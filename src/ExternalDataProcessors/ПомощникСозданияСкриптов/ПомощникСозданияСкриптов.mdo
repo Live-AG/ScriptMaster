@@ -19,6 +19,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="69ee3788-d274-40f5-bcf3-5123bb02118d">
+    <name>ФормаЗаполненияСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="04b060a9-2165-4157-a5a7-caf91f3fe969">
     <name>_1cv8_8_3_21</name>
     <synonym>
