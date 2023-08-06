@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c02106ba-72a8-4cd8-b467-a1a2b9b8cfaa">
+  <producedTypes>
+    <objectType typeId="0c0a08d9-d55c-4e80-bdb1-35f72914da2b" valueTypeId="b00f6199-a97c-4c61-8302-4021838ac575"/>
+  </producedTypes>
+  <name>ScriptStructureMaster</name>
+  <synonym>
+    <key>ru</key>
+    <value>Script structure master</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="452a81db-5686-43a4-a592-b14e513ac0b4"/>
+  <defaultForm>ExternalDataProcessor.ScriptStructureMaster.Form.Форма</defaultForm>
+  <forms uuid="21a87df3-15ff-4d3e-86f7-2e131ac35db2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bd1db5be-ce7d-4453-bd7d-d2cc08a0a626">
+    <name>ФормаЗаполненияСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>

@@ -1,0 +1,221 @@
+{
+	"#value": [
+		{
+			"name": "ДеревоКоманд",
+			"Value": {
+				"#type": "jv8:ValueTree",
+				"#value": {
+					"column": [
+						{
+							"Name": "Команда",
+							"ValueType": {
+								"Type": [
+									"{http://www.w3.org/2001/XMLSchema}string"
+								],
+								"StringQualifiers": {
+									"Length": 50,
+									"AllowedLength": "Variable"
+								}
+							}
+						},
+						{
+							"Name": "Описание",
+							"ValueType": {
+								"Type": [
+									"{http://www.w3.org/2001/XMLSchema}string"
+								],
+								"StringQualifiers": {
+									"Length": 0,
+									"AllowedLength": "Variable"
+								}
+							}
+						},
+						{
+							"Name": "КлючСвязи",
+							"ValueType": {
+								"Type": [
+									"{http://v8.1c.ru/8.1/data/core}UUID"
+								]
+							}
+						}
+					],
+					"row": [
+						{
+							"row": [
+								{
+									"Value": [
+										{
+											"#type": "jxs:string",
+											"#value": "config"
+										},
+										{
+											"#type": "jxs:string",
+											"#value": "Конфигурация"
+										},
+										{
+											"#type": "jv8:UUID",
+											"#value": "f047ad65-aafe-4973-ba56-a12290eeb014"
+										}
+									]
+								}
+							],
+							"Value": [
+								{
+									"#type": "jxs:string",
+									"#value": "ibcmd"
+								},
+								{
+									"#type": "jxs:string",
+									"#value": "Автономный сервер"
+								},
+								{
+									"#type": "jv8:UUID",
+									"#value": "ce7c2cda-dc52-46c5-9d84-100238c497bd"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "ТаблицаПараметров",
+			"Value": {
+				"#type": "jv8:ValueTable",
+				"#value": {
+					"column": [
+						{
+							"Name": "Параметр",
+							"ValueType": {
+								"Type": [
+									"{http://www.w3.org/2001/XMLSchema}string"
+								],
+								"StringQualifiers": {
+									"Length": 50,
+									"AllowedLength": "Variable"
+								}
+							}
+						},
+						{
+							"Name": "ТипАргумента",
+							"ValueType": {
+								"Type": [
+									"{http://www.w3.org/2001/XMLSchema}string"
+								],
+								"StringQualifiers": {
+									"Length": 50,
+									"AllowedLength": "Variable"
+								}
+							}
+						},
+						{
+							"Name": "ЗначенияАргумента",
+							"ValueType": {
+								"Type": [
+									"{http://v8.1c.ru/8.1/data/core}ValueListType"
+								]
+							}
+						},
+						{
+							"Name": "КлючСвязи",
+							"ValueType": {
+								"Type": [
+									"{http://v8.1c.ru/8.1/data/core}UUID"
+								]
+							}
+						},
+						{
+							"Name": "Описание",
+							"ValueType": {
+								"Type": [
+									"{http://www.w3.org/2001/XMLSchema}string"
+								],
+								"StringQualifiers": {
+									"Length": 0,
+									"AllowedLength": "Variable"
+								}
+							}
+						}
+					],
+					"row": [
+						[
+							{
+								"#type": "jxs:string",
+								"#value": "--bdName"
+							},
+							{
+								"#type": "jxs:string",
+								"#value": ""
+							},
+							{
+								"#type": "jv8:ValueListType",
+								"#value": {
+									"valueType": {},
+									"lastId": "-1"
+								}
+							},
+							{
+								"#type": "jv8:UUID",
+								"#value": "f047ad65-aafe-4973-ba56-a12290eeb014"
+							},
+							{
+								"#type": "jxs:string",
+								"#value": ""
+							}
+						],
+						[
+							{
+								"#type": "jxs:string",
+								"#value": "--user"
+							},
+							{
+								"#type": "jxs:string",
+								"#value": ""
+							},
+							{
+								"#type": "jv8:ValueListType",
+								"#value": {
+									"valueType": {},
+									"lastId": "-1"
+								}
+							},
+							{
+								"#type": "jv8:UUID",
+								"#value": "f047ad65-aafe-4973-ba56-a12290eeb014"
+							},
+							{
+								"#type": "jxs:string",
+								"#value": ""
+							}
+						],
+						[
+							{
+								"#type": "jxs:string",
+								"#value": "--password"
+							},
+							{
+								"#type": "jxs:string",
+								"#value": ""
+							},
+							{
+								"#type": "jv8:ValueListType",
+								"#value": {
+									"valueType": {},
+									"lastId": "-1"
+								}
+							},
+							{
+								"#type": "jv8:UUID",
+								"#value": "f047ad65-aafe-4973-ba56-a12290eeb014"
+							},
+							{
+								"#type": "jxs:string",
+								"#value": ""
+							}
+						]
+					]
+				}
+			}
+		}
+	]
+}

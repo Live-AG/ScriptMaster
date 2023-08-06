@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ace0aa7b-3520-4b96-895d-b913dbdeee96">
+  <producedTypes>
+    <objectType typeId="fe273b99-e3d6-43e8-a92d-9bb4116ddc22" valueTypeId="9d36f1fe-b9cb-42d5-a0d6-a460771da59b"/>
+  </producedTypes>
+  <name>ПомощникСозданияСкриптов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник создания скриптов</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="4e3b5b39-e621-4123-aa69-3ed904b126dc"/>
+  <defaultForm>ExternalDataProcessor.ПомощникСозданияСкриптов.Form.Форма</defaultForm>
+  <forms uuid="09c56769-a8fd-4758-8a5c-318fb968fbd3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="04b060a9-2165-4157-a5a7-caf91f3fe969">
+    <name>_1cv8_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>1cv8 8.3.21</value>
+    </synonym>
+  </templates>
+  <templates uuid="d074c297-01a3-478f-8583-b1b5b164fc83">
+    <name>_ibcmd_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>ibcmd 8.3.21</value>
+    </synonym>
+  </templates>
+  <templates uuid="c2843dcf-fb72-4641-af95-c229914f99be">
+    <name>_ibsrv_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>ibsrv 8.3.21</value>
+    </synonym>
+  </templates>
+  <templates uuid="2dcef3d0-5bcb-4251-95c7-7e156d6ae72d">
+    <name>_rac_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>rac 8.3.21</value>
+    </synonym>
+  </templates>
+  <templates uuid="bbbbea23-4469-41a2-b769-455854819a08">
+    <name>_ring_0_19_5</name>
+    <synonym>
+      <key>ru</key>
+      <value>ring 0.19.5</value>
+    </synonym>
+  </templates>
+  <templates uuid="a1614697-3261-4a06-b4da-85b1b82979df">
+    <name>_cnvdbfl_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>cnvdbfl 8.3.21</value>
+    </synonym>
+  </templates>
+  <templates uuid="26e6d445-c5aa-4867-a7c6-6b186dadeaec">
+    <name>_agent_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>agent 8.3.21</value>
+    </synonym>
+  </templates>
+  <templates uuid="63b96ded-43ca-43d1-9df7-26e070c11db9">
+    <name>ТестМакет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тест макет</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>
