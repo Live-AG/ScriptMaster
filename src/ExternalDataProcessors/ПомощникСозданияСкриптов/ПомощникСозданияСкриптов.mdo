@@ -32,7 +32,7 @@
     <name>_ibcmd_8_3_21</name>
     <synonym>
       <key>ru</key>
-      <value>Ibcmd 8.3.21</value>
+      <value>ibcmd 8.3.21</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -48,7 +48,7 @@
     <name>_ibsrv_8_3_21</name>
     <synonym>
       <key>ru</key>
-      <value>Ibsrv 8.3.21</value>
+      <value>ibsrv 8.3.21</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -81,6 +81,14 @@
     <synonym>
       <key>ru</key>
       <value>agent 8.3.21</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="47d3f39b-bdb9-4b23-beab-76e45cf92f01">
+    <name>_webinst_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>webinst 8.3.21</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

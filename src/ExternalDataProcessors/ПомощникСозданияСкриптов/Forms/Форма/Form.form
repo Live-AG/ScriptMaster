@@ -599,6 +599,10 @@
         <event>OnActivateRow</event>
         <name>ДеревоКоммандПриАктивизацииСтроки</name>
       </handlers>
+      <handlers>
+        <event>OnChange</event>
+        <name>ДеревоКомандПриИзменении</name>
+      </handlers>
       <searchStringAddition>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -993,6 +997,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ТаблицаПараметров.Параметр</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ТаблицаПараметровПараметрПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ТаблицаПараметровПараметрРасширеннаяПодсказка</name>
               <id>62</id>
@@ -2501,7 +2509,7 @@
       <common>true</common>
     </use>
     <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Conversations</picture>
+      <picture>StdPicture.CloneObject</picture>
     </picture>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
