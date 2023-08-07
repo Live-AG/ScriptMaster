@@ -28,60 +28,59 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="04b060a9-2165-4157-a5a7-caf91f3fe969">
+  <templates uuid="8aef2a2e-3bad-4b45-9769-de25d6107f71">
+    <name>_ibcmd_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ibcmd 8.3.21</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="d5fe0887-ecb8-4909-9ac2-c7fba2378fe7">
     <name>_1cv8_8_3_21</name>
     <synonym>
       <key>ru</key>
       <value>1cv8 8.3.21</value>
     </synonym>
+    <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="d074c297-01a3-478f-8583-b1b5b164fc83">
-    <name>_ibcmd_8_3_21</name>
-    <synonym>
-      <key>ru</key>
-      <value>ibcmd 8.3.21</value>
-    </synonym>
-  </templates>
-  <templates uuid="c2843dcf-fb72-4641-af95-c229914f99be">
+  <templates uuid="8245515e-9cda-4ec3-9cc2-8331c19dba0e">
     <name>_ibsrv_8_3_21</name>
     <synonym>
       <key>ru</key>
-      <value>ibsrv 8.3.21</value>
+      <value>Ibsrv 8.3.21</value>
     </synonym>
+    <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="2dcef3d0-5bcb-4251-95c7-7e156d6ae72d">
+  <templates uuid="39f48ce1-f525-4315-a2e5-c69cf33aceef">
     <name>_rac_8_3_21</name>
     <synonym>
       <key>ru</key>
       <value>rac 8.3.21</value>
     </synonym>
+    <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="bbbbea23-4469-41a2-b769-455854819a08">
+  <templates uuid="ee722621-6fdc-42e0-a3f9-27c1084b596f">
     <name>_ring_0_19_5</name>
     <synonym>
       <key>ru</key>
       <value>ring 0.19.5</value>
     </synonym>
+    <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="a1614697-3261-4a06-b4da-85b1b82979df">
+  <templates uuid="0eeb4544-a882-4138-a242-3540d704d720">
     <name>_cnvdbfl_8_3_21</name>
     <synonym>
       <key>ru</key>
       <value>cnvdbfl 8.3.21</value>
     </synonym>
+    <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="26e6d445-c5aa-4867-a7c6-6b186dadeaec">
+  <templates uuid="b8cc2741-77c8-48e6-97ff-e3e5072ac3eb">
     <name>_agent_8_3_21</name>
     <synonym>
       <key>ru</key>
       <value>agent 8.3.21</value>
-    </synonym>
-  </templates>
-  <templates uuid="63b96ded-43ca-43d1-9df7-26e070c11db9">
-    <name>ТестМакет</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тест макет</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

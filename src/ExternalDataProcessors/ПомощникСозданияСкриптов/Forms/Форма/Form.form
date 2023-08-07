@@ -114,6 +114,15 @@
             <value>agent</value>
           </value>
         </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>webinst</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>webinst</value>
+          </value>
+        </choiceList>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -223,6 +232,134 @@
         <textEdit>true</textEdit>
       </extInfo>
     </items>
+    <items xsi:type="form:Button">
+      <name>ФормаСохранитьДанные</name>
+      <id>110</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаСохранитьДанныеРасширеннаяПодсказка</name>
+        <id>111</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.СохранитьДанные</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InCommandBar</locationInCommandBar>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаЗагрузитьДанные</name>
+      <id>108</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗагрузитьДанныеРасширеннаяПодсказка</name>
+        <id>109</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.ЗагрузитьДанные</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <locationInCommandBar>InCommandBar</locationInCommandBar>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаРежимРедактора</name>
+      <id>138</id>
+      <items xsi:type="form:Button">
+        <name>ФормаРежимРедактора</name>
+        <id>106</id>
+        <displayImportance>High</displayImportance>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ФормаРежимРедактораРасширеннаяПодсказка</name>
+          <id>107</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.РежимРедактора</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <groupHorizontalAlign>Right</groupHorizontalAlign>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа1</value>
+      </title>
+      <horizontalStretch>true</horizontalStretch>
+      <extendedTooltip>
+        <name>ГруппаРежимРедактораРасширеннаяПодсказка</name>
+        <id>139</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Right</horizontalAlign>
+      </extInfo>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -232,6 +369,7 @@
       <key>ru</key>
       <value>Группа1</value>
     </title>
+    <horizontalStretch>true</horizontalStretch>
     <extendedTooltip>
       <name>ГруппаПрограммаВерсияРасширеннаяПодсказка</name>
       <id>99</id>
@@ -948,9 +1086,14 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>ТаблицаПараметровАргументНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
@@ -1021,6 +1164,7 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ТаблицаПараметров.ТипАргумента</segments>
             </dataPath>
+            <shortcut>Alt+</shortcut>
             <extendedTooltip>
               <name>ТаблицаПараметровТипАргументаРасширеннаяПодсказка</name>
               <id>117</id>
@@ -1058,23 +1202,13 @@
               <listChoiceMode>true</listChoiceMode>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
-              <choiceList>
-                <presentation>
-                  <key>ru</key>
-                  <value>Произвольный</value>
-                </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>0</value>
-                </value>
-              </choiceList>
               <choiceList>
                 <presentation>
                   <key>ru</key>
                   <value>Строка</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>1</value>
+                <value xsi:type="core:StringValue">
+                  <value>Строка</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1082,8 +1216,8 @@
                   <key>ru</key>
                   <value>Число</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>2</value>
+                <value xsi:type="core:StringValue">
+                  <value>Число</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1091,8 +1225,8 @@
                   <key>ru</key>
                   <value>Булево</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>3</value>
+                <value xsi:type="core:StringValue">
+                  <value>Булево</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1100,8 +1234,8 @@
                   <key>ru</key>
                   <value>Дата</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>4</value>
+                <value xsi:type="core:StringValue">
+                  <value>Дата</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1109,8 +1243,8 @@
                   <key>ru</key>
                   <value>Список</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>5</value>
+                <value xsi:type="core:StringValue">
+                  <value>Список</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1118,8 +1252,8 @@
                   <key>ru</key>
                   <value>Файл</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>6</value>
+                <value xsi:type="core:StringValue">
+                  <value>Файл</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1127,8 +1261,8 @@
                   <key>ru</key>
                   <value>Каталог</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>7</value>
+                <value xsi:type="core:StringValue">
+                  <value>Каталог</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1136,8 +1270,8 @@
                   <key>ru</key>
                   <value>Пароль</value>
                 </presentation>
-                <value xsi:type="core:NumberValue">
-                  <value>8</value>
+                <value xsi:type="core:StringValue">
+                  <value>Пароль</value>
                 </value>
               </choiceList>
             </extInfo>
@@ -1870,106 +2004,12 @@
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
-    <items xsi:type="form:Button">
-      <name>ФормаЗагрузитьДанные</name>
-      <id>108</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаЗагрузитьДанныеРасширеннаяПодсказка</name>
-        <id>109</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.ЗагрузитьДанные</commandName>
-      <representation>Auto</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <locationInCommandBar>InCommandBar</locationInCommandBar>
-    </items>
-    <items xsi:type="form:Button">
-      <name>ФормаСохранитьДанные</name>
-      <id>110</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаСохранитьДанныеРасширеннаяПодсказка</name>
-        <id>111</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.СохранитьДанные</commandName>
-      <representation>Auto</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-      <locationInCommandBar>InCommandBar</locationInCommandBar>
-    </items>
-    <items xsi:type="form:Button">
-      <name>ФормаРежимРедактора</name>
-      <id>106</id>
-      <displayImportance>High</displayImportance>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаРежимРедактораРасширеннаяПодсказка</name>
-        <id>107</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.РежимРедактора</commandName>
-      <representation>Auto</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
-    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <horizontalAlign>Left</horizontalAlign>
-    <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers>
     <event>OnCreateAtServer</event>
@@ -2228,10 +2268,10 @@
       </title>
       <id>15</id>
       <valueType>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>1</precision>
-        </numberQualifiers>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -2489,6 +2529,7 @@
         <name>РежимРедактора</name>
       </handler>
     </action>
+    <representation>TextPicture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
