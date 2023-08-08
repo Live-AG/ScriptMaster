@@ -1427,6 +1427,10 @@
         <horizontalAlign>Left</horizontalAlign>
         <autoFill>true</autoFill>
       </autoCommandBar>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТаблицаПараметровПриИзменении</name>
+      </handlers>
       <searchStringAddition>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -2026,6 +2030,10 @@
   <handlers>
     <event>OnOpen</event>
     <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
   </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
