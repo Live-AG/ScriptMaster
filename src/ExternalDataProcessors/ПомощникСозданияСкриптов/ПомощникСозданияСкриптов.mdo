@@ -28,6 +28,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="52518fe7-efdf-4697-af85-d195af505948">
+    <name>ФормаРезультатаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма результата проверки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="8aef2a2e-3bad-4b45-9769-de25d6107f71">
     <name>_ibcmd_8_3_21</name>
     <synonym>
