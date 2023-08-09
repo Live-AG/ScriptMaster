@@ -1108,60 +1108,6 @@
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>ТаблицаПараметровСписокЗначенийАргумента</name>
-            <id>112</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ТаблицаПараметров.СписокЗначенийАргумента</segments>
-            </dataPath>
-            <extendedTooltip>
-              <name>ТаблицаПараметровСписокЗначенийАргументаРасширеннаяПодсказка</name>
-              <id>114</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ТаблицаПараметровСписокЗначенийАргументаКонтекстноеМеню</name>
-              <id>113</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>InputField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:InputFieldExtInfo">
-              <handlers>
-                <event>StartChoice</event>
-                <name>ТаблицаПараметровСписокЗначенийАргументаНачалоВыбора</name>
-              </handlers>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <wrap>true</wrap>
-              <chooseType>true</chooseType>
-              <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
             <name>ТаблицаПараметровТипАргумента</name>
             <id>115</id>
             <visible>true</visible>
@@ -1282,6 +1228,59 @@
                   <value>Пароль</value>
                 </value>
               </choiceList>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ТаблицаПараметровСписокЗначенийАргумента</name>
+            <id>112</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ТаблицаПараметров.СписокЗначенийАргумента</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>ТаблицаПараметровСписокЗначенийАргументаРасширеннаяПодсказка</name>
+              <id>114</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ТаблицаПараметровСписокЗначенийАргументаКонтекстноеМеню</name>
+              <id>113</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>ТаблицаПараметровСписокЗначенийАргументаНачалоВыбора</name>
+              </handlers>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -1814,18 +1813,19 @@
           </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
-        <type>TextDocumentField</type>
+        <type>LabelField</type>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:TextDocFieldExtInfo">
+        <extInfo xsi:type="form:LabelFieldExtInfo">
           <width>50</width>
-          <autoMaxWidth>true</autoMaxWidth>
           <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
           <maxHeight>4</maxHeight>
-          <horizontalStretch>true</horizontalStretch>
-          <verticalStretch>true</verticalStretch>
+          <borderColor xsi:type="core:ColorRef">
+            <color>Style.FormBackColor</color>
+          </borderColor>
           <textColor xsi:type="core:ColorDef">
             <red>204</red>
             <green>204</green>
@@ -1836,9 +1836,6 @@
             <green>12</green>
             <blue>12</blue>
           </backColor>
-          <borderColor xsi:type="core:ColorRef">
-            <color>Style.FormBackColor</color>
-          </borderColor>
           <font xsi:type="core:FontRef">
             <font>Style.NormalTextFont</font>
             <faceName>Input</faceName>
@@ -2342,10 +2339,7 @@
     </title>
     <id>13</id>
     <valueType>
-      <types>String</types>
-      <stringQualifiers>
-        <length>1024</length>
-      </stringQualifiers>
+      <types>FormattedString</types>
     </valueType>
     <view>
       <common>true</common>
@@ -2498,6 +2492,24 @@
     <id>24</id>
     <valueType>
       <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ТекстСкриптаПредставление</name>
+    <title>
+      <key>ru</key>
+      <value>Текст скрипта представление</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
     </valueType>
     <view>
       <common>true</common>
