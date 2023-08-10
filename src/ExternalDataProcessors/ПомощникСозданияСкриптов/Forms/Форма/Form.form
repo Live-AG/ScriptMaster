@@ -607,6 +607,10 @@
         <event>OnChange</event>
         <name>ДеревоКомандПриИзменении</name>
       </handlers>
+      <handlers>
+        <event>BeforeEditEnd</event>
+        <name>ДеревоКомандПередОкончаниемРедактирования</name>
+      </handlers>
       <searchStringAddition>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1433,6 +1437,10 @@
       <handlers>
         <event>OnChange</event>
         <name>ТаблицаПараметровПриИзменении</name>
+      </handlers>
+      <handlers>
+        <event>BeforeEditEnd</event>
+        <name>ТаблицаПараметровПередОкончаниемРедактирования</name>
       </handlers>
       <searchStringAddition>
         <visible>true</visible>
