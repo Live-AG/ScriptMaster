@@ -597,7 +597,6 @@
           <common>true</common>
         </userVisible>
         <horizontalAlign>Left</horizontalAlign>
-        <autoFill>true</autoFill>
       </autoCommandBar>
       <handlers>
         <event>OnActivateRow</event>
@@ -610,6 +609,10 @@
       <handlers>
         <event>BeforeEditEnd</event>
         <name>ДеревоКомандПередОкончаниемРедактирования</name>
+      </handlers>
+      <handlers>
+        <event>DragStart</event>
+        <name>ДеревоКомандНачалоПеретаскивания</name>
       </handlers>
       <searchStringAddition>
         <visible>true</visible>
@@ -748,6 +751,7 @@
         <items xsi:type="form:FormGroup">
           <name>ДеревоКомандКонтекстноеМенюГруппаРедактирование</name>
           <id>128</id>
+          <displayImportance>VeryHigh</displayImportance>
           <items xsi:type="form:Button">
             <name>ДобавитьКоманду</name>
             <id>130</id>
@@ -899,7 +903,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <autoFill>true</autoFill>
       </contextMenu>
       <representation>Tree</representation>
       <autoMaxWidth>true</autoMaxWidth>
@@ -915,7 +918,12 @@
       <initialTreeView>ExpandAllLevels</initialTreeView>
       <horizontalStretch>true</horizontalStretch>
       <verticalStretch>true</verticalStretch>
+      <enableStartDrag>true</enableStartDrag>
+      <enableDrag>true</enableDrag>
       <fileDragMode>AsFileRef</fileDragMode>
+      <searchStringLocation>None</searchStringLocation>
+      <viewStatusLocation>None</viewStatusLocation>
+      <searchControlLocation>None</searchControlLocation>
     </items>
     <items xsi:type="form:Table">
       <name>ТаблицаПараметров</name>
@@ -1432,7 +1440,6 @@
           <common>true</common>
         </userVisible>
         <horizontalAlign>Left</horizontalAlign>
-        <autoFill>true</autoFill>
       </autoCommandBar>
       <handlers>
         <event>OnChange</event>
@@ -1579,6 +1586,7 @@
         <items xsi:type="form:FormGroup">
           <name>ТаблицаПараметровКонтекстноеМенюГруппаРедактирования</name>
           <id>118</id>
+          <displayImportance>VeryHigh</displayImportance>
           <items xsi:type="form:Button">
             <name>ДобавитьПараметр</name>
             <id>120</id>
@@ -1730,7 +1738,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <autoFill>true</autoFill>
       </contextMenu>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -1747,6 +1754,9 @@
       <horizontalStretch>true</horizontalStretch>
       <verticalStretch>true</verticalStretch>
       <fileDragMode>AsFileRef</fileDragMode>
+      <searchStringLocation>None</searchStringLocation>
+      <viewStatusLocation>None</viewStatusLocation>
+      <searchControlLocation>None</searchControlLocation>
       <rowFilter xsi:type="core:UndefinedValue"/>
     </items>
     <visible>true</visible>
