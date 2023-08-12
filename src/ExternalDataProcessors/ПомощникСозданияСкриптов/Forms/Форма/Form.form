@@ -587,6 +587,49 @@
           <autoShowOpenButtonMode>Always</autoShowOpenButtonMode>
         </extInfo>
       </items>
+      <items xsi:type="form:FormField">
+        <name>ДеревоКомандИсключительная</name>
+        <id>144</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ДеревоКоманд.Исключительная</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ДеревоКомандИсключительнаяРасширеннаяПодсказка</name>
+          <id>146</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДеревоКомандИсключительнаяКонтекстноеМеню</name>
+          <id>145</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
       <commandBarLocation>None</commandBarLocation>
       <autoCommandBar>
         <name>ДеревоКомандКоманднаяПанель</name>
@@ -613,6 +656,14 @@
       <handlers>
         <event>DragStart</event>
         <name>ДеревоКомандНачалоПеретаскивания</name>
+      </handlers>
+      <handlers>
+        <event>BeforeAddRow</event>
+        <name>ДеревоКомандПередНачаломДобавления</name>
+      </handlers>
+      <handlers>
+        <event>BeforeDeleteRow</event>
+        <name>ДеревоКомандПередУдалением</name>
       </handlers>
       <searchStringAddition>
         <visible>true</visible>
@@ -776,6 +827,36 @@
               </extInfo>
             </extendedTooltip>
             <commandName>Form.Item.ДеревоКоманд.StandardCommand.Add</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>Скопировать</name>
+            <id>147</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>СкопироватьРасширеннаяПодсказка</name>
+              <id>148</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.ДеревоКоманд.StandardCommand.Copy</commandName>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2173,6 +2254,23 @@
         <stringQualifiers>
           <length>50</length>
         </stringQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Исключительная</name>
+      <title>
+        <key>ru</key>
+        <value>Исключительная</value>
+      </title>
+      <id>27</id>
+      <valueType>
+        <types>Boolean</types>
       </valueType>
       <view>
         <common>true</common>

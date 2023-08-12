@@ -49,54 +49,147 @@
 					</StringQualifiers>
 				</ValueType>
 			</column>
+			<column>
+				<Name>Исключительная</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
 			<row>
 				<row>
 					<row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Указание параметров подключения</Value>
+						<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+						<Value xsi:type="xs:string">designer</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
 						<row>
-							<Value xsi:type="xs:string">/ConfigurationRepositoryCreate</Value>
+							<Value xsi:type="xs:string">/Proxy</Value>
 							<Value xsi:type="xs:boolean">false</Value>
-							<Value xsi:type="xs:string">Создание хранилища</Value>
-							<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
-							<Value xsi:type="xs:string"/>
-						</row>
-						<row>
-							<Value xsi:type="xs:string">/ConfigurationRepositoryDumpCfg</Value>
-							<Value xsi:type="xs:boolean">false</Value>
-							<Value xsi:type="xs:string">Сохранить конфигурацию из хранилища в файл</Value>
-							<Value xsi:type="UUID">badd433e-e500-4b3f-8d86-a3d4825185de</Value>
-							<Value xsi:type="xs:string"/>
-						</row>
-						<row>
+							<Value xsi:type="xs:string">Использовать указанные настройки прокси, игнорируя умолчания (только для ws-соединения).</Value>
+							<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
 							<Value xsi:type="xs:string"/>
 							<Value xsi:type="xs:boolean">false</Value>
-							<Value xsi:type="xs:string">Работа с пользователями</Value>
-							<Value xsi:type="UUID">597ee83c-e1bf-4f1e-b1a1-b42cb5b3e91b</Value>
-							<Value xsi:type="xs:string"/>
-						</row>
-						<row>
-							<Value xsi:type="xs:string">/ConfigurationRepositoryAddUser</Value>
-							<Value xsi:type="xs:boolean">false</Value>
-							<Value xsi:type="xs:string">Создать пользователя хранилища конфигурации</Value>
-							<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
-							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:string"/>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string">Параметры доступа к хранилищу</Value>
-						<Value xsi:type="UUID">f7c8f7c7-c462-434e-a4a0-23b117e6889e</Value>
+						<Value xsi:type="xs:string">Настройка аутентификации</Value>
+						<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
 						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Выгрузка/загрузка информационной базы</Value>
+							<Value xsi:type="UUID">6f44de13-c0c9-41df-9b6f-caa42cc4562c</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<row>
+								<Value xsi:type="xs:string"/>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Параметры доступа к хранилищу</Value>
+								<Value xsi:type="UUID">f7c8f7c7-c462-434e-a4a0-23b117e6889e</Value>
+								<Value xsi:type="xs:string"/>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">/ConfigurationRepositoryCreate</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Создание хранилища</Value>
+								<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
+								<Value xsi:type="xs:string"/>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">/ConfigurationRepositoryDumpCfg</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Сохранить конфигурацию из хранилища в файл</Value>
+								<Value xsi:type="UUID">badd433e-e500-4b3f-8d86-a3d4825185de</Value>
+								<Value xsi:type="xs:string"/>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">/ConfigurationRepositoryAddUser</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Создать пользователя хранилища конфигурации</Value>
+								<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
+								<Value xsi:type="xs:string"/>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Команды работы с хранилищем конфигурации</Value>
+							<Value xsi:type="UUID">ea6a5e83-22f9-4aba-b9ff-ea8273fdf337</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Команды пакетного режима запуска конфигуратора</Value>
+						<Value xsi:type="UUID">b49dea6f-a2cc-4bc1-b82b-af6b6482dfd5</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
 					</row>
 					<Value xsi:type="xs:string">DESIGNER</Value>
 					<Value xsi:type="xs:boolean">false</Value>
 					<Value xsi:type="xs:string">Запуск в режиме Конфигуратора</Value>
-					<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-					<Value xsi:type="xs:string">designer</Value>
+					<Value xsi:type="UUID">b93fa77c-e7c7-4563-9107-2f63fee6f1d1</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Указание параметров подключения</Value>
+						<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+						<Value xsi:type="xs:string">designer</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string">/Proxy</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Использовать указанные настройки прокси, игнорируя умолчания (только для ws-соединения).</Value>
+							<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Настройка аутентификации</Value>
+						<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Определение режима запуска</Value>
+						<Value xsi:type="UUID">b1336e6b-fced-4d06-9a6d-2721225b3cc3</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<Value xsi:type="xs:string">ENTERPRISE</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Запуск в режиме Предприятия</Value>
+					<Value xsi:type="UUID">70ed6912-c17a-4a46-b89a-155b5812fb73</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
 				</row>
 				<Value xsi:type="xs:string">1cv8</Value>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
 				<Value xsi:type="UUID">504ff6c7-d176-4785-854d-8997e3e7948a</Value>
 				<Value xsi:type="xs:string">_1cv8</Value>
+				<Value xsi:type="xs:boolean">false</Value>
 			</row>
 		</Value>
 	</Property>
@@ -165,7 +258,7 @@
 				<Value xsi:type="xs:string">/F &lt;каталог&gt;</Value>
 				<Value xsi:type="xs:string">Каталог, в котором расположен файл базы данных 1Cv8.1CD.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">каталог</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -177,7 +270,7 @@
 				<Value xsi:type="xs:string">/S &lt;адрес&gt;</Value>
 				<Value xsi:type="xs:string">Адрес информационной базы, хранящейся на сервере «1С:Предприятия»</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">адрес</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -189,7 +282,7 @@
 				<Value xsi:type="xs:string">/IBName &lt;имя информационной базы&gt;</Value>
 				<Value xsi:type="xs:string">Запуск информационной базы по имени базы в списке информационных баз</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">имя информационной базы</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -441,6 +534,1071 @@
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">Имя расширения</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
+				<Value xsi:type="xs:string">/IBConnectionString</Value>
+				<Value xsi:type="xs:string">Позволяет задать строку соединения с информационной базой целиком в том виде, в котором ее возвращает функция СтрокаСоединенияИнформационнойБазы(). Части строки соединения могут быть переопределены ранее существовавшими параметрами. Для этого нужно, чтобы /IBConnectionString находился в командной строке раньше них. Передавая строку соединения в качестве параметра командной строки, нужно помнить о том, что строка соединения содержит кавычки. Поэтому требуется взять всю строку в кавычки, а содержащиеся внутри кавычки удвоить. Описание строки соединения с информационной базой см. здесь.
+
+Дополнительные параметры строки соединения в режиме тонкого клиента:
+
+● wsn ‑ имя пользователя для аутентификации на веб-сервере;
+
+● wsp ‑ пароль пользователя для аутентификации на веб-сервере;
+
+● wspauto ‑ использовать автоматические настройки прокси-сервера;
+
+● wspsrv ‑ адрес прокси-сервера;
+
+● wspport ‑ порт прокси;
+
+● wspuser ‑ имя пользователя для прокси с авторизацией;
+
+● wsppwd ‑ пароль для прокси с авторизацией.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
+				<Value xsi:type="xs:string">/WS &lt;url&gt;</Value>
+				<Value xsi:type="xs:string">Строка ws-соединения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">url</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
+				<Value xsi:type="xs:string">/O &lt;скорость соединения&gt;</Value>
+				<Value xsi:type="xs:string">Определяет скорость соединения (используется в тонком клиенте). Команда используется для настройки элемента списка информационных баз. &lt;скорость соединения&gt; может принимать следующие значения:
+
+● Normal ‑ обычная скорость соединения (значение по умолчанию);
+
+● Low ‑ низкая скорость соединения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">скорость соединения</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>Normal</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>Low</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
+				<Value xsi:type="xs:string">/TComp &lt;режим сжатия трафика&gt;</Value>
+				<Value xsi:type="xs:string">Устанавливает режим сжатия трафика между сервером и тонким клиентом. Для команды может быть указан один из следующих параметров:
+
+● -None ‑ сжатие отключено.
+
+● -Deflate ‑ используется стандартное (для протокола HTTP) сжатие трафика по алгоритму deflate.
+
+● -SDC ‑ используется собственный алгоритм сжатия (используется по умолчанию).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим сжатия трафика</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>2</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-None</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-Deflate</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-SDC</presentation>
+						<id>2</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
+				<Value xsi:type="xs:string">UsePrivilegedMode</Value>
+				<Value xsi:type="xs:string">Запуск клиентского приложения в привилегированном режиме. Разрешен аутентифицированному пользователю, имеющему административные права. Журнал регистрации фиксирует установку или отказ в возможности установки режима привилегированного сеанса.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
+				<Value xsi:type="xs:string">/SLev&lt;Уровень&gt;</Value>
+				<Value xsi:type="xs:string">Определяет уровень защищенности соединения клиента с сервером «1С:Предприятия». Для команды могут быть задано одно из следующих значений:
+
+● 0 ‑ незащищенное соединение;
+
+● 1 ‑ защищенное соединение только в процессе выполнения аутентификации;
+
+● 2 ‑ защищенное соединение в течение всего сеанса.
+
+Если команда указана без своего значения, то это эквивалентно указанию команды со значением 0 ‑ /SLev0.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">Уровень</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>2</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>0</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>1</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>2</presentation>
+						<id>2</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
+				<Value xsi:type="xs:string">/Z &lt;Список общих реквизитов&gt;</Value>
+				<Value xsi:type="xs:string">Установка разделителей при запуске клиентского приложения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">Список общих реквизитов</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6f44de13-c0c9-41df-9b6f-caa42cc4562c</Value>
+				<Value xsi:type="xs:string">/DumpIB &lt;имя файла&gt;</Value>
+				<Value xsi:type="xs:string">Выполнить выгрузку информационной базы в файл.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">имя файла</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6f44de13-c0c9-41df-9b6f-caa42cc4562c</Value>
+				<Value xsi:type="xs:string">/RestoreIB &lt;имя файла&gt;</Value>
+				<Value xsi:type="xs:string">Выполнить загрузку информационной базы из файла. Допустимо использовать следующие параметры:
+
+● -JobsCount ‑ количество системных фоновых заданий, используемых для загрузки информационной базы. Значение по умолчанию ‑ 0. В этом случае используется столько фоновых заданий, сколько процессоров на компьютере, выполняющем загрузку информационной базы.
+
+Ускорение процесса загрузки достигается в следующих случаях:
+
+● При расположении кластера серверов системы «1С:Предприятие» и сервера СУБД на одном компьютере.
+
+● Компьютер сервера СУБД и кластера серверов «1С:Предприятие» связан каналом связи с высокой пропускной способностью (1 Гбит и более).
+
+</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">имя файла</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6f44de13-c0c9-41df-9b6f-caa42cc4562c</Value>
+				<Value xsi:type="xs:string">-JobsCount &lt;Количество&gt;</Value>
+				<Value xsi:type="xs:string">Количество системных фоновых заданий, используемых для загрузки информационной базы. Значение по умолчанию ‑ 0. В этом случае используется столько фоновых заданий, сколько процессоров на компьютере, выполняющем загрузку информационной базы.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">Количество</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/N&lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя. Должно быть указано так же, как в списке пользователей, создаваемом в Конфигураторе.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/P&lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя, имя которого указано в команде /N. Если у пользователя нет пароля, этот параметр можно опустить.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/ModifyPassword &lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">Команда может использоваться только совместно с командами /N и /P и приводит к установке пользователю, указанному в команде /N, пароля, указанного в качестве параметра команды. Если в команде /P указан корректный пароль, то пользователь аутентифицируется в информационной базе, затем выполняется смена пароля и затем пользователь продолжает работу в сеансе.
+
+</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/WA&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Определяет режим использования аутентификации операционной системы при запуске «1С:Предприятие». Если команда /WA не указывается, то подразумевается, что используется команда командной строки /WA+.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ установка обязательного применения аутентификации операционной системы при старте «1С:Предприятие».
+
+● – ‑ запрет применения аутентификации операционной системы при старте «1С:Предприятия».</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/WSA&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Определяет режим использования аутентификации операционной системы на веб-сервере. Если параметр /WSA не указывается, то подразумевается, что используется параметр командной строки /WSA+.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ принудительное выполнение аутентификации средствами операционной системы на веб-сервере (по умолчанию).
+
+● – ‑ запрет применения аутентификации средствами операционной системы на веб-сервере.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/WSN &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя операционной системы, которое будет использовано системой для выполнения аутентификации на веб-сервере в случае указания параметра /WSA+. Пароль пользователя указывается в параметре /WSP.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/WSP &lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя, имя которого указано в параметре /WSN, для аутентификации на веб-сервере.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/NoProxy</Value>
+				<Value xsi:type="xs:string">Запретить использование прокси (только для ws-соединения).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d7f7bec9-f809-4a9c-92bf-c8cb27642b87</Value>
+				<Value xsi:type="xs:string">-PSrv &lt;адрес прокси&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">адрес прокси</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d7f7bec9-f809-4a9c-92bf-c8cb27642b87</Value>
+				<Value xsi:type="xs:string">-PPort &lt;порт&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">порт</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d7f7bec9-f809-4a9c-92bf-c8cb27642b87</Value>
+				<Value xsi:type="xs:string">-PUser &lt;имя пользователя прокси&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя пользователя прокси</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d7f7bec9-f809-4a9c-92bf-c8cb27642b87</Value>
+				<Value xsi:type="xs:string">-PPwd &lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/OIDA&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Применение сквозной аутентификации пользователя между разными информационными базами и/или внешними ресурсами для тонкого и веб-клиентов. Если при запуске клиента параметр /OIDA не задан, или задан параметр /OIDA+, то производится попытка аутентификации через OpenID-провайдера, адрес которого задан в файле default.vrd публикации этой информационной базы.
+
+Если OpenID-провайдер требует интерактивной аутентификации (происходит первое обращение или истекло время жизни признака аутентифицированности), клиент отображает диалог для ввода имени и пароля пользователя.
+
+Аутентификация происходит по списку пользователей информационной базы OpenID-провайдера.
+
+Аутентифицируемый пользователь информационной базы, использующих OpenID-аутентификацию, должен соответствовать по имени пользователю информационной базы OpenID-провайдера.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ использовать OpenID-аутентификацию (по умолчанию).
+
+● – ‑ не использовать OpenID-аутентификацию.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/AccessToken</Value>
+				<Value xsi:type="xs:string">Позволяет указать JWT для выполнения аутентификации пользователя.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/Authoff</Value>
+				<Value xsi:type="xs:string">Выполняет операцию OpenID logout (завершение сеанса работы пользователя). Завершение сеанса работы выполняется вне зависимости от используемого в дальнейшем метода аутентификации.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">155b0fe1-d56d-488e-8f74-3481f61c4ddd</Value>
+				<Value xsi:type="xs:string">/SAOnRestart</Value>
+				<Value xsi:type="xs:string">Указывает на то, что при перезапуске клиентского приложения из данного сеанса будет обязательно запрошены имя пользователя и пароль. По умолчанию пароль не запрашивается.
+
+Не используется в тонком клиенте.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b1336e6b-fced-4d06-9a6d-2721225b3cc3</Value>
+				<Value xsi:type="xs:string">/AppAutoCheckVersion&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Выполнять автоматический подбор нужной версии для каждой информационной базы. Подробнее см. здесь.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ выполнять подбор версий при запуске (значение по умолчанию).
+
+● – ‑ не выполнять подбор версий при запуске.
+
+По умолчанию подбор выполняется. Команда /AppAutoCheckVersion эквивалентна команде /AppAutoCheckVersion+.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b1336e6b-fced-4d06-9a6d-2721225b3cc3</Value>
+				<Value xsi:type="xs:string">/AppAutoCheckMode</Value>
+				<Value xsi:type="xs:string">Выполнять автоматическое определение приложения на основе данных информационной базы (основного режима запуска для конфигурации и режима запуска для пользователя).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b1336e6b-fced-4d06-9a6d-2721225b3cc3</Value>
+				<Value xsi:type="xs:string">/RunModeOrdinaryApplication</Value>
+				<Value xsi:type="xs:string">Запуск толстого клиента в обычном режиме, несмотря на настройки конфигурации и пользователя, от имени которого будет выполняться запуск. Не используется в тонком клиенте.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b1336e6b-fced-4d06-9a6d-2721225b3cc3</Value>
+				<Value xsi:type="xs:string">/RunModeManagedApplication</Value>
+				<Value xsi:type="xs:string">Запуск толстого клиента в режиме управляемого приложения, при этом учитывается настройка клиента в списке информационных баз (настройка Основной режим запуска, см. здесь):
+
+● Выбирать автоматически ‑ запускается тонкий клиент;
+
+● Тонкий клиент ‑ запускается тонкий клиент;
+
+● Веб-клиент ‑ запускается веб-клиент;
+
+● Толстый клиент ‑ запускается толстый клиент в режиме управляемого приложения.
+
+При этом при запуске клиента, отключается механизм автоматического подбора клиентского приложения.
+
+</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b1336e6b-fced-4d06-9a6d-2721225b3cc3</Value>
+				<Value xsi:type="xs:string">/AppArch &lt;разрядность&gt;</Value>
+				<Value xsi:type="xs:string">Позволяет указать разрядность используемого клиентского приложения.
+
+&lt;разрядность&gt; может принимать одно из следующих значений:
+
+● x86 ‑ использовать только 32-разрядные версии.
+
+● x86_prt ‑ использовать преимущественно 32-разрядные версии.
+
+● x86_64 ‑ использовать только 64-разрядные версии.
+
+● x86_64_prt ‑ использовать преимущественно 64-разрядные версии.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">разрядность</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>x86</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>x86_prt</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>x86_64</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>x86_64_prt</presentation>
+						<id>3</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b1336e6b-fced-4d06-9a6d-2721225b3cc3</Value>
+				<Value xsi:type="xs:string">/MainWindowMode &lt;режим запуска&gt;</Value>
+				<Value xsi:type="xs:string">Позволяет явным образом указать режим запуска основного окна клиентского приложения. Параметр &lt;режим запуска&gt; может принимать одно из следующих значений:
+
+● -Normal ‑ обычный режим запуска.
+
+● -Workplace ‑ режим рабочего места.
+
+● -EmbeddedWorkplace ‑ режим встроенного рабочего места (для встраивания веб-клиента в сторонний сайт).
+
+● -FullscreenWorkplace ‑ режим полноэкранного рабочего места.
+
+● -Kiosk ‑ режим киоск.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим запуска</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>4</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-Normal</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-Workplace</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-EmbeddedWorkplace</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-FullscreenWorkplace</presentation>
+						<id>3</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-Kiosk</presentation>
+						<id>4</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/F &lt;каталог&gt;</Value>
+				<Value xsi:type="xs:string">Каталог, в котором расположен файл базы данных 1Cv8.1CD.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">каталог</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/S &lt;адрес&gt;</Value>
+				<Value xsi:type="xs:string">Адрес информационной базы, хранящейся на сервере «1С:Предприятия»</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">адрес</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/IBName &lt;имя информационной базы&gt;</Value>
+				<Value xsi:type="xs:string">Запуск информационной базы по имени базы в списке информационных баз</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя информационной базы</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/IBConnectionString</Value>
+				<Value xsi:type="xs:string">Позволяет задать строку соединения с информационной базой целиком в том виде, в котором ее возвращает функция СтрокаСоединенияИнформационнойБазы(). Части строки соединения могут быть переопределены ранее существовавшими параметрами. Для этого нужно, чтобы /IBConnectionString находился в командной строке раньше них. Передавая строку соединения в качестве параметра командной строки, нужно помнить о том, что строка соединения содержит кавычки. Поэтому требуется взять всю строку в кавычки, а содержащиеся внутри кавычки удвоить. Описание строки соединения с информационной базой см. здесь.
+
+Дополнительные параметры строки соединения в режиме тонкого клиента:
+
+● wsn ‑ имя пользователя для аутентификации на веб-сервере;
+
+● wsp ‑ пароль пользователя для аутентификации на веб-сервере;
+
+● wspauto ‑ использовать автоматические настройки прокси-сервера;
+
+● wspsrv ‑ адрес прокси-сервера;
+
+● wspport ‑ порт прокси;
+
+● wspuser ‑ имя пользователя для прокси с авторизацией;
+
+● wsppwd ‑ пароль для прокси с авторизацией.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/WS &lt;url&gt;</Value>
+				<Value xsi:type="xs:string">Строка ws-соединения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">url</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/O &lt;скорость соединения&gt;</Value>
+				<Value xsi:type="xs:string">Определяет скорость соединения (используется в тонком клиенте). Команда используется для настройки элемента списка информационных баз. &lt;скорость соединения&gt; может принимать следующие значения:
+
+● Normal ‑ обычная скорость соединения (значение по умолчанию);
+
+● Low ‑ низкая скорость соединения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">скорость соединения</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>Normal</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>Low</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/TComp &lt;режим сжатия трафика&gt;</Value>
+				<Value xsi:type="xs:string">Устанавливает режим сжатия трафика между сервером и тонким клиентом. Для команды может быть указан один из следующих параметров:
+
+● -None ‑ сжатие отключено.
+
+● -Deflate ‑ используется стандартное (для протокола HTTP) сжатие трафика по алгоритму deflate.
+
+● -SDC ‑ используется собственный алгоритм сжатия (используется по умолчанию).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим сжатия трафика</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>2</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-None</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-Deflate</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-SDC</presentation>
+						<id>2</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">UsePrivilegedMode</Value>
+				<Value xsi:type="xs:string">Запуск клиентского приложения в привилегированном режиме. Разрешен аутентифицированному пользователю, имеющему административные права. Журнал регистрации фиксирует установку или отказ в возможности установки режима привилегированного сеанса.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/SLev&lt;Уровень&gt;</Value>
+				<Value xsi:type="xs:string">Определяет уровень защищенности соединения клиента с сервером «1С:Предприятия». Для команды могут быть задано одно из следующих значений:
+
+● 0 ‑ незащищенное соединение;
+
+● 1 ‑ защищенное соединение только в процессе выполнения аутентификации;
+
+● 2 ‑ защищенное соединение в течение всего сеанса.
+
+Если команда указана без своего значения, то это эквивалентно указанию команды со значением 0 ‑ /SLev0.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">Уровень</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>2</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>0</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>1</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>2</presentation>
+						<id>2</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2cf00798-1571-4dee-a50d-195ba6378f78</Value>
+				<Value xsi:type="xs:string">/Z &lt;Список общих реквизитов&gt;</Value>
+				<Value xsi:type="xs:string">Установка разделителей при запуске клиентского приложения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">Список общих реквизитов</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/N&lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя. Должно быть указано так же, как в списке пользователей, создаваемом в Конфигураторе.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/P&lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя, имя которого указано в команде /N. Если у пользователя нет пароля, этот параметр можно опустить.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/ModifyPassword &lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">Команда может использоваться только совместно с командами /N и /P и приводит к установке пользователю, указанному в команде /N, пароля, указанного в качестве параметра команды. Если в команде /P указан корректный пароль, то пользователь аутентифицируется в информационной базе, затем выполняется смена пароля и затем пользователь продолжает работу в сеансе.
+
+</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/WA&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Определяет режим использования аутентификации операционной системы при запуске «1С:Предприятие». Если команда /WA не указывается, то подразумевается, что используется команда командной строки /WA+.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ установка обязательного применения аутентификации операционной системы при старте «1С:Предприятие».
+
+● – ‑ запрет применения аутентификации операционной системы при старте «1С:Предприятия».</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/WSA&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Определяет режим использования аутентификации операционной системы на веб-сервере. Если параметр /WSA не указывается, то подразумевается, что используется параметр командной строки /WSA+.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ принудительное выполнение аутентификации средствами операционной системы на веб-сервере (по умолчанию).
+
+● – ‑ запрет применения аутентификации средствами операционной системы на веб-сервере.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/WSN &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя операционной системы, которое будет использовано системой для выполнения аутентификации на веб-сервере в случае указания параметра /WSA+. Пароль пользователя указывается в параметре /WSP.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/WSP &lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя, имя которого указано в параметре /WSN, для аутентификации на веб-сервере.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/NoProxy</Value>
+				<Value xsi:type="xs:string">Запретить использование прокси (только для ws-соединения).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/OIDA&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Применение сквозной аутентификации пользователя между разными информационными базами и/или внешними ресурсами для тонкого и веб-клиентов. Если при запуске клиента параметр /OIDA не задан, или задан параметр /OIDA+, то производится попытка аутентификации через OpenID-провайдера, адрес которого задан в файле default.vrd публикации этой информационной базы.
+
+Если OpenID-провайдер требует интерактивной аутентификации (происходит первое обращение или истекло время жизни признака аутентифицированности), клиент отображает диалог для ввода имени и пароля пользователя.
+
+Аутентификация происходит по списку пользователей информационной базы OpenID-провайдера.
+
+Аутентифицируемый пользователь информационной базы, использующих OpenID-аутентификацию, должен соответствовать по имени пользователю информационной базы OpenID-провайдера.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ использовать OpenID-аутентификацию (по умолчанию).
+
+● – ‑ не использовать OpenID-аутентификацию.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/AccessToken</Value>
+				<Value xsi:type="xs:string">Позволяет указать JWT для выполнения аутентификации пользователя.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/Authoff</Value>
+				<Value xsi:type="xs:string">Выполняет операцию OpenID logout (завершение сеанса работы пользователя). Завершение сеанса работы выполняется вне зависимости от используемого в дальнейшем метода аутентификации.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
+				<Value xsi:type="xs:string">/SAOnRestart</Value>
+				<Value xsi:type="xs:string">Указывает на то, что при перезапуске клиентского приложения из данного сеанса будет обязательно запрошены имя пользователя и пароль. По умолчанию пароль не запрашивается.
+
+Не используется в тонком клиенте.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
+				<Value xsi:type="xs:string">-PSrv &lt;адрес прокси&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">адрес прокси</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
+				<Value xsi:type="xs:string">-PPort &lt;порт&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">порт</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
+				<Value xsi:type="xs:string">-PUser &lt;имя пользователя прокси&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя пользователя прокси</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
+				<Value xsi:type="xs:string">-PPwd &lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">пароль</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
