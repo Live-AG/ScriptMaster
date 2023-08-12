@@ -25,6 +25,7 @@
 				</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Шрифт</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
 			</dcscor:item>
@@ -32,6 +33,10 @@
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:SlateGray</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>

@@ -15,6 +15,7 @@
         <segments>Программа</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
+      <shortcut>Ctrl+S</shortcut>
       <handlers>
         <event>OnChange</event>
         <name>ПрограммаПриИзменении</name>
@@ -103,15 +104,6 @@
           </presentation>
           <value xsi:type="core:StringValue">
             <value>cnvdbfl</value>
-          </value>
-        </choiceList>
-        <choiceList>
-          <presentation>
-            <key>ru</key>
-            <value>agent</value>
-          </presentation>
-          <value xsi:type="core:StringValue">
-            <value>agent</value>
           </value>
         </choiceList>
         <choiceList>
@@ -598,6 +590,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>ДеревоКоманд.Исключительная</segments>
         </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>При установленном флаге, выбранная команда будет уникальна на своем уровне дерева.</value>
+        </toolTip>
         <extendedTooltip>
           <name>ДеревоКомандИсключительнаяРасширеннаяПодсказка</name>
           <id>146</id>
@@ -664,6 +660,10 @@
       <handlers>
         <event>BeforeDeleteRow</event>
         <name>ДеревоКомандПередУдалением</name>
+      </handlers>
+      <handlers>
+        <event>Drag</event>
+        <name>ДеревоКомандПеретаскивание</name>
       </handlers>
       <searchStringAddition>
         <visible>true</visible>
@@ -996,7 +996,7 @@
       <horizontalLines>true</horizontalLines>
       <verticalLines>true</verticalLines>
       <searchOnInput>Auto</searchOnInput>
-      <initialTreeView>ExpandAllLevels</initialTreeView>
+      <initialTreeView>ExpandTopLevel</initialTreeView>
       <horizontalStretch>true</horizontalStretch>
       <verticalStretch>true</verticalStretch>
       <enableStartDrag>true</enableStartDrag>
@@ -1530,6 +1530,10 @@
         <event>BeforeEditEnd</event>
         <name>ТаблицаПараметровПередОкончаниемРедактирования</name>
       </handlers>
+      <handlers>
+        <event>DragStart</event>
+        <name>ТаблицаПараметровНачалоПеретаскивания</name>
+      </handlers>
       <searchStringAddition>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1834,6 +1838,7 @@
       <initialListView>Auto</initialListView>
       <horizontalStretch>true</horizontalStretch>
       <verticalStretch>true</verticalStretch>
+      <enableStartDrag>true</enableStartDrag>
       <fileDragMode>AsFileRef</fileDragMode>
       <searchStringLocation>None</searchStringLocation>
       <viewStatusLocation>None</viewStatusLocation>
@@ -1923,7 +1928,7 @@
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:LabelFieldExtInfo">
           <width>50</width>
-          <height>3</height>
+          <height>4</height>
           <autoMaxHeight>true</autoMaxHeight>
           <maxHeight>4</maxHeight>
           <verticalStretch>false</verticalStretch>
@@ -2024,7 +2029,6 @@
         <key>ru</key>
         <value>Группа1</value>
       </title>
-      <height>3</height>
       <verticalStretch>false</verticalStretch>
       <extendedTooltip>
         <name>СтраницаТерминалРасширеннаяПодсказка</name>
@@ -2086,7 +2090,7 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <height>3</height>
+    <height>4</height>
     <verticalStretch>false</verticalStretch>
     <extendedTooltip>
       <name>ГруппаСтриницыТерминалаРасширеннаяПодсказка</name>

@@ -1,6 +1,6 @@
 ﻿<Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Property name="Программа">
-		<Value xsi:type="xs:string">ibcmd</Value>
+		<Value xsi:type="xs:string">1cv8</Value>
 	</Property>
 	<Property name="ВерсияПрограммы">
 		<Value xsi:type="xs:string">8.3.21</Value>
@@ -49,75 +49,347 @@
 					</StringQualifiers>
 				</ValueType>
 			</column>
+			<column>
+				<Name>Исключительная</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
 			<row>
 				<row>
 					<row>
-						<Value xsi:type="xs:string">DESIGNER</Value>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string">Запуск в режиме Конфигуратора</Value>
-						<Value xsi:type="UUID">94bbb691-a52a-4921-afce-1fbfa4c1176f</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">create</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Создание информационной базы</Value>
+						<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+						<Value xsi:type="xs:string">create</Value>
+						<Value xsi:type="xs:boolean">false</Value>
 					</row>
-					<Value xsi:type="xs:string"/>
-					<Value xsi:type="xs:boolean">true</Value>
-					<Value xsi:type="xs:string">Режим запуска</Value>
-					<Value xsi:type="UUID">34d7ab4f-da38-4dfc-97f4-fdb7597b44d3</Value>
-					<Value xsi:type="xs:string"/>
-				</row>
-				<row>
-					<Value xsi:type="xs:string"/>
+					<row>
+						<Value xsi:type="xs:string">dump</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Выгрузка данных информационной базы</Value>
+						<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
+						<Value xsi:type="xs:string">dump</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">restore</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Загрузка данных информационной базы</Value>
+						<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
+						<Value xsi:type="xs:string">restore</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">clear</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Очистка информационной базы</Value>
+						<Value xsi:type="UUID">1f81d824-217d-43ac-bbd2-f86a4bc187b6</Value>
+						<Value xsi:type="xs:string">clear</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string">load</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Загрузка конфигурации</Value>
+							<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
+							<Value xsi:type="xs:string">load</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">save</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Выгрузка конфигурации</Value>
+							<Value xsi:type="UUID">6508a4e0-3170-4cd0-ba5e-c4a656c11f9c</Value>
+							<Value xsi:type="xs:string">save</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">check</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Проверка конфигурации</Value>
+							<Value xsi:type="UUID">23dc003b-df29-4ed9-9ba2-e6fa35ffcb91</Value>
+							<Value xsi:type="xs:string">check</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">apply</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Обновление конфигурации базы данных</Value>
+							<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
+							<Value xsi:type="xs:string">apply</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">reset</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Возврат к конфигурации базы данных</Value>
+							<Value xsi:type="UUID">81ceba10-2f8f-4cc9-a384-57e1d6d3849c</Value>
+							<Value xsi:type="xs:string">reset</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">repair</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Восстановление конфигурации после незавершенной операции</Value>
+							<Value xsi:type="UUID">83b596cb-1113-461a-a8aa-4f90afd27505</Value>
+							<Value xsi:type="xs:string">repair</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<row>
+								<Value xsi:type="xs:string">info</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Вывести информацию о состоянии конфигурации (ConfigDumpInfo)</Value>
+								<Value xsi:type="UUID">4a97021f-e6f9-42c3-aaf4-95c4ec6c9097</Value>
+								<Value xsi:type="xs:string">info</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">status</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Вывести информацию о изменениях конфигурации относительно переданного состояния (ConfigDumpInfo)</Value>
+								<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
+								<Value xsi:type="xs:string">status</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">objects</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Экспорт выбранных объектов конфигурации в XML</Value>
+								<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
+								<Value xsi:type="xs:string">objects</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">all-extensions</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Экспорт всех расширений конфигурации в XML</Value>
+								<Value xsi:type="UUID">f665d51f-2941-4e4f-b4eb-130a599f7dff</Value>
+								<Value xsi:type="xs:string">ExportAllExtensions</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<Value xsi:type="xs:string">export</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Экспорт конфигурации в XML</Value>
+							<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+							<Value xsi:type="xs:string">export</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<row>
+								<Value xsi:type="xs:string">files</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Импорт выбранных файлов конфигурации из XML</Value>
+								<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
+								<Value xsi:type="xs:string">files</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">all-extensions</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Импорт всех расширений конфигурации из XML</Value>
+								<Value xsi:type="UUID">29d6e58c-ab97-4931-9d1d-3a142e9ec79a</Value>
+								<Value xsi:type="xs:string">ImportAllExtensions</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<Value xsi:type="xs:string">import</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Импорт конфигурации из XML</Value>
+							<Value xsi:type="UUID">3af01191-caec-422e-8f4a-7cfa3c48722f</Value>
+							<Value xsi:type="xs:string">import</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">disable</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Снять конфигурацию с поддержки</Value>
+							<Value xsi:type="UUID">9077ebcd-8285-4481-bafc-6b16d0c7f12b</Value>
+							<Value xsi:type="xs:string">disable</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<row>
+								<Value xsi:type="xs:string">list</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Вывод списка разделителей информационной базы</Value>
+								<Value xsi:type="UUID">9e29a26d-b5e8-4492-9cad-206dea8c6978</Value>
+								<Value xsi:type="xs:string">list</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<Value xsi:type="xs:string">data-separation</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Получение информации о разделителях информационной базы</Value>
+							<Value xsi:type="UUID">a10f7e0f-001d-4654-a7f6-b3f8945a31ac</Value>
+							<Value xsi:type="xs:string">DataSeparation</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<row>
+								<Value xsi:type="xs:string">create</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Создание расширения</Value>
+								<Value xsi:type="UUID">80c2aa8e-3d44-4e7f-a009-146f9378de27</Value>
+								<Value xsi:type="xs:string">ExtensionCreate</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">info</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Получить информацию о расширении</Value>
+								<Value xsi:type="UUID">d04e81e5-e918-42a7-a16b-fa08ef330eef</Value>
+								<Value xsi:type="xs:string">ExtensionInfo</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">list</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Получить список расширений</Value>
+								<Value xsi:type="UUID">6eb4139b-5e0f-421b-beac-390afc23c599</Value>
+								<Value xsi:type="xs:string">ExtensionList</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">update</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Установить указанные значения свойств расширения</Value>
+								<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+								<Value xsi:type="xs:string">ExtensionUpdate</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<row>
+								<Value xsi:type="xs:string">delete</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string">Удаление расширения</Value>
+								<Value xsi:type="UUID">cd0eff50-902e-44a8-9216-e83cafe9e24a</Value>
+								<Value xsi:type="xs:string">ExtensionDelete</Value>
+								<Value xsi:type="xs:boolean">false</Value>
+							</row>
+							<Value xsi:type="xs:string">extension</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Управление расширениями конфигурации</Value>
+							<Value xsi:type="UUID">22683b98-0d81-48e5-8172-0cc96a2f88dd</Value>
+							<Value xsi:type="xs:string">Extension</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">generation-id</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Получить идентификатор поколения конфигурации</Value>
+							<Value xsi:type="UUID">91fd0890-b310-4fa6-8137-00ed8782d313</Value>
+							<Value xsi:type="xs:string">GenerationID</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+						</row>
+						<Value xsi:type="xs:string">config</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Управление конфигурацией информационной базы</Value>
+						<Value xsi:type="UUID">763f6508-704a-4f94-9e9d-5aad2798601b</Value>
+						<Value xsi:type="xs:string">config</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<Value xsi:type="xs:string">infobase</Value>
 					<Value xsi:type="xs:boolean">false</Value>
-					<Value xsi:type="xs:string">Параметры подключения</Value>
-					<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-					<Value xsi:type="xs:string">designer</Value>
+					<Value xsi:type="xs:string">Режим управления информационной базой</Value>
+					<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+					<Value xsi:type="xs:string">infobase</Value>
+					<Value xsi:type="xs:boolean">true</Value>
 				</row>
 				<row>
 					<row>
 						<row>
-							<Value xsi:type="xs:string">/ConfigurationRepositoryCreate</Value>
-							<Value xsi:type="xs:boolean">true</Value>
-							<Value xsi:type="xs:string">Создание хранилища</Value>
-							<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
-							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:string">init</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Инициализация конфигурации автономного сервера</Value>
+							<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+							<Value xsi:type="xs:string">ServerConfigInit</Value>
+							<Value xsi:type="xs:boolean">false</Value>
 						</row>
 						<row>
-							<Value xsi:type="xs:string">/ConfigurationRepositoryDumpCfg</Value>
+							<Value xsi:type="xs:string">import</Value>
 							<Value xsi:type="xs:boolean">false</Value>
-							<Value xsi:type="xs:string">Сохранить конфигурацию из хранилища в файл</Value>
-							<Value xsi:type="UUID">badd433e-e500-4b3f-8d86-a3d4825185de</Value>
-							<Value xsi:type="xs:string"/>
-						</row>
-						<row>
-							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:string">Импорт конфигурации автономного сервера из реестра кластера серверов 1С:Предприятия 8</Value>
+							<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+							<Value xsi:type="xs:string">ServerConfigImport</Value>
 							<Value xsi:type="xs:boolean">false</Value>
-							<Value xsi:type="xs:string">Работа с пользователями</Value>
-							<Value xsi:type="UUID">597ee83c-e1bf-4f1e-b1a1-b42cb5b3e91b</Value>
-							<Value xsi:type="xs:string"/>
 						</row>
-						<row>
-							<Value xsi:type="xs:string">/ConfigurationRepositoryAddUser</Value>
-							<Value xsi:type="xs:boolean">false</Value>
-							<Value xsi:type="xs:string">Создать пользователя хранилища конфигурации</Value>
-							<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
-							<Value xsi:type="xs:string"/>
-						</row>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string">Параметры доступа к хранилищу</Value>
-						<Value xsi:type="UUID">f7c8f7c7-c462-434e-a4a0-23b117e6889e</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">config</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Управление конфигурацией автономного сервера</Value>
+						<Value xsi:type="UUID">8e8b0e61-a761-457d-95a9-7409350731c9</Value>
+						<Value xsi:type="xs:string">ServerConfig</Value>
+						<Value xsi:type="xs:boolean">false</Value>
 					</row>
-					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:string">server</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Режим настройки автономного сервера</Value>
+					<Value xsi:type="UUID">6cf744d9-70d9-49d9-bd53-68217d6132d9</Value>
+					<Value xsi:type="xs:string">Server</Value>
 					<Value xsi:type="xs:boolean">true</Value>
-					<Value xsi:type="xs:string">Команды пакетного режима запуска конфигуратора</Value>
-					<Value xsi:type="UUID">378af271-613e-426c-b308-31b44b8795fa</Value>
-					<Value xsi:type="xs:string"/>
 				</row>
-				<Value xsi:type="xs:string">1cv8</Value>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">info</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">получение информации о сеансе</Value>
+						<Value xsi:type="UUID">758741fc-1068-4bc7-bc52-e1289f92008e</Value>
+						<Value xsi:type="xs:string">SessionInfo</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">list</Value>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">получение списка информации о сеансах</Value>
+						<Value xsi:type="UUID">7df05164-2a71-4f15-bb26-cd1ef5c17c89</Value>
+						<Value xsi:type="xs:string">SessionList</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">terminate</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">принудительное завершение сеанса</Value>
+						<Value xsi:type="UUID">7aa8a419-4d5b-4e93-b13f-956c9004e3f9</Value>
+						<Value xsi:type="xs:string">SessionTerminate</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">interrupt-current-server-call</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">прерывание текущего серверного вызова</Value>
+						<Value xsi:type="UUID">7a6a85b3-d9e6-4622-aa06-e1ee0db2b086</Value>
+						<Value xsi:type="xs:string">InterruptCurrentServerCall</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<Value xsi:type="xs:string">session</Value>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string">Режим администрирования сеансов информационных баз</Value>
+					<Value xsi:type="UUID">19408273-5924-4340-9707-6efb3fa9497b</Value>
+					<Value xsi:type="xs:string">session</Value>
+					<Value xsi:type="xs:boolean">true</Value>
+				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">list</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">получение списка информации о блокировках</Value>
+						<Value xsi:type="UUID">022279b5-06c2-4a56-aa92-cb1239a87fb1</Value>
+						<Value xsi:type="xs:string">LockList</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<Value xsi:type="xs:string">lock</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Режим администрирования блокировок</Value>
+					<Value xsi:type="UUID">589bf4e0-4a17-4809-92ad-7fe7afc91498</Value>
+					<Value xsi:type="xs:string">lock</Value>
+					<Value xsi:type="xs:boolean">true</Value>
+				</row>
+				<Value xsi:type="xs:string">ibcmd</Value>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="UUID">504ff6c7-d176-4785-854d-8997e3e7948a</Value>
-				<Value xsi:type="xs:string">_1cv8</Value>
+				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
+				<Value xsi:type="xs:string">_ibcmd</Value>
+				<Value xsi:type="xs:boolean">false</Value>
 			</row>
 		</Value>
 	</Property>
@@ -182,309 +454,47 @@
 				</ValueType>
 			</column>
 			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/F &lt;каталог&gt;</Value>
-				<Value xsi:type="xs:string">Каталог, в котором расположен файл базы данных 1Cv8.1CD.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Каталог</Value>
-				<Value xsi:type="xs:string">каталог</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/S &lt;адрес&gt;</Value>
-				<Value xsi:type="xs:string">Адрес информационной базы, хранящейся на сервере «1С:Предприятия»</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string">адрес</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/IBName &lt;имя информационной базы&gt;</Value>
-				<Value xsi:type="xs:string">Запуск информационной базы по имени базы в списке информационных баз</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string">имя информационной базы</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
-				<Value xsi:type="xs:string">-AllowConfigurationChanges</Value>
-				<Value xsi:type="xs:string">если конфигурация находится на поддержке без возможности изменения, будет включена возможность изменения.</Value>
+				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
+				<Value xsi:type="xs:string">--version | -v</Value>
+				<Value xsi:type="xs:string">получение версии утилиты</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--version | -v</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
 				</Value>
 			</row>
 			<row>
-				<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
-				<Value xsi:type="xs:string">-ChangesAllowedRule &lt;Правило&gt;</Value>
-				<Value xsi:type="xs:string">устанавливает правило поддержки для объектов, для которых изменения разрешены поставщиком</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Список</Value>
-				<Value xsi:type="xs:string">Правило</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>2</lastId>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ObjectNotEditable</presentation>
-						<id>0</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ObjectIsEditableSupportEnabled</presentation>
-						<id>1</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ObjectNotSupported</presentation>
-						<id>2</id>
-					</item>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
-				<Value xsi:type="xs:string">-ChangesNotRecommendedRule</Value>
-				<Value xsi:type="xs:string">устанавливает правило поддержки для объектов, для которых изменения не рекомендуются поставщиком</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Список</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>2</lastId>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ObjectNotEditable</presentation>
-						<id>0</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ObjectIsEditableSupportEnabled</presentation>
-						<id>1</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ObjectNotSupported</presentation>
-						<id>2</id>
-					</item>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
-				<Value xsi:type="xs:string">-NoBind</Value>
-				<Value xsi:type="xs:string">к созданному хранилищу подключение выполнено не будет</Value>
+				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
+				<Value xsi:type="xs:string">--help | -h | -?</Value>
+				<Value xsi:type="xs:string">отображение краткой информации об утилите</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--help | -h | -?</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
 				</Value>
 			</row>
 			<row>
-				<Value xsi:type="UUID">e62060e0-5e44-48f7-9b99-1123a9061547</Value>
-				<Value xsi:type="xs:string">-Extension &lt;Имя расширения&gt;</Value>
-				<Value xsi:type="xs:string">позволяет указать имя расширения, хранилище которого будет создано данной командой. Если параметр не указан ‑ будет создано хранилище для основной конфигурации</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string">Имя расширения</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">badd433e-e500-4b3f-8d86-a3d4825185de</Value>
-				<Value xsi:type="xs:string">&lt;имя cf файла&gt;</Value>
-				<Value xsi:type="xs:string">Путь к файлу cf</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Файл</Value>
-				<Value xsi:type="xs:string">имя cf файла</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">badd433e-e500-4b3f-8d86-a3d4825185de</Value>
-				<Value xsi:type="xs:string">-v &lt;номер версии хранилища&gt;</Value>
-				<Value xsi:type="xs:string">номер версии, если номер версии не указан, или равен -1, будет сохранена последняя версия</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Число</Value>
-				<Value xsi:type="xs:string">номер версии хранилища</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">badd433e-e500-4b3f-8d86-a3d4825185de</Value>
-				<Value xsi:type="xs:string">-Extension &lt;Имя расширения&gt;</Value>
-				<Value xsi:type="xs:string">позволяет указать имя расширения, с хранилищем которого будет выполняться команда. Если параметр не указан ‑ операция будет выполняться с хранилищем основной конфигурации.</Value>
+				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
+				<Value xsi:type="xs:string">--pid=&lt;pid&gt; | -p &lt;pid&gt;</Value>
+				<Value xsi:type="xs:string">Идентификатор процесса автономного сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">Имя расширения</Value>
+				<Value xsi:type="xs:string">pid</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
 				</Value>
 			</row>
 			<row>
-				<Value xsi:type="UUID">f7c8f7c7-c462-434e-a4a0-23b117e6889e</Value>
-				<Value xsi:type="xs:string">/ConfigurationRepositoryF &lt;каталог хранилища&gt;</Value>
-				<Value xsi:type="xs:string">Параметр предназначен для указания пути к хранилищу конфигурации.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Каталог</Value>
-				<Value xsi:type="xs:string">каталог хранилища</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">f7c8f7c7-c462-434e-a4a0-23b117e6889e</Value>
-				<Value xsi:type="xs:string">/ConfigurationRepositoryN &lt;имя&gt;</Value>
-				<Value xsi:type="xs:string">Параметр предназначен для указания имени пользователя хранилища конфигурации.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string">имя</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">f7c8f7c7-c462-434e-a4a0-23b117e6889e</Value>
-				<Value xsi:type="xs:string">/ConfigurationRepositoryP &lt;пароль&gt;</Value>
-				<Value xsi:type="xs:string">Параметр предназначен для указания пароля пользователя хранилища конфигурации.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Пароль</Value>
-				<Value xsi:type="xs:string">пароль</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
-				<Value xsi:type="xs:string">-User &lt;Имя&gt;</Value>
-				<Value xsi:type="xs:string">имя создаваемого пользователя</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string">Имя</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
-				<Value xsi:type="xs:string">-Pwd &lt;Пароль&gt;</Value>
-				<Value xsi:type="xs:string">пароль создаваемого пользователя</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Пароль</Value>
-				<Value xsi:type="xs:string">Пароль</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
-				<Value xsi:type="xs:string">-Rights &lt;Права&gt;</Value>
-				<Value xsi:type="xs:string">права пользователя. Возможные значения:
-
-● ReadOnly ‑ право на просмотр,
-
-● LockObjects ‑ право на захват объектов,
-
-● ManageConfigurationVersions ‑ право на изменение состава версий,
-
-● Administration ‑ право на административные функции.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Список</Value>
-				<Value xsi:type="xs:string">Права</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>3</lastId>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ReadOnly</presentation>
-						<id>0</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>LockObjects</presentation>
-						<id>1</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>ManageConfigurationVersions</presentation>
-						<id>2</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>Administration</presentation>
-						<id>3</id>
-					</item>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
-				<Value xsi:type="xs:string">-RestoreDeletedUser</Value>
-				<Value xsi:type="xs:string">если обнаружен удаленный пользователь с таким же именем, он будет восстановлен</Value>
+				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
+				<Value xsi:type="xs:string">--remote=&lt;url&gt; | -r &lt;url&gt;</Value>
+				<Value xsi:type="xs:string">Сетевой адрес автономного сервера (шлюза администрирования)</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">f8e5c3a8-a1c8-4141-9b1d-cd27e3d17733</Value>
-				<Value xsi:type="xs:string">-Extension &lt;Имя расширения&gt;</Value>
-				<Value xsi:type="xs:string">позволяет указать имя расширения, с хранилищем которого будет выполняться команда. Если параметр не указан ‑ операция будет выполняться с хранилищем основной конфигурации.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string">Имя расширения</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/IBConnectionString</Value>
-				<Value xsi:type="xs:string">Позволяет задать строку соединения с информационной базой целиком в том виде, в котором ее возвращает функция СтрокаСоединенияИнформационнойБазы(). Части строки соединения могут быть переопределены ранее существовавшими параметрами. Для этого нужно, чтобы /IBConnectionString находился в командной строке раньше них. Передавая строку соединения в качестве параметра командной строки, нужно помнить о том, что строка соединения содержит кавычки. Поэтому требуется взять всю строку в кавычки, а содержащиеся внутри кавычки удвоить. Описание строки соединения с информационной базой см. здесь.Дополнительные параметры строки соединения в режиме тонкого клиента:● wsn ‑ имя пользователя для аутентификации на веб-сервере;● wsp ‑ пароль пользователя для аутентификации на веб-сервере;● wspauto ‑ использовать автоматические настройки прокси-сервера;● wspsrv ‑ адрес прокси-сервера;● wspport ‑ порт прокси;● wspuser ‑ имя пользователя для прокси с авторизацией;● wsppwd ‑ пароль для прокси с авторизацией.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/WS &lt;url&gt;</Value>
-				<Value xsi:type="xs:string">Строка ws-соединения.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">url</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -492,100 +502,1630 @@
 				</Value>
 			</row>
 			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/O &lt;скорость соединения&gt;</Value>
-				<Value xsi:type="xs:string">Определяет скорость соединения (используется в тонком клиенте). Команда используется для настройки элемента списка информационных баз. &lt;скорость соединения&gt; может принимать следующие значения:● Normal ‑ обычная скорость соединения (значение по умолчанию);● Low ‑ низкая скорость соединения.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Список</Value>
-				<Value xsi:type="xs:string">скорость соединения</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>1</lastId>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>Normal</presentation>
-						<id>0</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>Low</presentation>
-						<id>1</id>
-					</item>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/TComp &lt;режим сжатия трафика&gt;</Value>
-				<Value xsi:type="xs:string">Устанавливает режим сжатия трафика между сервером и тонким клиентом. Для команды может быть указан один из следующих параметров:● -None ‑ сжатие отключено.● -Deflate ‑ используется стандартное (для протокола HTTP) сжатие трафика по алгоритму deflate.● -SDC ‑ используется собственный алгоритм сжатия (используется по умолчанию).</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Список</Value>
-				<Value xsi:type="xs:string">режим сжатия трафика</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>2</lastId>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>-None</presentation>
-						<id>0</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>-Deflate</presentation>
-						<id>1</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>-SDC</presentation>
-						<id>2</id>
-					</item>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">UsePrivilegedMode</Value>
-				<Value xsi:type="xs:string">Запуск клиентского приложения в привилегированном режиме. Разрешен аутентифицированному пользователю, имеющему административные права. Журнал регистрации фиксирует установку или отказ в возможности установки режима привилегированного сеанса.</Value>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--config=&lt;path&gt; | -c &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к конфигурационному файлу</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
 				</Value>
 			</row>
 			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/SLev&lt;Уровень&gt;</Value>
-				<Value xsi:type="xs:string">Определяет уровень защищенности соединения клиента с сервером «1С:Предприятия». Для команды могут быть задано одно из следующих значений:● 0 ‑ незащищенное соединение;● 1 ‑ защищенное соединение только в процессе выполнения аутентификации;● 2 ‑ защищенное соединение в течение всего сеанса.Если команда указана без своего значения, то это эквивалентно указанию команды со значением 0 ‑ /SLev0.</Value>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--system=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к системному конфигурационному файлу</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Список</Value>
-				<Value xsi:type="xs:string">Уровень</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>2</lastId>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>0</presentation>
-						<id>0</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>1</presentation>
-						<id>1</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>2</presentation>
-						<id>2</id>
-					</item>
+					<lastId>-1</lastId>
 				</Value>
 			</row>
 			<row>
-				<Value xsi:type="UUID">0a412683-8a0b-4cf3-8106-d8ad06b2cb0f</Value>
-				<Value xsi:type="xs:string">/Z &lt;Список общих реквизитов&gt;</Value>
-				<Value xsi:type="xs:string">Установка разделителей при запуске клиентского приложения.</Value>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--dbms=&lt;kind&gt;</Value>
+				<Value xsi:type="xs:string">Определяет тип СУБД, в которой размещается информационная база.
+        Допустимые значения:
+        	MSSQLServer - Microsoft SQL Server;
+        	PostgreSQL - PostgreSQL;
+        	IBMDB2 - IBM DB2;
+        	OracleDatabase - Oracle Database.
+        Если параметр не указан, используется файловая база данных</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
-				<Value xsi:type="xs:string">Список общих реквизитов</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">kind</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--db-server=&lt;address&gt;</Value>
+				<Value xsi:type="xs:string">Имя сервера СУБД</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">address</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--db-name=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя базы данных</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--db-user=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя сервера СУБД</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--db-pwd=&lt;password&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя сервера СУБД</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string">Запрос пароля пользователя сервера СУБД через стандартный поток ввода (STDIN)</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--db-path=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу файловой базы данных 1С:Предприятия 8.
+        В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
+        По-умолчанию, используется подкаталог 'db-data' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--data=&lt;path&gt; | -d &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу данных сервера.
+        По-умолчанию, используется значение: /Users/live/.1cv8/1C/1cv8/standalone-server/</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--lock=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу блокировки каталога данных автономного сервера.
+        По-умолчанию, используется файл lock.pid в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--temp=&lt;path&gt; | -t &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу временных файлов информационной базы.
+        В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
+        По-умолчанию, используется подкаталог 'temp' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--users-data=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу конфигурационных данных пользователей.
+        По-умолчанию, используется значение: users-data</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--session-data=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу сеансовых данных.
+        В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
+        По-умолчанию, используется подкаталог 'session-data' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--log-data=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу данных журнала регистрации.
+        В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
+        По-умолчанию, используется подкаталог 'log-data' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--ftext-data=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу данных полнотекстового поиска.
+        В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
+        По-умолчанию, используется подкаталог 'ftext-data' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--ftext2-data=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу данных полнотекстового поиска версии 2.
+        В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
+        По-умолчанию, используется подкаталог 'ftext2-data' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
+				<Value xsi:type="xs:string">--openid-data=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу данных OpenID-аутентификации.
+        В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
+        По-умолчанию, используется подкаталог 'openid-data' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--locale=&lt;name&gt; | -l &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя локейла информационной базы.
+            По-умолчанию, используется текущее значение локейла приложения</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--date-offset=&lt;years&gt;</Value>
+				<Value xsi:type="xs:string">Смещение дат (используется для Microsoft SQL Server).
+            По-умолчанию, используется значение: 2000</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">years</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--create-database</Value>
+				<Value xsi:type="xs:string">Создать базу данных в случае отсутствия</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--create-database</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--restore=&lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу выгрузки данных информационной базы для загрузки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--load=&lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу конфигурации информационной базы для загрузки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--import=&lt;directory&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу XML представления конфигурации информационной базы для загрузки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">directory</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--apply</Value>
+				<Value xsi:type="xs:string">Флаг выполнения обновления конфигурации базы данных после загрузки конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--apply</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу выгрузки информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
+				<Value xsi:type="xs:string">--create-database</Value>
+				<Value xsi:type="xs:string">Создать базу данных в случае отсутствия</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--create-database</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">Принудительное завершение сеансов информационной базы перед загрузкой</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу выгрузки информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1f81d824-217d-43ac-bbd2-f86a4bc187b6</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1f81d824-217d-43ac-bbd2-f86a4bc187b6</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">763f6508-704a-4f94-9e9d-5aad2798601b</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">763f6508-704a-4f94-9e9d-5aad2798601b</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6508a4e0-3170-4cd0-ba5e-c4a656c11f9c</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6508a4e0-3170-4cd0-ba5e-c4a656c11f9c</Value>
+				<Value xsi:type="xs:string">--db</Value>
+				<Value xsi:type="xs:string">Выполнение операции над конфигурацией базы данных</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--db</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6508a4e0-3170-4cd0-ba5e-c4a656c11f9c</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">23dc003b-df29-4ed9-9ba2-e6fa35ffcb91</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">23dc003b-df29-4ed9-9ba2-e6fa35ffcb91</Value>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
+				<Value xsi:type="xs:string">--dynamic=&lt;auto|disable|prompt|force&gt;</Value>
+				<Value xsi:type="xs:string">Использование динамического обновления.
+auto - автоматически (по-умолчанию)
+disable - использование запрещено
+prompt - запрос пользователя
+force - использовать только динамическое обновление.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">auto|disable|prompt|force</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
+				<Value xsi:type="xs:string">--session-terminate=&lt;auto|disable|prompt|force&gt;</Value>
+				<Value xsi:type="xs:string">Завершение активных сеансов в случае необходимости установки эксклюзивной блокировки информационной базы.	
+	auto - автоматически (по-умолчанию)
+	disable - запрещено
+	prompt - запрос пользователя
+	force - принудительное завершение сеансов.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">auto|disable|prompt|force</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">81ceba10-2f8f-4cc9-a384-57e1d6d3849c</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">83b596cb-1113-461a-a8aa-4f90afd27505</Value>
+				<Value xsi:type="xs:string">--commit</Value>
+				<Value xsi:type="xs:string">Завершить выполнение незавершенной операции</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--commit</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">83b596cb-1113-461a-a8aa-4f90afd27505</Value>
+				<Value xsi:type="xs:string">--rollback</Value>
+				<Value xsi:type="xs:string">Отменить выполнение незавершенной операции</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--rollback</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">83b596cb-1113-461a-a8aa-4f90afd27505</Value>
+				<Value xsi:type="xs:string">--fix-metadata</Value>
+				<Value xsi:type="xs:string">Выполнить восстановление структуры метаданных конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--fix-metadata</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">--base=&lt;file&gt; | -b &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Путь к файлу информации о конфигурации (ConfigDumpInfo) относительно которого вычисляются изменения текущей конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">--file=&lt;file&gt; | -f &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу конфигурации, расширения конфигурации, внешней обработки или отчета</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">--sync</Value>
+				<Value xsi:type="xs:string">Синхронизировать имеющейся экспорт с конфигурацией</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--sync</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">--force</Value>
+				<Value xsi:type="xs:string">Выполнить полную выгрузку, если при попытке обновления выгрузки выяснилось, что текущая версия формата выгрузки не совпадает с версией формата, записанной в файл ConfigDumpInfo.xml.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--force</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">--threads=&lt;n&gt; | -T &lt;n&gt;</Value>
+				<Value xsi:type="xs:string">Количество потоков используемых при экспорте. По умолчанию, используется количество логических ядер</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">n</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string">Упаковать экспортируемые файлы в архив</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">путь к каталогу файлов конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4a97021f-e6f9-42c3-aaf4-95c4ec6c9097</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу для записи информации о конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4a97021f-e6f9-42c3-aaf4-95c4ec6c9097</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу для записи информации о изменениях в конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
+				<Value xsi:type="xs:string">--base=&lt;file&gt; | -b &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Путь к файлу информации о конфигурации (ConfigDumpInfo) относительно которого вычисляются изменения текущей конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
+				<Value xsi:type="xs:string">--short | -s</Value>
+				<Value xsi:type="xs:string">Отображать информацию о изменениях в сокращенном виде.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--short | -s</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
+				<Value xsi:type="xs:string">--out=&lt;path&gt; | -o &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Путь к каталогу или архиву для экспорта выбранных объектов</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
+				<Value xsi:type="xs:string">--recursive | -r</Value>
+				<Value xsi:type="xs:string">Выполнять экспорт дочерних объектов.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--recursive | -r</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
+				<Value xsi:type="xs:string">--threads=&lt;n&gt; | -T &lt;n&gt;</Value>
+				<Value xsi:type="xs:string">Количество потоков используемых при экспорте. По умолчанию, используется количество логических ядер</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">n</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
+				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string">Упаковать экспортируемые файлы в архив</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
+				<Value xsi:type="xs:string">&lt;Object1 ... ObjectN&gt;</Value>
+				<Value xsi:type="xs:string">Список объектов конфигурации для экспорта</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Object1 ... ObjectN</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f665d51f-2941-4e4f-b4eb-130a599f7dff</Value>
+				<Value xsi:type="xs:string">--threads=&lt;n&gt; | -T &lt;n&gt;</Value>
+				<Value xsi:type="xs:string">Количество потоков используемых при экспорте. По умолчанию, используется количество логических ядер</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">n</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f665d51f-2941-4e4f-b4eb-130a599f7dff</Value>
+				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string">Упаковать экспортируемые файлы в архив</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f665d51f-2941-4e4f-b4eb-130a599f7dff</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">путь к каталогу, в который будут выгружены расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3af01191-caec-422e-8f4a-7cfa3c48722f</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу для записи импортируемой конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3af01191-caec-422e-8f4a-7cfa3c48722f</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3af01191-caec-422e-8f4a-7cfa3c48722f</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">путь к каталогу или архиву с файлами конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
+				<Value xsi:type="xs:string">--base-dir=&lt;directory&gt;</Value>
+				<Value xsi:type="xs:string">Базовый каталог, содержащий XML файлы конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">directory</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
+				<Value xsi:type="xs:string">--archive=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к архиву, содержащему XML файлы конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
+				<Value xsi:type="xs:string">--no-check</Value>
+				<Value xsi:type="xs:string">Отключить проверку метаданных после загрузки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--no-check</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
+				<Value xsi:type="xs:string">&lt;File1 ... FileN&gt;</Value>
+				<Value xsi:type="xs:string">Список фалов конфигурации для импорта</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">File1 ... FileN</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">29d6e58c-ab97-4931-9d1d-3a142e9ec79a</Value>
+				<Value xsi:type="xs:string">--no-check</Value>
+				<Value xsi:type="xs:string">Отключить проверку метаданных после загрузки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--no-check</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">29d6e58c-ab97-4931-9d1d-3a142e9ec79a</Value>
+				<Value xsi:type="xs:string">&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">путь к каталогу, из которого будут загружены расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">9077ebcd-8285-4481-bafc-6b16d0c7f12b</Value>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">Снятие с поддержки вне зависимости от наличия возможности редактирования конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">80c2aa8e-3d44-4e7f-a009-146f9378de27</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Имя расширения. Должно удовлетворять правилам формирования имени.
+Имя должно состоять из одного слова, начинаться с буквы и не содержать специальных символов кроме "_".</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">80c2aa8e-3d44-4e7f-a009-146f9378de27</Value>
+				<Value xsi:type="xs:string">--name-prefix=&lt;prefix&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Префикс имен. Должен удовлетворять правилам формирования имени.
+Имя должно состоять из одного слова, начинаться с буквы и не содержать специальных символов кроме "_".</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">prefix</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">80c2aa8e-3d44-4e7f-a009-146f9378de27</Value>
+				<Value xsi:type="xs:string">--synonym=&lt;synonym&gt;</Value>
+				<Value xsi:type="xs:string">Синоним в формате функции NStr()</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">synonym</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">80c2aa8e-3d44-4e7f-a009-146f9378de27</Value>
+				<Value xsi:type="xs:string">--purpose=&lt;customization|add-on|patch&gt;</Value>
+				<Value xsi:type="xs:string">Назначение расширения</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">customization|add-on|patc</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d04e81e5-e918-42a7-a16b-fa08ef330eef</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Имя расширения. Должно удовлетворять правилам формирования имени.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Имя расширения. Должно удовлетворять правилам формирования имени.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+				<Value xsi:type="xs:string">--active=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">Активность расширения</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+				<Value xsi:type="xs:string">--safe-mode=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">Безопасный режим</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+				<Value xsi:type="xs:string">--security-profile-name=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">Имя профиля безопасности</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+				<Value xsi:type="xs:string">--unsafe-action-protection=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">Защита от опасных действий</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+				<Value xsi:type="xs:string">--used-in-distributed-infobase=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">Используется в распределенной информационной базе</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
+				<Value xsi:type="xs:string">--scope=&lt;infobase|data-separation&gt;</Value>
+				<Value xsi:type="xs:string">Область действия расширения</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">infobase|data-separation</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cd0eff50-902e-44a8-9216-e83cafe9e24a</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения. Должно удовлетворять правилам формирования имени.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">cd0eff50-902e-44a8-9216-e83cafe9e24a</Value>
+				<Value xsi:type="xs:string">--all</Value>
+				<Value xsi:type="xs:string">Удаление всех расширений</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--all</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">91fd0890-b310-4fa6-8137-00ed8782d313</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">extension</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу для записи конфигурации автономного сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--address=&lt;address&gt; | -a &lt;address&gt;</Value>
+				<Value xsi:type="xs:string">Основной IP адрес, обслуживаемый сервером.
+Допустимые значения:
+localhost - локальный сетевой интерфейс;
+any - все доступные сетевые интерфейсы;
+xxx.xxx.xxx.xxx - IPv4 адрес используемого сетевого интерфейса;
+xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемого сетевого интерфейса.
+По-умолчанию используется значение: localhost</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">address</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--port=&lt;number&gt; | -p &lt;number&gt;</Value>
+				<Value xsi:type="xs:string">Основной TCP порт, обслуживаемый сервером.
+По-умолчанию, используется значение: 8314</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">number</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--base=&lt;location&gt; | -b &lt;location&gt;</Value>
+				<Value xsi:type="xs:string">Базовый путь публикации информационной базы.
+По-умолчанию, используется значение: /</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">location</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt; | -n &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя информационной базы.
+По-умолчанию, используется строковое представление идентификатора информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--id=&lt;uuid&gt;</Value>
+				<Value xsi:type="xs:string">Идентификатор информационной базы.	
+Допустимые значения:	
+	xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx - идентификатор в формате UUID;
+	auto - автогенерированный уникальный идентификатор.
+По-умолчанию, используется значение: auto</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">uuid</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--dbms=&lt;kind&gt;</Value>
+				<Value xsi:type="xs:string">Определяет тип СУБД, в которой размещается информационная база.		
+Допустимые значения:		
+	MSSQLServer - Microsoft SQL Server;	
+	PostgreSQL - PostgreSQL;	
+	IBMDB2 - IBM DB2;	
+	OracleDatabase - Oracle Database.	
+Если параметр не указан, используется файловая база данных</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">kind</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--db-server=&lt;address&gt;</Value>
+				<Value xsi:type="xs:string">Имя сервера СУБД</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">address</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--db-name=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя базы данных</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--db-user=&lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя пользователя сервера СУБД</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--db-pwd=&lt;password&gt;</Value>
+				<Value xsi:type="xs:string">Пароль пользователя сервера СУБД</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string">Запрос пароля пользователя сервера СУБД через стандартный поток ввода (STDIN)</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--db-path=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу файловой базы данных 1С:Предприятия 8.	
+В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.	
+По-умолчанию, используется подкаталог 'db-data' в каталоге данных сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--distribute-licenses=&lt;flag&gt;</Value>
+				<Value xsi:type="xs:string">Включение/выключение выдачи клиентских лицензий.	
+Допустимые значения:	
+	allow (yes, true) - выдача клиентских лицензий включена;
+	deny (no, false) - выдача клиентских лицензий выключена.
+По-умолчанию, используется значение: allow</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">flag</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
+				<Value xsi:type="xs:string">--schedule-jobs=&lt;flag&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">flag</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--cluster-data=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к рабочему каталогу кластера серверов 1С:Предприятия 8.
+По-умолчанию, используется значение: /Users/live/.1cv8/1C/1cv8</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--manager-port=&lt;port&gt;</Value>
+				<Value xsi:type="xs:string">Порт менеджера кластера серверов 1С:Предприятия 8.
+По-умолчанию, используется значение: 1541</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">port</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt; | -n &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">(обязательный) Имя информационной базы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу для записи конфигурации автономного сервера</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">file</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--address=&lt;address&gt; | -a &lt;address&gt;</Value>
+				<Value xsi:type="xs:string">Основной IP адрес, обслуживаемый сервером.	
+Допустимые значения:	
+	localhost - локальный сетевой интерфейс;
+	any - все доступные сетевые интерфейсы;
+	xxx.xxx.xxx.xxx - IPv4 адрес используемого сетевого интерфейса;
+	xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемого сетевого интерфейса.
+По-умолчанию используется значение: localhost</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">address</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--port=&lt;number&gt;</Value>
+				<Value xsi:type="xs:string">Основной TCP порт, обслуживаемый сервером.
+По-умолчанию, используется значение: 8314</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">number</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--base=&lt;location&gt; | -b &lt;location&gt;</Value>
+				<Value xsi:type="xs:string">Базовый путь публикации информационной базы.
+По-умолчанию, используется значение: /</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">location</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
+				<Value xsi:type="xs:string">--publication=&lt;path&gt; | -p &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу дескриптора публикации информационной базы на веб-сервере</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">758741fc-1068-4bc7-bc52-e1289f92008e</Value>
+				<Value xsi:type="xs:string">--licenses</Value>
+				<Value xsi:type="xs:string">вывод информации о лицензиях, полученных сеансом</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--licenses</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7df05164-2a71-4f15-bb26-cd1ef5c17c89</Value>
+				<Value xsi:type="xs:string">--licenses</Value>
+				<Value xsi:type="xs:string">вывод информации о лицензиях, полученных сеансом</Value>
+				<Value xsi:type="xs:boolean">true</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--licenses</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7aa8a419-4d5b-4e93-b13f-956c9004e3f9</Value>
+				<Value xsi:type="xs:string">--error-message=&lt;string&gt;</Value>
+				<Value xsi:type="xs:string">сообщение о причине завершения сеанса</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">string</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">7a6a85b3-d9e6-4622-aa06-e1ee0db2b086</Value>
+				<Value xsi:type="xs:string">--error-message=&lt;string&gt;</Value>
+				<Value xsi:type="xs:string">сообщение о причине прерывания</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">string</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>

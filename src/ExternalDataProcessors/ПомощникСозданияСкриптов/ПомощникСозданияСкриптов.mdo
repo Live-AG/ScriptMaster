@@ -77,14 +77,6 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="b8cc2741-77c8-48e6-97ff-e3e5072ac3eb">
-    <name>_agent_8_3_21</name>
-    <synonym>
-      <key>ru</key>
-      <value>agent 8.3.21</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
   <templates uuid="47d3f39b-bdb9-4b23-beab-76e45cf92f01">
     <name>_webinst_8_3_21</name>
     <synonym>
