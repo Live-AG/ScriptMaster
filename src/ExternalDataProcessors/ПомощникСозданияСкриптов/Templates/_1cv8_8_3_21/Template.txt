@@ -176,6 +176,177 @@
 					<Value xsi:type="xs:string"/>
 					<Value xsi:type="xs:boolean">false</Value>
 				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">/HttpsCert</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Указывает источник клиентского сертификата</Value>
+						<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">/HttpsCA</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Указывает источник сертификатов удостоверяющих центров, используемых для проверки сертификата сервера.</Value>
+						<Value xsi:type="UUID">9e49a538-5124-4cd2-b18a-5945b777eed8</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">/HttpsForceSSLv3</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Указывает на необходимость принудительного использования протокола SSL версии 3.0 тонким клиентом при работе через веб-сервер с помощью протокола HTTPS.¶¶Запрещено одновременное использование параметров /HttpsForceSSLv3 и /HttpsForceTLS1_0. При одновременном указании поведение не определено.</Value>
+						<Value xsi:type="UUID">da17b502-414c-48e9-898e-a5d34fa9e6d3</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">/HttpsForceTLS1_0</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Указывает на необходимость принудительного использования протокола TLS версии 1.0 системой «1С:Предприятие» при работе через веб-сервер с помощью протокола HTTPS.¶¶Запрещено одновременное использование параметров /HttpsForceSSLv3 и /HttpsForceTLS1_0. При одновременном указании поведение не определено.</Value>
+						<Value xsi:type="UUID">55b9540b-bd68-472b-8457-30c4476f67cf</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+					</row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Работа с сертификатами</Value>
+					<Value xsi:type="UUID">3131ac98-29c9-4cb5-87e0-caaa2064f7cd</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
+				<row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Настройки локализации</Value>
+					<Value xsi:type="UUID">bebde7ff-2000-4269-bcf9-3e762f8570cc</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
+				<row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Настройки интерфейса</Value>
+					<Value xsi:type="UUID">85bc3acb-d0c1-4116-bbad-b60ac8026b6a</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">/debug</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Означает, что данное клиентское приложение будет запущено в режиме отладки. Протокол, используемый для работы отладчика, определяет параметром &lt;режим&gt;:
+
+● -tcp ‑ для отладки используется протокол TCP/IP;
+
+● -http ‑ для отладки используется протокол HTTP.
+
+Если в командной строке указан параметр -attach, то это означает, что отладчик будет автоматически подключать предметы отладки (клиентский и серверный) запускаемого приложения, которые будут зарегистрированы на сервере отладки. Параметр используется только</Value>
+						<Value xsi:type="UUID">dbe19e43-0973-4b59-bfee-8a1a8dbeb725</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">/debuggerURL</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Данная команда указывает адрес отладчика (при отладке по протоколу TCP/IP) или адрес сервера отладки (при отладке по протоколу HTTP) при работе в режиме отладки. При указании сервера отладки необходимо указать не только имя компьютера, на котором работает сервер отладки, но и порт, по которому происходит взаимодействие с ним.</Value>
+						<Value xsi:type="UUID">bba6f973-dff5-46bc-85b5-f6818afaeeb8</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">DisplayPerformance</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Включает отображение количества вызовов сервера и объем данных, отправляемых на сервер и принимаемых с сервера.</Value>
+						<Value xsi:type="UUID">c7af4a5a-af3f-4f81-ba55-df3cf4e3e2f8</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">/EmulateServerCallDelay</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Данная команда имитирует работу клиентского приложения в условиях медленного соединения.
+Максимальное значение временных задержек ‑ 9.99 секунды.</Value>
+						<Value xsi:type="UUID">8f2e7adc-38af-43b1-9035-d84808bf4ae1</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Настройки отладки</Value>
+					<Value xsi:type="UUID">a1e04c2a-e78a-4a7d-bba6-ab9f39ff7c3b</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">/TestManager</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Запуск толстого или тонкого клиента для управления клиентами тестирования с помощью специализированной объектной модели.</Value>
+						<Value xsi:type="UUID">2da26b1e-1e40-497f-8a57-27c6427dc113</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">/TestClient</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Запуск клиентского приложения (тонкий клиент, толстый клиент, веб-клиент, мобильный клиент и мобильное приложение) как клиента тестирования.</Value>
+						<Value xsi:type="UUID">4183dade-41f2-4dd1-8610-425a42211a99</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">/UILogRecorder</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Позволяет в клиентском приложении (тонкий клиент, толстый клиент, веб-клиент, мобильный клиент) выполнять запись журнала интерактивных действий пользователя. Журнал действий, в дальнейшем, может быть использован для формирования, на его основе, программы на встроенном языке «1С:Предприятие», которая позволит воспроизвести записанные действия. Может совмещаться с параметром /TestClient.</Value>
+						<Value xsi:type="UUID">a04dde39-5769-4e9a-a2e1-1f678a34b985</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Настройки тестирования</Value>
+					<Value xsi:type="UUID">b1f06e6b-d8df-4475-ace6-8005676b7a56</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
+				<row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Проверки во время работы клиентского приложения</Value>
+					<Value xsi:type="UUID">2df25871-9065-40cf-aff7-3414f1442b62</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">/Out</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Установка файла для вывода служебных сообщений. Если задан параметр -NoTruncate (через пробел), файл не очищается (не используется в тонком клиенте).
+
+Во время исполнения пакетных команд файл сообщений можно открыть для просмотра. В пакетном режиме запуска запись сообщений в файл не буферизуется (сообщения записываются сразу).
+
+Файл формируется в кодировке UTF-8.</Value>
+						<Value xsi:type="UUID">f15963f3-b2cb-4ad4-9f48-1aa06362c5a3</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Прочие параметры</Value>
+					<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
+				<row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Вспомогательные параметры</Value>
+					<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+				</row>
 				<Value xsi:type="xs:string">1cv8</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
@@ -2025,6 +2196,993 @@
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">пароль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-windows</Value>
+				<Value xsi:type="xs:string">указывает, что при соединении нужно использовать клиентский сертификат из системного хранилища сертификатов ОС Windows. Данный параметр игнорируется, если указан хотя бы один из следующих параметров команды: -file или -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-linux</Value>
+				<Value xsi:type="xs:string">указывает, что при соединении необходимо использовать сертификат из специального каталога ОС Linux, в котором хранятся сертификаты. Подробнее см. здесь. Данный параметр игнорируется, если указан хотя бы один из следующих параметров команды: -file или -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-macos</Value>
+				<Value xsi:type="xs:string">указывает, что при соединении нужно использовать клиентский сертификат из системного хранилища сертификатов ОС macOS. Данный параметр игнорируется, если указан хотя бы один из следующих параметров команды: -file или -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-recent</Value>
+				<Value xsi:type="xs:string">выбирать или использовать ранее выбранный клиентский системный сертификат при работе в ОС Windows или macOS.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-auto</Value>
+				<Value xsi:type="xs:string">использовать автоматически выбранный клиентский сертификат из установленных в системном хранилище сертификатов ОС Windows или macOS. Данный параметр игнорируется, если у команды отсутствует параметр –windows или –macos (соответственно).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-choose</Value>
+				<Value xsi:type="xs:string">всегда выбирать используемый клиентский сертификат ОС Windows или macOS.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-file &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">указывает, что необходимо использовать клиентский сертификат и приватный ключ из указанного файла. Данный параметр игнорируется, если у команды установлен параметр -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-pwd &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">указывает пароль файла, содержащего клиентский сертификат и его приватный ключ. Если сервер требует предоставления клиентского сертификата и файл сертификата защищен паролем, то соединение возможно только при правильно указанном пароле. Данный параметр игнорируется, если у данной команды не указан параметр -file.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">c23d46a2-5876-4c83-8d3a-945022b436fc</Value>
+				<Value xsi:type="xs:string">-none</Value>
+				<Value xsi:type="xs:string">указывает, что клиентский сертификат не используется. Соединение возможно только с серверами, не требующими проверки клиентского сертификата.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">9e49a538-5124-4cd2-b18a-5945b777eed8</Value>
+				<Value xsi:type="xs:string">-windows</Value>
+				<Value xsi:type="xs:string">указывает, что для проверки сертификата сервера при соединении нужно использовать сертификаты удостоверяющих центров из системного хранилища сертификатов ОС Windows. Данный параметр игнорируется, если установлен хотя бы один из параметров команды -file или -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">9e49a538-5124-4cd2-b18a-5945b777eed8</Value>
+				<Value xsi:type="xs:string">-linux</Value>
+				<Value xsi:type="xs:string">указывает, что для проверки сертификата сервера при соединении необходимо использовать сертификаты удостоверяющих центров из специального каталога ОС Linux, в котором хранятся сертификаты. Подробнее см. здесь. Данный параметр игнорируется, если указан хотя бы один из следующих параметров команды: -file или -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">9e49a538-5124-4cd2-b18a-5945b777eed8</Value>
+				<Value xsi:type="xs:string">-macos</Value>
+				<Value xsi:type="xs:string">указывает, что для проверки сертификата сервера при соединении нужно использовать сертификаты удостоверяющих центров из системного хранилища сертификатов ОС macOS. Данный параметр игнорируется, если указан хотя бы один из следующих параметров команды: -file или -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">9e49a538-5124-4cd2-b18a-5945b777eed8</Value>
+				<Value xsi:type="xs:string">-file &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">указывает, что для проверки сертификата сервера при соединении нужно использовать сертификаты удостоверяющих центров, загружаемые из указанного файла. Данный параметр игнорируется, если установлен параметр команды -none.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">path</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">9e49a538-5124-4cd2-b18a-5945b777eed8</Value>
+				<Value xsi:type="xs:string">-pwd &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">пароль файла, содержащего корневые сертификаты. Если файл сертификата защищен паролем, то соединение возможно только при правильно указанном пароле. Данный параметр игнорируется, если у данной команды не указан параметр -file.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">password</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">9e49a538-5124-4cd2-b18a-5945b777eed8</Value>
+				<Value xsi:type="xs:string">-none</Value>
+				<Value xsi:type="xs:string">указывает, что корневые сертификаты не используются, и сертификат сервера не проверяется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">85bc3acb-d0c1-4116-bbad-b60ac8026b6a</Value>
+				<Value xsi:type="xs:string">/iTaxi</Value>
+				<Value xsi:type="xs:string">Запуск в режиме интерфейса Такси.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">85bc3acb-d0c1-4116-bbad-b60ac8026b6a</Value>
+				<Value xsi:type="xs:string">/itdi</Value>
+				<Value xsi:type="xs:string">Запуск в режиме интерфейса с использованием закладок.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">85bc3acb-d0c1-4116-bbad-b60ac8026b6a</Value>
+				<Value xsi:type="xs:string">/TechnicalSpecialistMode</Value>
+				<Value xsi:type="xs:string">Включает команду меню Функции для технического специалиста.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bebde7ff-2000-4269-bcf9-3e762f8570cc</Value>
+				<Value xsi:type="xs:string">/L&lt;код языка&gt;</Value>
+				<Value xsi:type="xs:string">Азербайджанский - az
+Английский - en
+Армянский - hy
+Болгарский - bg
+Венгерский - hu
+Вьетнамский - vi
+Греческий - el
+Грузинский - ka
+Испанский - es
+Итальянский - it
+Казахский - kk
+Китайский - zh
+Латышский - lv
+Литовский - lt
+Немецкий - de
+Польский - pl
+Румынский - ro
+Русский - ru
+Турецкий - tr
+Туркменский - tk
+Украинский - uk
+Французский - fr</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">код языка</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>21</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>az</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>en</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>hy</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>bg</presentation>
+						<id>3</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>hu</presentation>
+						<id>4</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>vi</presentation>
+						<id>5</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>el</presentation>
+						<id>6</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>ka</presentation>
+						<id>7</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>es</presentation>
+						<id>8</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>it</presentation>
+						<id>9</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>kk</presentation>
+						<id>10</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>zh</presentation>
+						<id>11</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>lv</presentation>
+						<id>12</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>lt</presentation>
+						<id>13</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>de</presentation>
+						<id>14</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>pl</presentation>
+						<id>15</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>ro</presentation>
+						<id>16</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>ru</presentation>
+						<id>17</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>tr</presentation>
+						<id>18</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>tk</presentation>
+						<id>19</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>uk</presentation>
+						<id>20</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>fr</presentation>
+						<id>21</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bebde7ff-2000-4269-bcf9-3e762f8570cc</Value>
+				<Value xsi:type="xs:string">/VL&lt;код локализации сеанса&gt;</Value>
+				<Value xsi:type="xs:string">Указывается код локализации сеанса, используемый при форматировании данных типа Число и Дата, а также в методах ЧислоПрописью() и ПредставлениеПериода()</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">код локализации сеанса</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>21</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>az</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>en</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>hy</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>bg</presentation>
+						<id>3</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>hu</presentation>
+						<id>4</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>vi</presentation>
+						<id>5</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>el</presentation>
+						<id>6</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>ka</presentation>
+						<id>7</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>es</presentation>
+						<id>8</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>it</presentation>
+						<id>9</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>kk</presentation>
+						<id>10</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>zh</presentation>
+						<id>11</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>lv</presentation>
+						<id>12</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>lt</presentation>
+						<id>13</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>de</presentation>
+						<id>14</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>pl</presentation>
+						<id>15</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>ro</presentation>
+						<id>16</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>ru</presentation>
+						<id>17</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>tr</presentation>
+						<id>18</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>tk</presentation>
+						<id>19</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>uk</presentation>
+						<id>20</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>fr</presentation>
+						<id>21</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">dbe19e43-0973-4b59-bfee-8a1a8dbeb725</Value>
+				<Value xsi:type="xs:string">&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Протокол, используемый для работы отладчика:
+● -tcp ‑ для отладки используется протокол TCP/IP;
+● -http ‑ для отладки используется протокол HTTP.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-tcp</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-http</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">dbe19e43-0973-4b59-bfee-8a1a8dbeb725</Value>
+				<Value xsi:type="xs:string">-attach</Value>
+				<Value xsi:type="xs:string">Если в командной строке указан параметр -attach, то это означает, что отладчик будет автоматически подключать предметы отладки (клиентский и серверный) запускаемого приложения, которые будут зарегистрированы на сервере отладки. Параметр используется только для отладки по протоколу HTTP.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bba6f973-dff5-46bc-85b5-f6818afaeeb8</Value>
+				<Value xsi:type="xs:string">&lt;адрес отладчика&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">адрес отладчика</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8f2e7adc-38af-43b1-9035-d84808bf4ae1</Value>
+				<Value xsi:type="xs:string">-Call&lt;задержка&gt;</Value>
+				<Value xsi:type="xs:string">указывает величину задержки при вызове сервера в секундах. Если параметр не указан, то значение задержки принимается равной 1.45 секунды.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">задержка</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8f2e7adc-38af-43b1-9035-d84808bf4ae1</Value>
+				<Value xsi:type="xs:string">-Send&lt;время&gt;</Value>
+				<Value xsi:type="xs:string">указывает величину задержки в секундах в расчете на каждые 1 Кбайт данных, отправляемых на сервер. Если параметр не указан, то значение задержки принимается равной 0.45 секунды</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">время</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8f2e7adc-38af-43b1-9035-d84808bf4ae1</Value>
+				<Value xsi:type="xs:string">-Recevie&lt;задержка&gt;</Value>
+				<Value xsi:type="xs:string">указывает величину задержки в секундах в расчете на каждые 1 Кбайт данных, принятых с сервера. Если параметр не указан, то значение задержки принимается равной 0,15 секунды.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">задержка</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4183dade-41f2-4dd1-8610-425a42211a99</Value>
+				<Value xsi:type="xs:string">-TPort&lt;Номер сетевого порта&gt;</Value>
+				<Value xsi:type="xs:string">указывает номер сетевого порта для взаимодействия клиента и менеджера тестирования. По умолчанию используется порт 1538. Не используется при запуске в мобильном клиенте</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">Номер сетевого порта</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4183dade-41f2-4dd1-8610-425a42211a99</Value>
+				<Value xsi:type="xs:string">-TestClientID&lt;Идентификатор&gt;</Value>
+				<Value xsi:type="xs:string">указывает уникальный идентификатор тестируемого клиентского приложения. Параметр используется для веб-клиента или мобильного клиента. Параметр используется в том случае, когда необходимо различить несколько различных клиентов тестирования, одновременно используемых через одно приложение менеджера тестирования. Значение по умолчанию для параметра отсутствует</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">Идентификатор</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4183dade-41f2-4dd1-8610-425a42211a99</Value>
+				<Value xsi:type="xs:string">-TURL=&lt;АдресПубликации&gt;</Value>
+				<Value xsi:type="xs:string">позволяет указать адрес публикации информационной базы для случая запуска клиента тестирования в приложении на мобильной платформе</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">АдресПубликации</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">a04dde39-5769-4e9a-a2e1-1f678a34b985</Value>
+				<Value xsi:type="xs:string">-TPort&lt;Номер сетевого порта&gt;</Value>
+				<Value xsi:type="xs:string">указывает номер сетевого порта для взаимодействия клиента и менеджера тестирования. По умолчанию используется порт 1538. Не используется при запуске в мобильном клиенте</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">Номер сетевого порта</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">a04dde39-5769-4e9a-a2e1-1f678a34b985</Value>
+				<Value xsi:type="xs:string">-File&lt;Путь&gt;</Value>
+				<Value xsi:type="xs:string">имя файла, в который будет сохраняться журнал действий пользователя после завершения записи, если к клиенту не подключён менеджер тестирования</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">Путь</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2df25871-9065-40cf-aff7-3414f1442b62</Value>
+				<Value xsi:type="xs:string">/EnableCheckModal</Value>
+				<Value xsi:type="xs:string">Включает режим строгой проверки использования модальных методов. Более подробную информацию о работе параметра см. здесь.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2df25871-9065-40cf-aff7-3414f1442b62</Value>
+				<Value xsi:type="xs:string">/EnableCheckExtensionsAndAddInsSyncCalls</Value>
+				<Value xsi:type="xs:string">Включает режим строгой проверки использования синхронных вызовов расширений работы с файлами и криптографией и внешних компонент. Игнорируется при запуске толстого клиента. Более подробную информацию о работе параметра см. здесь.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2df25871-9065-40cf-aff7-3414f1442b62</Value>
+				<Value xsi:type="xs:string">/EnableCheckServerCalls</Value>
+				<Value xsi:type="xs:string">Включает режим проверки использования контекстных серверных вызовов формы в обработчиках событий, в которых такие вызовы запрещены. Если параметр указан, то при контекстном серверном вызове в обработчиках, в которых такие вызовы запрещены, в окно сообщений будет выведено сообщение. Это же сообщение будет доступно в диалоге Информация для технической поддержки.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2df25871-9065-40cf-aff7-3414f1442b62</Value>
+				<Value xsi:type="xs:string">/EnableCheckScriptCircularRefs</Value>
+				<Value xsi:type="xs:string">Включает поиск циклических ссылок при выполнении кода на встроенном языке.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/C &lt;строка текста&gt;</Value>
+				<Value xsi:type="xs:string">Передача параметра в прикладное решение.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">строка текста</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/ClearCache</Value>
+				<Value xsi:type="xs:string">Выполняется очистка кеша клиент-серверных вызовов, в котором хранятся метаданные форм, модули и т. д., а также сохраненный индекс поиска по текстам модулей.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/AllowExecuteScheduledJobs &lt;Режим&gt;</Value>
+				<Value xsi:type="xs:string">Управление запуском регламентных заданий. Регламентные задания начинают выполняться на первом запущенном по порядку клиенте, у которого не /AllowExecuteScheduledJobs –Off. После завершения сеанса этого клиента, выполнение переходит к какому-либо из других запущенных сеансов. Если запускается сеанс с /AllowExecuteScheduledJobs –Force, то регламентные задания начинают выполняться на нем, не зависимо от наличия других сеансов.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">Режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-Off</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>–Force</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/UC &lt;код доступа&gt;</Value>
+				<Value xsi:type="xs:string">Позволяет выполнить установку соединения с информационной базой, на которую установлена блокировка установки соединений. Если при установке блокировки задан непустой код доступа, то для установки соединения необходимо в параметре /UC указать этот код доступа.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Пароль</Value>
+				<Value xsi:type="xs:string">код доступа</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/RunShortcut &lt;имя файла&gt;</Value>
+				<Value xsi:type="xs:string">Позволяет запустить систему «1С:Предприятие» со списком информационных баз, который помещен в указанный файл. В качестве файла может быть указан файл списка общих информационных баз (*.v8i), или файл ярлыка информационных баз (*.v8l).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">имя файла</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/AppAutoInstallLastVersion&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Управляет возможность автоматической установки новых версий клиентского приложения.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ установка новых версий включена.
+
+● – ‑ установка новых версий выключена.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/Execute &lt;имя файла внешней обработки&gt;</Value>
+				<Value xsi:type="xs:string">Предназначен для запуска внешней обработки, полный путь к которой указан в качестве значения команды, в режиме «1С:Предприятие» непосредственно после старта системы. При указании параметра /Execute параметр /URL игнорируется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">имя файла внешней обработ</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4c7942f8-c39f-402d-9187-b8e3b301d3bd</Value>
+				<Value xsi:type="xs:string">/URL &lt;адрес&gt;</Value>
+				<Value xsi:type="xs:string">Указывает необходимость перехода по ссылке. Поддерживаются ссылки формата e1c и http(s):
+
+● Если указана внешняя ссылка ‑ выполняется поиск запущенного клиентского приложения с той же строкой соединения, которая указана в параметре. В найденном клиентском приложении не должно быть открыто модальное или блокирующее окно. После этого выполняется попытка перехода по локальной ссылке из исходной навигационной ссылки и активизируется основное окно приложения. В случае неудачи клиентское приложение продолжает работу. Если исходная навигационная ссылка не содержит локальной ссылки (содержит только адрес информационной базы), то попытка перехода не выполняется, активируется основное окно найденного клиентского приложения.
+
+● Если подходящего клиентского приложения не найдено, строка соединения определяется из параметра командной строки /URL.
+
+● Если указана локальная ссылка ‑ клиентское приложение запускается в общем порядке. После запуска выполнится попытка перехода по переданной локальной ссылке.
+
+Для ссылок формата http(s) всегда запускается (или находится активный) тонкий клиент.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">адрес</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/@ &lt;файл с командой&gt;</Value>
+				<Value xsi:type="xs:string">Позволяет указать командную строку запуска в файле, который будет указан значением команды (&lt;файл с командой&gt;). Команда /@ предназначена для обхода ограничения длины командной строки используемой операционной системы. В данном файле команда должна быть записана целиком (со всеми своими параметрами), в одну строку. Кодировка файла должна соответствовать кодировке командного интерпретатора, в котором выполняется запуск клиентского приложения.
+
+Во время обработки командной строки, содержимое файла полностью заменит собой командную строку запускаемого приложения. Из этого следует два вывода:
+
+1. Команда /@ должна быть первой или единственной командой командной строки запуска приложения.
+
+2. Если команда /@ указана не первой ‑ поведение является неопределенным.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">файл с командой</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f15963f3-b2cb-4ad4-9f48-1aa06362c5a3</Value>
+				<Value xsi:type="xs:string">&lt;имя файла&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя файла</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f15963f3-b2cb-4ad4-9f48-1aa06362c5a3</Value>
+				<Value xsi:type="xs:string">-NoTruncate</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/DisableStartupMessages</Value>
+				<Value xsi:type="xs:string">Отключает стартовые сообщения:
+
+● Конфигурация базы данных не соответствует сохраненной конфигурации. Продолжить?;
+
+● Возможностей Вашего компьютера недостаточно для редактирования справки по конфигурации. Для редактирования справки необходимо установить Microsoft Internet Explorer версии 7.0 или выше.;
+
+● Возможностей Вашего компьютера недостаточно для редактирования html-документов, в том числе разделов справки. Для редактирования html-документов необходимо установить Microsoft Internet Explorer версии 7.0 или выше. В данном запуске редактирование html-документов будет недоступно..</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/DisableStartupDialogs</Value>
+				<Value xsi:type="xs:string">Отключает вызов стартового диалога и диалогов аутентификации. При этом:
+
+● Выдается ошибка в следующих случаях:
+
+● Если командной строки недостаточно для выбора информационной базы или определения режима запуска.
+
+● Если командной строки недостаточно для авторизации пользователя в информационной базе.
+
+● Если в командной строке ошибочная авторизация в хранилище конфигурации.
+
+● Выполняется попытка создания информационной базы (CREATEINFOBASE), но для кластера серверов задан администратор.
+
+● Если в командной строке отсутствует авторизация в хранилище конфигурации, конфигуратор запускается без связи с хранилищем.
+
+Команда поддерживается конфигуратором, тонким и толстым клиентскими приложениями. При использовании данной команды в командной строке запуска клиентского приложения включается пакетный режим запуска клиентского приложения (подробнее см. здесь).</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/DisableSplash</Value>
+				<Value xsi:type="xs:string">Отключает отображение заставки при запуске «1С:Предприятия», если заставка была полностью заменена. Для того чтобы полностью заменить заставку, необходимо обращаться в фирму «1С».</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/DisableUnrecoverableErrorMessage</Value>
+				<Value xsi:type="xs:string">Позволяет указать специальное поведение при возникновении невосстановимой ошибки (в том числе аварийного завершения):
+
+● Окно об ошибке показано не будет.
+
+● При аварийном завершении дамп сформируется в соответствии с настройками в файле logcfg.xml (в ОС Windows) или настройками операционной системы (в ОС Linux и macOS).
+
+● Отчет об ошибке будет отправлен, если настроена автоматическая отправка отчета об ошибке и размер отчета не превышает ограничение на отправку без вопроса о большом размере отчета (5 Мбайт).
+
+● Приложение будет завершено с кодом возврата, отличным от нуля.
+
+Рекомендуется указывать эту команду, если нужно запустить клиентское приложение в окружении, где не будет пользователя, который отреагирует на сообщение о невосстановимой ошибке.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/DisableHomePageForms</Value>
+				<Value xsi:type="xs:string">При открытии тонкого клиента запрещает открытие форм начальной страницы прикладного решения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/LogUI</Value>
+				<Value xsi:type="xs:string">Выполнить протоколирование действий пользователя.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/UseHwLicenses&lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">Определяет режим поиска ключа защиты.
+
+&lt;режим&gt; может принимать следующие значения:
+
+● + ‑ поиск ключа защиты выполняется.
+
+● – ‑ поиск ключа защиты не выполняется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>+</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-</presentation>
+						<id>1</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">3c91af36-0c59-411f-a9d4-4fa2b38ea743</Value>
+				<Value xsi:type="xs:string">/DisplayUserNotificationList</Value>
+				<Value xsi:type="xs:string">Показывает непрочитанные сообщения из системы взаимодействия и центра оповещений при старте клиентского приложения.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>

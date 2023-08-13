@@ -29,19 +29,19 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="8aef2a2e-3bad-4b45-9769-de25d6107f71">
-    <name>_ibcmd_8_3_21</name>
-    <synonym>
-      <key>ru</key>
-      <value>ibcmd 8.3.21</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
   <templates uuid="d5fe0887-ecb8-4909-9ac2-c7fba2378fe7">
     <name>_1cv8_8_3_21</name>
     <synonym>
       <key>ru</key>
       <value>1cv8 8.3.21</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8aef2a2e-3bad-4b45-9769-de25d6107f71">
+    <name>_ibcmd_8_3_21</name>
+    <synonym>
+      <key>ru</key>
+      <value>ibcmd 8.3.21</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

@@ -1,6 +1,6 @@
 ﻿<Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Property name="Программа">
-		<Value xsi:type="xs:string">1cv8</Value>
+		<Value xsi:type="xs:string">ibcmd</Value>
 	</Property>
 	<Property name="ВерсияПрограммы">
 		<Value xsi:type="xs:string">8.3.21</Value>
@@ -63,7 +63,7 @@
 						<Value xsi:type="xs:string">Создание информационной базы</Value>
 						<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
 						<Value xsi:type="xs:string">create</Value>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">dump</Value>
@@ -71,7 +71,7 @@
 						<Value xsi:type="xs:string">Выгрузка данных информационной базы</Value>
 						<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
 						<Value xsi:type="xs:string">dump</Value>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">restore</Value>
@@ -79,7 +79,7 @@
 						<Value xsi:type="xs:string">Загрузка данных информационной базы</Value>
 						<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
 						<Value xsi:type="xs:string">restore</Value>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">clear</Value>
@@ -96,7 +96,7 @@
 							<Value xsi:type="xs:string">Загрузка конфигурации</Value>
 							<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
 							<Value xsi:type="xs:string">load</Value>
-							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:boolean">true</Value>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">save</Value>
@@ -104,7 +104,7 @@
 							<Value xsi:type="xs:string">Выгрузка конфигурации</Value>
 							<Value xsi:type="UUID">6508a4e0-3170-4cd0-ba5e-c4a656c11f9c</Value>
 							<Value xsi:type="xs:string">save</Value>
-							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:boolean">true</Value>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">check</Value>
@@ -287,7 +287,7 @@
 						<Value xsi:type="xs:string">Управление конфигурацией информационной базы</Value>
 						<Value xsi:type="UUID">763f6508-704a-4f94-9e9d-5aad2798601b</Value>
 						<Value xsi:type="xs:string">config</Value>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 					</row>
 					<Value xsi:type="xs:string">infobase</Value>
 					<Value xsi:type="xs:boolean">false</Value>
@@ -339,7 +339,7 @@
 					</row>
 					<row>
 						<Value xsi:type="xs:string">list</Value>
-						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:boolean">false</Value>
 						<Value xsi:type="xs:string">получение списка информации о сеансах</Value>
 						<Value xsi:type="UUID">7df05164-2a71-4f15-bb26-cd1ef5c17c89</Value>
 						<Value xsi:type="xs:string">SessionList</Value>
@@ -362,7 +362,7 @@
 						<Value xsi:type="xs:boolean">false</Value>
 					</row>
 					<Value xsi:type="xs:string">session</Value>
-					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:boolean">false</Value>
 					<Value xsi:type="xs:string">Режим администрирования сеансов информационных баз</Value>
 					<Value xsi:type="UUID">19408273-5924-4340-9707-6efb3fa9497b</Value>
 					<Value xsi:type="xs:string">session</Value>
@@ -385,7 +385,7 @@
 					<Value xsi:type="xs:boolean">true</Value>
 				</row>
 				<Value xsi:type="xs:string">ibcmd</Value>
-				<Value xsi:type="xs:boolean">true</Value>
+				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
 				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
 				<Value xsi:type="xs:string">_ibcmd</Value>
@@ -1047,7 +1047,7 @@
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2099,7 +2099,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="UUID">7df05164-2a71-4f15-bb26-cd1ef5c17c89</Value>
 				<Value xsi:type="xs:string">--licenses</Value>
 				<Value xsi:type="xs:string">вывод информации о лицензиях, полученных сеансом</Value>
-				<Value xsi:type="xs:boolean">true</Value>
+				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:string">--licenses</Value>
 				<Value xsi:type="ValueListType">
