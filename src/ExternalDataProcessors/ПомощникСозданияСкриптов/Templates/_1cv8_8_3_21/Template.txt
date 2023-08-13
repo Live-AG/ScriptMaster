@@ -1,6 +1,6 @@
 <Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Property name="Программа">
-		<Value xsi:type="xs:string">ibcmd</Value>
+		<Value xsi:type="xs:string">1cv8</Value>
 	</Property>
 	<Property name="ВерсияПрограммы">
 		<Value xsi:type="xs:string">8.3.21</Value>
@@ -60,14 +60,14 @@
 					<row>
 						<row>
 							<Value xsi:type="xs:string">/Proxy</Value>
-							<Value xsi:type="xs:boolean">true</Value>
+							<Value xsi:type="xs:boolean">false</Value>
 							<Value xsi:type="xs:string">Использовать указанные настройки прокси, игнорируя умолчания (только для ws-соединения).</Value>
 							<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
 							<Value xsi:type="xs:string"/>
 							<Value xsi:type="xs:boolean">false</Value>
 						</row>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:boolean">false</Value>
 						<Value xsi:type="xs:string">Настройка аутентификации</Value>
 						<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
 						<Value xsi:type="xs:string"/>
@@ -138,7 +138,7 @@
 						<Value xsi:type="xs:boolean">false</Value>
 					</row>
 					<Value xsi:type="xs:string">DESIGNER</Value>
-					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:boolean">false</Value>
 					<Value xsi:type="xs:string">Запуск в режиме Конфигуратора</Value>
 					<Value xsi:type="UUID">b93fa77c-e7c7-4563-9107-2f63fee6f1d1</Value>
 					<Value xsi:type="xs:string"/>
@@ -177,7 +177,7 @@
 					<Value xsi:type="xs:boolean">false</Value>
 				</row>
 				<Value xsi:type="xs:string">1cv8</Value>
-				<Value xsi:type="xs:boolean">true</Value>
+				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
 				<Value xsi:type="UUID">504ff6c7-d176-4785-854d-8997e3e7948a</Value>
 				<Value xsi:type="xs:string">_1cv8</Value>
@@ -1530,7 +1530,7 @@
 				<Value xsi:type="UUID">23130829-98fa-4998-8f86-c0f4b2534d0c</Value>
 				<Value xsi:type="xs:string">-PSrv &lt;адрес прокси&gt;</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:boolean">true</Value>
+				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">адрес прокси</Value>
 				<Value xsi:type="ValueListType">
