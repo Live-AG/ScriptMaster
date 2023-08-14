@@ -55,7 +55,62 @@
 					<Type>xs:boolean</Type>
 				</ValueType>
 			</column>
+			<column>
+				<Name>СсылкаНаИсточник</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
 			<row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">infobase</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="UUID">d842a7b9-b176-4a45-b847-d414185a50f7</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">server</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="UUID">d3e90a93-5b5c-4385-87ed-8d09f1c573e8</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">session</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="UUID">3ab1afda-0032-4303-bc76-cf13b5ad2a62</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">lock</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="UUID">785c2356-2e22-41a0-aca1-6ebc4dae193f</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<Value xsi:type="xs:string">help</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="UUID">39e0c736-b103-4824-8f30-ec15d8996997</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
+				</row>
 				<row>
 					<row>
 						<Value xsi:type="xs:string">create</Value>
@@ -63,7 +118,8 @@
 						<Value xsi:type="xs:string">Создание информационной базы</Value>
 						<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
 						<Value xsi:type="xs:string">create</Value>
-						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">dump</Value>
@@ -71,7 +127,8 @@
 						<Value xsi:type="xs:string">Выгрузка данных информационной базы</Value>
 						<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
 						<Value xsi:type="xs:string">dump</Value>
-						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">restore</Value>
@@ -79,7 +136,8 @@
 						<Value xsi:type="xs:string">Загрузка данных информационной базы</Value>
 						<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
 						<Value xsi:type="xs:string">restore</Value>
-						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">clear</Value>
@@ -88,6 +146,7 @@
 						<Value xsi:type="UUID">1f81d824-217d-43ac-bbd2-f86a4bc187b6</Value>
 						<Value xsi:type="xs:string">clear</Value>
 						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -96,7 +155,8 @@
 							<Value xsi:type="xs:string">Загрузка конфигурации</Value>
 							<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
 							<Value xsi:type="xs:string">load</Value>
-							<Value xsi:type="xs:boolean">true</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">save</Value>
@@ -104,7 +164,8 @@
 							<Value xsi:type="xs:string">Выгрузка конфигурации</Value>
 							<Value xsi:type="UUID">6508a4e0-3170-4cd0-ba5e-c4a656c11f9c</Value>
 							<Value xsi:type="xs:string">save</Value>
-							<Value xsi:type="xs:boolean">true</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">check</Value>
@@ -113,6 +174,7 @@
 							<Value xsi:type="UUID">23dc003b-df29-4ed9-9ba2-e6fa35ffcb91</Value>
 							<Value xsi:type="xs:string">check</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">apply</Value>
@@ -121,6 +183,7 @@
 							<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
 							<Value xsi:type="xs:string">apply</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">reset</Value>
@@ -129,6 +192,7 @@
 							<Value xsi:type="UUID">81ceba10-2f8f-4cc9-a384-57e1d6d3849c</Value>
 							<Value xsi:type="xs:string">reset</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">repair</Value>
@@ -137,6 +201,7 @@
 							<Value xsi:type="UUID">83b596cb-1113-461a-a8aa-4f90afd27505</Value>
 							<Value xsi:type="xs:string">repair</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<row>
@@ -146,6 +211,7 @@
 								<Value xsi:type="UUID">4a97021f-e6f9-42c3-aaf4-95c4ec6c9097</Value>
 								<Value xsi:type="xs:string">info</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">status</Value>
@@ -154,6 +220,7 @@
 								<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
 								<Value xsi:type="xs:string">status</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">objects</Value>
@@ -162,6 +229,7 @@
 								<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
 								<Value xsi:type="xs:string">objects</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">all-extensions</Value>
@@ -170,6 +238,7 @@
 								<Value xsi:type="UUID">f665d51f-2941-4e4f-b4eb-130a599f7dff</Value>
 								<Value xsi:type="xs:string">ExportAllExtensions</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<Value xsi:type="xs:string">export</Value>
 							<Value xsi:type="xs:boolean">false</Value>
@@ -177,6 +246,7 @@
 							<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
 							<Value xsi:type="xs:string">export</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<row>
@@ -186,6 +256,7 @@
 								<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
 								<Value xsi:type="xs:string">files</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">all-extensions</Value>
@@ -194,6 +265,7 @@
 								<Value xsi:type="UUID">29d6e58c-ab97-4931-9d1d-3a142e9ec79a</Value>
 								<Value xsi:type="xs:string">ImportAllExtensions</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<Value xsi:type="xs:string">import</Value>
 							<Value xsi:type="xs:boolean">false</Value>
@@ -201,6 +273,7 @@
 							<Value xsi:type="UUID">3af01191-caec-422e-8f4a-7cfa3c48722f</Value>
 							<Value xsi:type="xs:string">import</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">disable</Value>
@@ -209,6 +282,7 @@
 							<Value xsi:type="UUID">9077ebcd-8285-4481-bafc-6b16d0c7f12b</Value>
 							<Value xsi:type="xs:string">disable</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<row>
@@ -218,6 +292,7 @@
 								<Value xsi:type="UUID">9e29a26d-b5e8-4492-9cad-206dea8c6978</Value>
 								<Value xsi:type="xs:string">list</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<Value xsi:type="xs:string">data-separation</Value>
 							<Value xsi:type="xs:boolean">false</Value>
@@ -225,6 +300,7 @@
 							<Value xsi:type="UUID">a10f7e0f-001d-4654-a7f6-b3f8945a31ac</Value>
 							<Value xsi:type="xs:string">DataSeparation</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<row>
@@ -234,6 +310,7 @@
 								<Value xsi:type="UUID">80c2aa8e-3d44-4e7f-a009-146f9378de27</Value>
 								<Value xsi:type="xs:string">ExtensionCreate</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">info</Value>
@@ -242,6 +319,7 @@
 								<Value xsi:type="UUID">d04e81e5-e918-42a7-a16b-fa08ef330eef</Value>
 								<Value xsi:type="xs:string">ExtensionInfo</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">list</Value>
@@ -250,6 +328,7 @@
 								<Value xsi:type="UUID">6eb4139b-5e0f-421b-beac-390afc23c599</Value>
 								<Value xsi:type="xs:string">ExtensionList</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">update</Value>
@@ -258,6 +337,7 @@
 								<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
 								<Value xsi:type="xs:string">ExtensionUpdate</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<row>
 								<Value xsi:type="xs:string">delete</Value>
@@ -266,6 +346,7 @@
 								<Value xsi:type="UUID">cd0eff50-902e-44a8-9216-e83cafe9e24a</Value>
 								<Value xsi:type="xs:string">ExtensionDelete</Value>
 								<Value xsi:type="xs:boolean">false</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<Value xsi:type="xs:string">extension</Value>
 							<Value xsi:type="xs:boolean">false</Value>
@@ -273,6 +354,7 @@
 							<Value xsi:type="UUID">22683b98-0d81-48e5-8172-0cc96a2f88dd</Value>
 							<Value xsi:type="xs:string">Extension</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">generation-id</Value>
@@ -281,13 +363,15 @@
 							<Value xsi:type="UUID">91fd0890-b310-4fa6-8137-00ed8782d313</Value>
 							<Value xsi:type="xs:string">GenerationID</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:string">config</Value>
 						<Value xsi:type="xs:boolean">false</Value>
 						<Value xsi:type="xs:string">Управление конфигурацией информационной базы</Value>
 						<Value xsi:type="UUID">763f6508-704a-4f94-9e9d-5aad2798601b</Value>
 						<Value xsi:type="xs:string">config</Value>
-						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:string">infobase</Value>
 					<Value xsi:type="xs:boolean">false</Value>
@@ -295,6 +379,7 @@
 					<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
 					<Value xsi:type="xs:string">infobase</Value>
 					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -305,6 +390,7 @@
 							<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
 							<Value xsi:type="xs:string">ServerConfigInit</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:string">import</Value>
@@ -313,6 +399,7 @@
 							<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
 							<Value xsi:type="xs:string">ServerConfigImport</Value>
 							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:string">config</Value>
 						<Value xsi:type="xs:boolean">false</Value>
@@ -320,6 +407,7 @@
 						<Value xsi:type="UUID">8e8b0e61-a761-457d-95a9-7409350731c9</Value>
 						<Value xsi:type="xs:string">ServerConfig</Value>
 						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:string">server</Value>
 					<Value xsi:type="xs:boolean">false</Value>
@@ -327,6 +415,7 @@
 					<Value xsi:type="UUID">6cf744d9-70d9-49d9-bd53-68217d6132d9</Value>
 					<Value xsi:type="xs:string">Server</Value>
 					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -336,6 +425,7 @@
 						<Value xsi:type="UUID">758741fc-1068-4bc7-bc52-e1289f92008e</Value>
 						<Value xsi:type="xs:string">SessionInfo</Value>
 						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">list</Value>
@@ -344,6 +434,7 @@
 						<Value xsi:type="UUID">7df05164-2a71-4f15-bb26-cd1ef5c17c89</Value>
 						<Value xsi:type="xs:string">SessionList</Value>
 						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">terminate</Value>
@@ -352,6 +443,7 @@
 						<Value xsi:type="UUID">7aa8a419-4d5b-4e93-b13f-956c9004e3f9</Value>
 						<Value xsi:type="xs:string">SessionTerminate</Value>
 						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">interrupt-current-server-call</Value>
@@ -360,6 +452,7 @@
 						<Value xsi:type="UUID">7a6a85b3-d9e6-4622-aa06-e1ee0db2b086</Value>
 						<Value xsi:type="xs:string">InterruptCurrentServerCall</Value>
 						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:string">session</Value>
 					<Value xsi:type="xs:boolean">false</Value>
@@ -367,6 +460,7 @@
 					<Value xsi:type="UUID">19408273-5924-4340-9707-6efb3fa9497b</Value>
 					<Value xsi:type="xs:string">session</Value>
 					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -376,6 +470,7 @@
 						<Value xsi:type="UUID">022279b5-06c2-4a56-aa92-cb1239a87fb1</Value>
 						<Value xsi:type="xs:string">LockList</Value>
 						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:string">lock</Value>
 					<Value xsi:type="xs:boolean">false</Value>
@@ -383,6 +478,7 @@
 					<Value xsi:type="UUID">589bf4e0-4a17-4809-92ad-7fe7afc91498</Value>
 					<Value xsi:type="xs:string">lock</Value>
 					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:string">ibcmd</Value>
 				<Value xsi:type="xs:boolean">false</Value>
@@ -390,6 +486,7 @@
 				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
 				<Value xsi:type="xs:string">_ibcmd</Value>
 				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000894</Value>
 			</row>
 		</Value>
 	</Property>
@@ -1047,7 +1144,7 @@
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1821,7 +1918,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">Базовый путь публикации информационной базы.
 По-умолчанию, используется значение: /</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">location</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1834,7 +1931,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">Имя информационной базы.
 По-умолчанию, используется строковое представление идентификатора информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1850,7 +1947,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 	auto - автогенерированный уникальный идентификатор.
 По-умолчанию, используется значение: auto</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">uuid</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1868,11 +1965,31 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 	OracleDatabase - Oracle Database.	
 Если параметр не указан, используется файловая база данных</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Список</Value>
 				<Value xsi:type="xs:string">kind</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>MSSQLServer</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>PostgreSQL</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>IBMDB2</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>OracleDatabase</presentation>
+						<id>3</id>
+					</item>
 				</Value>
 			</row>
 			<row>
@@ -1880,7 +1997,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">--db-server=&lt;address&gt;</Value>
 				<Value xsi:type="xs:string">Имя сервера СУБД</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">address</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1892,7 +2009,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">--db-name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя базы данных</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1904,7 +2021,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">--db-user=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя сервера СУБД</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1916,7 +2033,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">--db-pwd=&lt;password&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя сервера СУБД</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">password</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1942,7 +2059,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.	
 По-умолчанию, используется подкаталог 'db-data' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1958,11 +2075,21 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 	deny (no, false) - выдача клиентских лицензий выключена.
 По-умолчанию, используется значение: allow</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Список</Value>
 				<Value xsi:type="xs:string">flag</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>allow</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>deny</presentation>
+						<id>1</id>
+					</item>
 				</Value>
 			</row>
 			<row>

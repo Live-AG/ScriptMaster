@@ -69,14 +69,6 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="0eeb4544-a882-4138-a242-3540d704d720">
-    <name>_cnvdbfl_8_3_21</name>
-    <synonym>
-      <key>ru</key>
-      <value>cnvdbfl 8.3.21</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
   <templates uuid="47d3f39b-bdb9-4b23-beab-76e45cf92f01">
     <name>_webinst_8_3_21</name>
     <synonym>
