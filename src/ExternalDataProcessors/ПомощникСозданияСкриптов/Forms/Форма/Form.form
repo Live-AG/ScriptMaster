@@ -1465,7 +1465,6 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ТаблицаПараметров.ТипАргумента</segments>
             </dataPath>
-            <shortcut>Alt+</shortcut>
             <extendedTooltip>
               <name>ТаблицаПараметровТипАргументаРасширеннаяПодсказка</name>
               <id>117</id>
