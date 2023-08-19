@@ -2229,11 +2229,16 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:LabelFieldExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ТекстСкриптаНажатие</name>
+          </handlers>
           <width>50</width>
           <height>4</height>
           <autoMaxHeight>true</autoMaxHeight>
           <maxHeight>4</maxHeight>
           <verticalStretch>false</verticalStretch>
+          <hyperlink>true</hyperlink>
           <borderColor xsi:type="core:ColorRef">
             <color>Style.FormBackColor</color>
           </borderColor>
@@ -2369,6 +2374,104 @@
       <extendedTooltip>
         <name>СтраницаБуферРасширеннаяПодсказка</name>
         <id>89</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>СтраницаТекста</name>
+      <id>171</id>
+      <items xsi:type="form:FormField">
+        <name>ТекстСкриптаПредставление</name>
+        <id>173</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТекстСкриптаПредставление</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <extendedTooltip>
+          <name>ТекстСкриптаПредставлениеРасширеннаяПодсказка</name>
+          <id>175</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ТекстСкриптаПредставлениеКонтекстноеМеню</name>
+          <id>174</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <verticalStretch>true</verticalStretch>
+          <wrap>true</wrap>
+          <multiLine>true</multiLine>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <textColor xsi:type="core:ColorDef">
+            <red>204</red>
+            <green>204</green>
+            <blue>204</blue>
+          </textColor>
+          <backColor xsi:type="core:ColorDef">
+            <red>12</red>
+            <green>12</green>
+            <blue>2</blue>
+          </backColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <faceName>Input</faceName>
+          </font>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа1</value>
+      </title>
+      <extendedTooltip>
+        <name>СтраницаТекстаРасширеннаяПодсказка</name>
+        <id>172</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>

@@ -62,10 +62,10 @@
     <templateType>TextDocument</templateType>
   </templates>
   <templates uuid="ee722621-6fdc-42e0-a3f9-27c1084b596f">
-    <name>_ring_0_19_5</name>
+    <name>_ring_0_11_10</name>
     <synonym>
       <key>ru</key>
-      <value>ring 0.19.5</value>
+      <value>ring 0.11.10</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

@@ -5,6 +5,9 @@
 	<Property name="ВерсияПрограммы">
 		<Value xsi:type="xs:string">8.3.21</Value>
 	</Property>
+	<Property name="UID_Модели">
+		<Value xsi:type="UUID">c457824e-f705-475b-afe2-4bd4ebd92836</Value>
+	</Property>
 	<Property name="ДеревоКоманд">
 		<Value xsi:type="ValueTree">
 			<column>
@@ -49,12 +52,30 @@
 					</StringQualifiers>
 				</ValueType>
 			</column>
+			<column>
+				<Name>Исключительная</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>СсылкаНаИсточник</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
 			<row>
 				<Value xsi:type="xs:string">ibsrv</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Автономный сервер</Value>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
 				<Value xsi:type="xs:string">_ibsrv</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000900</Value>
 			</row>
 		</Value>
 	</Property>
@@ -82,16 +103,6 @@
 					<Type>xs:string</Type>
 					<StringQualifiers>
 						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</ValueType>
-			</column>
-			<column>
-				<Name>Аргумент</Name>
-				<ValueType>
-					<Type>xs:string</Type>
-					<StringQualifiers>
-						<Length>512</Length>
 						<AllowedLength>Variable</AllowedLength>
 					</StringQualifiers>
 				</ValueType>
@@ -130,12 +141,11 @@
 			</column>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--version | -v</Value>
+				<Value xsi:type="xs:string">--version</Value>
 				<Value xsi:type="xs:string">получение версии утилиты</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--version | -v</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -143,12 +153,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--help | -h | -?</Value>
+				<Value xsi:type="xs:string">--help</Value>
 				<Value xsi:type="xs:string">отображение краткой информации об утилите</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--help | -h | -?</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -158,7 +167,6 @@
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
 				<Value xsi:type="xs:string">--daemon</Value>
 				<Value xsi:type="xs:string">Работа в режиме демона ОС Linux</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:string">--daemon</Value>
@@ -169,11 +177,22 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--config=&lt;path&gt; | -c &lt;path&gt;</Value>
-				<Value xsi:type="xs:string">Путь к конфигурационному файлу</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">--service</Value>
+				<Value xsi:type="xs:string">Работа в режиме сервиса ОС Windows</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
+				<Value xsi:type="xs:string">--config=&lt;path&gt;</Value>
+				<Value xsi:type="xs:string">Путь к конфигурационному файлу</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -184,9 +203,8 @@
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
 				<Value xsi:type="xs:string">--system=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к системному конфигурационному файлу</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -195,12 +213,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--data=&lt;path&gt; | -d &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">--data=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к каталогу данных сервера.
 По-умолчанию, используется значение: ~/.1cv8/1C/1cv8/standalone-server/</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -212,9 +229,8 @@
 				<Value xsi:type="xs:string">--lock=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу блокировки каталога данных автономного сервера.
 По-умолчанию, используется файл lock.pid в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -223,13 +239,12 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--temp=&lt;path&gt; | -t &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">--temp=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к каталогу временных файлов информационной базы.
 В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
 По-умолчанию, используется подкаталог 'temp' в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -241,9 +256,8 @@
 				<Value xsi:type="xs:string">--users-data=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к каталогу конфигурационных данных пользователей.
         По-умолчанию, используется значение: users-data</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -256,9 +270,8 @@
 				<Value xsi:type="xs:string">Путь к каталогу сеансовых данных.
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'session-data' в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -271,9 +284,8 @@
 				<Value xsi:type="xs:string">Путь к каталогу данных журнала регистрации.
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'log-data' в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -286,9 +298,8 @@
 				<Value xsi:type="xs:string">Путь к каталогу данных полнотекстового поиска.
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'ftext-data' в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -301,9 +312,8 @@
 				<Value xsi:type="xs:string">Путь к каталогу данных полнотекстового поиска версии 2.
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'ftext2-data' в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -316,9 +326,8 @@
 				<Value xsi:type="xs:string">Путь к каталогу данных OpenID-аутентификации.
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'openid-data' в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -327,7 +336,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--address=&lt;address&gt; | -a &lt;address&gt;</Value>
+				<Value xsi:type="xs:string">--address=&lt;address&gt;</Value>
 				<Value xsi:type="xs:string">сновной IP адрес, обслуживаемый сервером.
         Допустимые значения:
         	localhost - локальный сетевой интерфейс;
@@ -335,9 +344,8 @@
         	xxx.xxx.xxx.xxx - IPv4 адрес используемого сетевого интерфейса;
         	xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемого сетевого интерфейса.
 По-умолчанию используется значение: localhost</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">address</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -346,12 +354,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--port=&lt;number&gt; | -p &lt;number&gt;</Value>
+				<Value xsi:type="xs:string">--port=&lt;number&gt;</Value>
 				<Value xsi:type="xs:string">Основной TCP порт, обслуживаемый сервером.
         По-умолчанию, используется значение: 8314</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Число</Value>
 				<Value xsi:type="xs:string">number</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -360,12 +367,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--base=&lt;location&gt; | -b &lt;location&gt;</Value>
+				<Value xsi:type="xs:string">--base=&lt;location&gt;</Value>
 				<Value xsi:type="xs:string">Базовый путь публикации информационной базы.
         По-умолчанию, используется значение: /</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">location</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -374,12 +380,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--name=&lt;name&gt; | -n &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя информационной базы.
         По-умолчанию, используется строковое представление идентификатора информационной базы</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -394,9 +399,8 @@
         	xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx - идентификатор в формате UUID;
         	auto - автогенерированный уникальный идентификатор.
         По-умолчанию, используется значение: auto</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">uuid</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -413,22 +417,40 @@
         	IBMDB2 - IBM DB2;
         	OracleDatabase - Oracle Database.
         Если параметр не указан, используется файловая база данных</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Список</Value>
 				<Value xsi:type="xs:string">kind</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>MSSQLServer</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>PostgreSQL</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>IBMDB2</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>OracleDatabase</presentation>
+						<id>3</id>
+					</item>
 				</Value>
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
 				<Value xsi:type="xs:string">--db-server=&lt;address&gt;</Value>
 				<Value xsi:type="xs:string">Имя сервера СУБД</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">address</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -439,9 +461,8 @@
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
 				<Value xsi:type="xs:string">--db-name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя базы данных</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -452,9 +473,8 @@
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
 				<Value xsi:type="xs:string">--db-user=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя сервера СУБД</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -465,9 +485,8 @@
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
 				<Value xsi:type="xs:string">--db-pwd=&lt;password&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя сервера СУБД</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">password</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -476,12 +495,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string">--request-db-pwd</Value>
 				<Value xsi:type="xs:string">Запрос пароля пользователя сервера СУБД через стандартный поток ввода (STDIN)</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -493,9 +511,8 @@
 				<Value xsi:type="xs:string">Путь к каталогу файловой базы данных 1С:Предприятия 8.
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'db-data' в каталоге данных сервера</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -510,9 +527,8 @@
         	allow (yes, true) - выдача клиентских лицензий включена;
         	deny (no, false) - выдача клиентских лицензий выключена.
         По-умолчанию, используется значение: allow</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Булево (allow/deny)</Value>
 				<Value xsi:type="xs:string">flag</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -527,9 +543,8 @@
         	allow (yes, true) - планирование регламентных заданий включено;
         	deny (no, false) - планирование регламентных заданий выключено.
         По-умолчанию, используется значение: allow</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Булево (allow/deny)</Value>
 				<Value xsi:type="xs:string">flag</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -538,11 +553,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6f3f1aa0-2aaa-4a96-95f0-eaddda00cd1d</Value>
-				<Value xsi:type="xs:string">--debug=&lt;url&gt; | -D &lt;url&gt;</Value>
+				<Value xsi:type="xs:string">--debug=&lt;url&gt;</Value>
 				<Value xsi:type="xs:string">Адрес сервера отладки</Value>
-				<Value xsi:type="xs:string"/>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">url</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>

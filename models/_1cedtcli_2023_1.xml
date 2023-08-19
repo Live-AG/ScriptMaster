@@ -3,7 +3,10 @@
 		<Value xsi:type="xs:string">1cedtcli</Value>
 	</Property>
 	<Property name="ВерсияПрограммы">
-		<Value xsi:type="xs:string">8.3.21</Value>
+		<Value xsi:type="xs:string">2023.1</Value>
+	</Property>
+	<Property name="UID_Модели">
+		<Value xsi:type="UUID">09920b49-d7cf-4096-9739-960c41ab0135</Value>
 	</Property>
 	<Property name="ДеревоКоманд">
 		<Value xsi:type="ValueTree">

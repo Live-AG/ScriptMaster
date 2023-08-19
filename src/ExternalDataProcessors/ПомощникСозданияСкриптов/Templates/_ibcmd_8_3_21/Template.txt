@@ -5,6 +5,9 @@
 	<Property name="ВерсияПрограммы">
 		<Value xsi:type="xs:string">8.3.21</Value>
 	</Property>
+	<Property name="UID_Модели">
+		<Value xsi:type="UUID">d7aa572f-24e9-4f60-ae78-5ec65bddee5c</Value>
+	</Property>
 	<Property name="ДеревоКоманд">
 		<Value xsi:type="ValueTree">
 			<column>
