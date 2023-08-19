@@ -69,6 +69,14 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="95f76109-4129-443a-abca-9a271071e72e">
+    <name>_1cedtcli_2023_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>1cedtcli 2023.1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="47d3f39b-bdb9-4b23-beab-76e45cf92f01">
     <name>_webinst_8_3_21</name>
     <synonym>

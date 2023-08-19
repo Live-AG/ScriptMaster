@@ -552,11 +552,11 @@
 			</column>
 			<row>
 				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
-				<Value xsi:type="xs:string">--version | -v</Value>
+				<Value xsi:type="xs:string">--version</Value>
 				<Value xsi:type="xs:string">получение версии утилиты</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--version | -v</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -564,11 +564,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
-				<Value xsi:type="xs:string">--help | -h | -?</Value>
+				<Value xsi:type="xs:string">--help</Value>
 				<Value xsi:type="xs:string">отображение краткой информации об утилите</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--help | -h | -?</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -576,10 +576,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
-				<Value xsi:type="xs:string">--pid=&lt;pid&gt; | -p &lt;pid&gt;</Value>
+				<Value xsi:type="xs:string">--pid=&lt;pid&gt;</Value>
 				<Value xsi:type="xs:string">Идентификатор процесса автономного сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">pid</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -588,10 +588,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">103cbaba-42a0-4bac-8492-f25f33c40f20</Value>
-				<Value xsi:type="xs:string">--remote=&lt;url&gt; | -r &lt;url&gt;</Value>
+				<Value xsi:type="xs:string">--remote=&lt;url&gt;</Value>
 				<Value xsi:type="xs:string">Сетевой адрес автономного сервера (шлюза администрирования)</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">url</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -600,10 +600,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
-				<Value xsi:type="xs:string">--config=&lt;path&gt; | -c &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">--config=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к конфигурационному файлу</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -615,7 +615,7 @@
 				<Value xsi:type="xs:string">--system=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к системному конфигурационному файлу</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -633,11 +633,31 @@
         	OracleDatabase - Oracle Database.
         Если параметр не указан, используется файловая база данных</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Список</Value>
 				<Value xsi:type="xs:string">kind</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>MSSQLServer</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>PostgreSQL</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>IBMDB2</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>OracleDatabase</presentation>
+						<id>3</id>
+					</item>
 				</Value>
 			</row>
 			<row>
@@ -645,7 +665,7 @@
 				<Value xsi:type="xs:string">--db-server=&lt;address&gt;</Value>
 				<Value xsi:type="xs:string">Имя сервера СУБД</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">address</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -657,7 +677,7 @@
 				<Value xsi:type="xs:string">--db-name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя базы данных</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -669,7 +689,7 @@
 				<Value xsi:type="xs:string">--db-user=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя сервера СУБД</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -681,7 +701,7 @@
 				<Value xsi:type="xs:string">--db-pwd=&lt;password&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя сервера СУБД</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">password</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -690,11 +710,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
-				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string">--request-db-pwd</Value>
 				<Value xsi:type="xs:string">Запрос пароля пользователя сервера СУБД через стандартный поток ввода (STDIN)</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -707,7 +727,7 @@
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'db-data' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -716,11 +736,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">821cc366-4d09-41a3-8750-909c2dd66433</Value>
-				<Value xsi:type="xs:string">--data=&lt;path&gt; | -d &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">--data=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к каталогу данных сервера.
         По-умолчанию, используется значение: /Users/live/.1cv8/1C/1cv8/standalone-server/</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -733,7 +753,7 @@
 				<Value xsi:type="xs:string">Путь к файлу блокировки каталога данных автономного сервера.
         По-умолчанию, используется файл lock.pid в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -747,7 +767,7 @@
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'temp' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -760,7 +780,7 @@
 				<Value xsi:type="xs:string">Путь к каталогу конфигурационных данных пользователей.
         По-умолчанию, используется значение: users-data</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -774,7 +794,7 @@
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'session-data' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -788,7 +808,7 @@
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'log-data' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -802,7 +822,7 @@
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'ftext-data' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -816,7 +836,7 @@
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'ftext2-data' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -830,7 +850,7 @@
         В случае использования относительного пути, полный путь будет получен относительно каталога данных сервера.
         По-умолчанию, используется подкаталог 'openid-data' в каталоге данных сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -839,11 +859,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
-				<Value xsi:type="xs:string">--locale=&lt;name&gt; | -l &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--locale=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя локейла информационной базы.
             По-умолчанию, используется текущее значение локейла приложения</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -856,11 +876,21 @@
 				<Value xsi:type="xs:string">Смещение дат (используется для Microsoft SQL Server).
             По-умолчанию, используется значение: 2000</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Список</Value>
 				<Value xsi:type="xs:string">years</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>0</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>2000</presentation>
+						<id>1</id>
+					</item>
 				</Value>
 			</row>
 			<row>
@@ -880,7 +910,7 @@
 				<Value xsi:type="xs:string">--restore=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу выгрузки данных информационной базы для загрузки</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -892,7 +922,7 @@
 				<Value xsi:type="xs:string">--load=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу конфигурации информационной базы для загрузки</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -904,7 +934,7 @@
 				<Value xsi:type="xs:string">--import=&lt;directory&gt;</Value>
 				<Value xsi:type="xs:string">Путь к каталогу XML представления конфигурации информационной базы для загрузки</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">directory</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -925,11 +955,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6d39ea26-80d7-41ab-ae22-4b1c1bfd8017</Value>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">--force</Value>
 				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -937,10 +967,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
-				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -949,10 +979,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">adf9f240-060e-4df3-bc67-8874f1327adb</Value>
-				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">password</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -964,7 +994,7 @@
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу выгрузки информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -973,10 +1003,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
-				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -985,10 +1015,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
-				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">password</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1009,11 +1039,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">a9b44b87-af0d-4ccf-94cb-ff76985fefd7</Value>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">--force</Value>
 				<Value xsi:type="xs:string">Принудительное завершение сеансов информационной базы перед загрузкой</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1024,7 +1054,7 @@
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу выгрузки информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1033,10 +1063,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">1f81d824-217d-43ac-bbd2-f86a4bc187b6</Value>
-				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1045,10 +1075,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">1f81d824-217d-43ac-bbd2-f86a4bc187b6</Value>
-				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">password</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1057,10 +1087,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">763f6508-704a-4f94-9e9d-5aad2798601b</Value>
-				<Value xsi:type="xs:string">--user=&lt;name&gt; | -u &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--user=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1069,10 +1099,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">763f6508-704a-4f94-9e9d-5aad2798601b</Value>
-				<Value xsi:type="xs:string">--password=&lt;password&gt; | -P &lt;password&gt;</Value>
+				<Value xsi:type="xs:string">--password=&lt;password&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Пароль</Value>
 				<Value xsi:type="xs:string">password</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1081,10 +1111,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1093,11 +1123,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">0f0c6205-2283-42ac-a914-bc9b135374d3</Value>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">--force</Value>
 				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1108,7 +1138,7 @@
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1117,10 +1147,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">6508a4e0-3170-4cd0-ba5e-c4a656c11f9c</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1144,7 +1174,7 @@
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1153,10 +1183,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">23dc003b-df29-4ed9-9ba2-e6fa35ffcb91</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1165,11 +1195,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">23dc003b-df29-4ed9-9ba2-e6fa35ffcb91</Value>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">--force</Value>
 				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1177,10 +1207,10 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1189,11 +1219,11 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">--force</Value>
 				<Value xsi:type="xs:string">Подтверждение выполнения операции в случае наличия предупреждений</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1201,42 +1231,46 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
-				<Value xsi:type="xs:string">--dynamic=&lt;auto|disable|prompt|force&gt;</Value>
+				<Value xsi:type="xs:string">--dynamic=&lt;dynamic&gt;</Value>
 				<Value xsi:type="xs:string">Использование динамического обновления.
 auto - автоматически (по-умолчанию)
 disable - использование запрещено
 prompt - запрос пользователя
 force - использовать только динамическое обновление.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">auto|disable|prompt|force</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">dynamic</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
-				<Value xsi:type="xs:string">--session-terminate=&lt;auto|disable|prompt|force&gt;</Value>
-				<Value xsi:type="xs:string">Завершение активных сеансов в случае необходимости установки эксклюзивной блокировки информационной базы.	
-	auto - автоматически (по-умолчанию)
-	disable - запрещено
-	prompt - запрос пользователя
-	force - принудительное завершение сеансов.</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">auto|disable|prompt|force</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>auto</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>disable</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>prompt</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>force</presentation>
+						<id>3</id>
+					</item>
 				</Value>
 			</row>
 			<row>
 				<Value xsi:type="UUID">81ceba10-2f8f-4cc9-a384-57e1d6d3849c</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1281,10 +1315,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
-				<Value xsi:type="xs:string">--base=&lt;file&gt; | -b &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--base=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">(обязательный) Путь к файлу информации о конфигурации (ConfigDumpInfo) относительно которого вычисляются изменения текущей конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1293,10 +1327,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
-				<Value xsi:type="xs:string">--file=&lt;file&gt; | -f &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--file=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу конфигурации, расширения конфигурации, внешней обработки или отчета</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1305,10 +1339,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1341,10 +1375,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
-				<Value xsi:type="xs:string">--threads=&lt;n&gt; | -T &lt;n&gt;</Value>
+				<Value xsi:type="xs:string">--threads=&lt;n&gt;</Value>
 				<Value xsi:type="xs:string">Количество потоков используемых при экспорте. По умолчанию, используется количество логических ядер</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Число</Value>
 				<Value xsi:type="xs:string">n</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1353,11 +1387,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">c8b15829-1b77-4c22-a87b-582f02e69f6f</Value>
-				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string">--archive</Value>
 				<Value xsi:type="xs:string">Упаковать экспортируемые файлы в архив</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1368,7 +1402,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">путь к каталогу файлов конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1377,10 +1411,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">4a97021f-e6f9-42c3-aaf4-95c4ec6c9097</Value>
-				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу для записи информации о конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1389,10 +1423,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">4a97021f-e6f9-42c3-aaf4-95c4ec6c9097</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1401,10 +1435,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
-				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу для записи информации о изменениях в конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1413,10 +1447,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
-				<Value xsi:type="xs:string">--base=&lt;file&gt; | -b &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--base=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">(обязательный) Путь к файлу информации о конфигурации (ConfigDumpInfo) относительно которого вычисляются изменения текущей конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1425,10 +1459,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1437,11 +1471,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">73ba7c4d-c626-48cd-9cfd-f100674fbfa1</Value>
-				<Value xsi:type="xs:string">--short | -s</Value>
+				<Value xsi:type="xs:string">--short</Value>
 				<Value xsi:type="xs:string">Отображать информацию о изменениях в сокращенном виде.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--short | -s</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1449,10 +1483,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
-				<Value xsi:type="xs:string">--out=&lt;path&gt; | -o &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">--out=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">(обязательный) Путь к каталогу или архиву для экспорта выбранных объектов</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1461,10 +1495,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1473,11 +1507,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
-				<Value xsi:type="xs:string">--recursive | -r</Value>
+				<Value xsi:type="xs:string">--recursive</Value>
 				<Value xsi:type="xs:string">Выполнять экспорт дочерних объектов.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--recursive | -r</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1485,10 +1519,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
-				<Value xsi:type="xs:string">--threads=&lt;n&gt; | -T &lt;n&gt;</Value>
+				<Value xsi:type="xs:string">--threads=&lt;n&gt;</Value>
 				<Value xsi:type="xs:string">Количество потоков используемых при экспорте. По умолчанию, используется количество логических ядер</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Число</Value>
 				<Value xsi:type="xs:string">n</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1497,11 +1531,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">7f05b8ba-e6da-429e-af6f-13c810627915</Value>
-				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string">--archive</Value>
 				<Value xsi:type="xs:string">Упаковать экспортируемые файлы в архив</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1512,7 +1546,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">&lt;Object1 ... ObjectN&gt;</Value>
 				<Value xsi:type="xs:string">Список объектов конфигурации для экспорта</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">Object1 ... ObjectN</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1521,10 +1555,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">f665d51f-2941-4e4f-b4eb-130a599f7dff</Value>
-				<Value xsi:type="xs:string">--threads=&lt;n&gt; | -T &lt;n&gt;</Value>
+				<Value xsi:type="xs:string">--threads=&lt;n&gt;</Value>
 				<Value xsi:type="xs:string">Количество потоков используемых при экспорте. По умолчанию, используется количество логических ядер</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Число</Value>
 				<Value xsi:type="xs:string">n</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1533,11 +1567,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">f665d51f-2941-4e4f-b4eb-130a599f7dff</Value>
-				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string">--archive</Value>
 				<Value xsi:type="xs:string">Упаковать экспортируемые файлы в архив</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--archive | -A</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1548,7 +1582,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">путь к каталогу, в который будут выгружены расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1557,10 +1591,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">3af01191-caec-422e-8f4a-7cfa3c48722f</Value>
-				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу для записи импортируемой конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1569,10 +1603,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">3af01191-caec-422e-8f4a-7cfa3c48722f</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1584,7 +1618,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">путь к каталогу или архиву с файлами конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1596,7 +1630,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--base-dir=&lt;directory&gt;</Value>
 				<Value xsi:type="xs:string">Базовый каталог, содержащий XML файлы конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">directory</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1608,7 +1642,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--archive=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к архиву, содержащему XML файлы конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1629,10 +1663,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">ade5e039-2fc8-4e06-ad26-ad7a9473b2ad</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1644,7 +1678,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">&lt;File1 ... FileN&gt;</Value>
 				<Value xsi:type="xs:string">Список фалов конфигурации для импорта</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">File1 ... FileN</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1668,7 +1702,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">путь к каталогу, из которого будут загружены расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1677,11 +1711,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">9077ebcd-8285-4481-bafc-6b16d0c7f12b</Value>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string">--force</Value>
 				<Value xsi:type="xs:string">Снятие с поддержки вне зависимости от наличия возможности редактирования конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--force | -F</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1693,7 +1727,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">(обязательный) Имя расширения. Должно удовлетворять правилам формирования имени.
 Имя должно состоять из одного слова, начинаться с буквы и не содержать специальных символов кроме "_".</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1706,7 +1740,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">(обязательный) Префикс имен. Должен удовлетворять правилам формирования имени.
 Имя должно состоять из одного слова, начинаться с буквы и не содержать специальных символов кроме "_".</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">prefix</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1718,7 +1752,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--synonym=&lt;synonym&gt;</Value>
 				<Value xsi:type="xs:string">Синоним в формате функции NStr()</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">synonym</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1727,14 +1761,29 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">80c2aa8e-3d44-4e7f-a009-146f9378de27</Value>
-				<Value xsi:type="xs:string">--purpose=&lt;customization|add-on|patch&gt;</Value>
+				<Value xsi:type="xs:string">--purpose=&lt;purpose&gt;</Value>
 				<Value xsi:type="xs:string">Назначение расширения</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">customization|add-on|patc</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">purpose</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>2</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>customization</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>add-on</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>patch</presentation>
+						<id>2</id>
+					</item>
 				</Value>
 			</row>
 			<row>
@@ -1742,7 +1791,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">(обязательный) Имя расширения. Должно удовлетворять правилам формирования имени.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1754,7 +1803,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">(обязательный) Имя расширения. Должно удовлетворять правилам формирования имени.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1763,11 +1812,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
-				<Value xsi:type="xs:string">--active=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">--active=&lt;active&gt;</Value>
 				<Value xsi:type="xs:string">Активность расширения</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="xs:string">Булево (yes/no)</Value>
+				<Value xsi:type="xs:string">active</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1775,11 +1824,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
-				<Value xsi:type="xs:string">--safe-mode=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">--safe-mode=&lt;safe-mode&gt;</Value>
 				<Value xsi:type="xs:string">Безопасный режим</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="xs:string">Булево (yes/no)</Value>
+				<Value xsi:type="xs:string">safe-mode</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1787,11 +1836,11 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
-				<Value xsi:type="xs:string">--security-profile-name=&lt;yes|no&gt;</Value>
+				<Value xsi:type="xs:string">--security-profile-name=&lt;security-profile-name&gt;</Value>
 				<Value xsi:type="xs:string">Имя профиля безопасности</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">yes|no</Value>
+				<Value xsi:type="xs:string">Булево (yes/no)</Value>
+				<Value xsi:type="xs:string">security-profile-name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -1802,7 +1851,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--unsafe-action-protection=&lt;yes|no&gt;</Value>
 				<Value xsi:type="xs:string">Защита от опасных действий</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Булево (yes/no)</Value>
 				<Value xsi:type="xs:string">yes|no</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1814,7 +1863,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--used-in-distributed-infobase=&lt;yes|no&gt;</Value>
 				<Value xsi:type="xs:string">Используется в распределенной информационной базе</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Булево (yes/no)</Value>
 				<Value xsi:type="xs:string">yes|no</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1823,14 +1872,24 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">cb77a8fd-770f-4a10-8ceb-5278c0203552</Value>
-				<Value xsi:type="xs:string">--scope=&lt;infobase|data-separation&gt;</Value>
+				<Value xsi:type="xs:string">--scope=&lt;scope&gt;</Value>
 				<Value xsi:type="xs:string">Область действия расширения</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">infobase|data-separation</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">scope</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>-1</lastId>
+					<lastId>1</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>infobase</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>data-separation</presentation>
+						<id>1</id>
+					</item>
 				</Value>
 			</row>
 			<row>
@@ -1838,7 +1897,7 @@ force - использовать только динамическое обно�
 				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения. Должно удовлетворять правилам формирования имени.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1859,10 +1918,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">91fd0890-b310-4fa6-8137-00ed8782d313</Value>
-				<Value xsi:type="xs:string">--extension=&lt;extension&gt; | -e &lt;extension&gt;</Value>
+				<Value xsi:type="xs:string">--extension=&lt;extension&gt;</Value>
 				<Value xsi:type="xs:string">Имя расширения конфигурации</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">extension</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1871,10 +1930,10 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
-				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу для записи конфигурации автономного сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1883,7 +1942,7 @@ force - использовать только динамическое обно�
 			</row>
 			<row>
 				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
-				<Value xsi:type="xs:string">--address=&lt;address&gt; | -a &lt;address&gt;</Value>
+				<Value xsi:type="xs:string">--address=&lt;address&gt;</Value>
 				<Value xsi:type="xs:string">Основной IP адрес, обслуживаемый сервером.
 Допустимые значения:
 localhost - локальный сетевой интерфейс;
@@ -1892,7 +1951,7 @@ xxx.xxx.xxx.xxx - IPv4 адрес используемого сетевого и
 xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемого сетевого интерфейса.
 По-умолчанию используется значение: localhost</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">address</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1901,11 +1960,11 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
-				<Value xsi:type="xs:string">--port=&lt;number&gt; | -p &lt;number&gt;</Value>
+				<Value xsi:type="xs:string">--port=&lt;number&gt;</Value>
 				<Value xsi:type="xs:string">Основной TCP порт, обслуживаемый сервером.
 По-умолчанию, используется значение: 8314</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Число</Value>
 				<Value xsi:type="xs:string">number</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1914,11 +1973,11 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
-				<Value xsi:type="xs:string">--base=&lt;location&gt; | -b &lt;location&gt;</Value>
+				<Value xsi:type="xs:string">--base=&lt;location&gt;</Value>
 				<Value xsi:type="xs:string">Базовый путь публикации информационной базы.
 По-умолчанию, используется значение: /</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">location</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -1927,7 +1986,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
-				<Value xsi:type="xs:string">--name=&lt;name&gt; | -n &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">Имя информационной базы.
 По-умолчанию, используется строковое представление идентификатора информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
@@ -2042,11 +2101,11 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
-				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string">--request-db-pwd</Value>
 				<Value xsi:type="xs:string">Запрос пароля пользователя сервера СУБД через стандартный поток ввода (STDIN)</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">--request-db-pwd | -W</Value>
+				<Value xsi:type="xs:string"/>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
@@ -2075,29 +2134,23 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 	deny (no, false) - выдача клиентских лицензий выключена.
 По-умолчанию, используется значение: allow</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">Булево (allow/deny)</Value>
 				<Value xsi:type="xs:string">flag</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
-					<lastId>1</lastId>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>allow</presentation>
-						<id>0</id>
-					</item>
-					<item>
-						<value xsi:nil="true"/>
-						<presentation>deny</presentation>
-						<id>1</id>
-					</item>
+					<lastId>-1</lastId>
 				</Value>
 			</row>
 			<row>
 				<Value xsi:type="UUID">353f929e-e65a-4e63-b5dc-7003b8cc1a9c</Value>
 				<Value xsi:type="xs:string">--schedule-jobs=&lt;flag&gt;</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Включение/выключение планирования регламентных заданий.
+                    Допустимые значения:
+                        allow (yes, true) - планирование регламентных заданий включено;
+                        deny (no, false) - планирование регламентных заданий выключено.
+                    По-умолчанию, используется значение: allow</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Булево (allow/deny)</Value>
 				<Value xsi:type="xs:string">flag</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2110,7 +2163,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">Путь к рабочему каталогу кластера серверов 1С:Предприятия 8.
 По-умолчанию, используется значение: /Users/live/.1cv8/1C/1cv8</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Каталог</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2123,7 +2176,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">Порт менеджера кластера серверов 1С:Предприятия 8.
 По-умолчанию, используется значение: 1541</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Число</Value>
 				<Value xsi:type="xs:string">port</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2132,10 +2185,10 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
-				<Value xsi:type="xs:string">--name=&lt;name&gt; | -n &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">--name=&lt;name&gt;</Value>
 				<Value xsi:type="xs:string">(обязательный) Имя информационной базы</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">name</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2144,10 +2197,10 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
-				<Value xsi:type="xs:string">--out=&lt;file&gt; | -o &lt;file&gt;</Value>
+				<Value xsi:type="xs:string">--out=&lt;file&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу для записи конфигурации автономного сервера</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">file</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2156,7 +2209,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
-				<Value xsi:type="xs:string">--address=&lt;address&gt; | -a &lt;address&gt;</Value>
+				<Value xsi:type="xs:string">--address=&lt;address&gt;</Value>
 				<Value xsi:type="xs:string">Основной IP адрес, обслуживаемый сервером.	
 Допустимые значения:	
 	localhost - локальный сетевой интерфейс;
@@ -2165,7 +2218,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 	xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемого сетевого интерфейса.
 По-умолчанию используется значение: localhost</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">address</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2178,7 +2231,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">Основной TCP порт, обслуживаемый сервером.
 По-умолчанию, используется значение: 8314</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Число</Value>
 				<Value xsi:type="xs:string">number</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2187,11 +2240,11 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
-				<Value xsi:type="xs:string">--base=&lt;location&gt; | -b &lt;location&gt;</Value>
+				<Value xsi:type="xs:string">--base=&lt;location&gt;</Value>
 				<Value xsi:type="xs:string">Базовый путь публикации информационной базы.
 По-умолчанию, используется значение: /</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">location</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2200,10 +2253,10 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 			</row>
 			<row>
 				<Value xsi:type="UUID">b25b75de-1ad9-4e50-9840-307ec66b07dc</Value>
-				<Value xsi:type="xs:string">--publication=&lt;path&gt; | -p &lt;path&gt;</Value>
+				<Value xsi:type="xs:string">--publication=&lt;path&gt;</Value>
 				<Value xsi:type="xs:string">Путь к файлу дескриптора публикации информационной базы на веб-сервере</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Файл</Value>
 				<Value xsi:type="xs:string">path</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2239,7 +2292,7 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">--error-message=&lt;string&gt;</Value>
 				<Value xsi:type="xs:string">сообщение о причине завершения сеанса</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">string</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
@@ -2251,11 +2304,47 @@ xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx - IPv6 адрес используемо
 				<Value xsi:type="xs:string">--error-message=&lt;string&gt;</Value>
 				<Value xsi:type="xs:string">сообщение о причине прерывания</Value>
 				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string">Строка</Value>
 				<Value xsi:type="xs:string">string</Value>
 				<Value xsi:type="ValueListType">
 					<valueType/>
 					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">301cd580-914f-4eaf-a1c8-e15c73febf73</Value>
+				<Value xsi:type="xs:string">--session-terminate=&lt;session-terminate&gt;</Value>
+				<Value xsi:type="xs:string">Завершение активных сеансов в случае необходимости установки эксклюзивной блокировки информационной базы.	
+	auto - автоматически (по-умолчанию)
+	disable - запрещено
+	prompt - запрос пользователя
+	force - принудительное завершение сеансов.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">session-terminate</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>auto</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>disable</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>prompt</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>force</presentation>
+						<id>3</id>
+					</item>
 				</Value>
 			</row>
 		</Value>

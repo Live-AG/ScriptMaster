@@ -1,0 +1,600 @@
+﻿<Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Property name="Программа">
+		<Value xsi:type="xs:string">1cedtcli</Value>
+	</Property>
+	<Property name="ВерсияПрограммы">
+		<Value xsi:type="xs:string">8.3.21</Value>
+	</Property>
+	<Property name="ДеревоКоманд">
+		<Value xsi:type="ValueTree">
+			<column>
+				<Name>Команда</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>250</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Использование</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Описание</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>КлючСвязи</Name>
+				<ValueType>
+					<Type>UUID</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ИмяОбласти</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>50</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Исключительная</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>СсылкаНаИсточник</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">export</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде export</Value>
+						<Value xsi:type="UUID">b811d3b2-eed3-4370-a69f-f72163d4cc52</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">import</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде import</Value>
+						<Value xsi:type="UUID">7014d5a4-2810-4a39-91cc-c07f1062a5b0</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">clean-up-source</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде clean-up-source</Value>
+						<Value xsi:type="UUID">c0e7b254-86ca-4f2f-aa8e-1dfca23cec4e</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">sort-project</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде sort-project</Value>
+						<Value xsi:type="UUID">fa6a87ff-658c-4856-a441-2e0325f13396</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">validate</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде validate</Value>
+						<Value xsi:type="UUID">340752fa-6daa-4917-874e-715fabf510b2</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">platform-versions</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде platform-versions</Value>
+						<Value xsi:type="UUID">9f3f834a-85c7-4a71-bd63-1f58c1dccd75</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">install-platform-support</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде install-platform-support</Value>
+						<Value xsi:type="UUID">b67d3a29-b44a-4442-b1c1-ef83e7f75885</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">uninstall-platform-support</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Справка по команде uninstall-platform-support</Value>
+						<Value xsi:type="UUID">dd3f8fd9-6643-480f-9347-e29f3c519cdd</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<Value xsi:type="xs:string">help</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Выводит список доступных команд</Value>
+					<Value xsi:type="UUID">24b29de6-b48b-48bf-b3d7-fc34dab200a5</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__help</Value>
+				</row>
+				<row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string">export</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Экспортирует проект в XML-выгрузку конфигурации</Value>
+							<Value xsi:type="UUID">520e3ac6-13fd-41d8-a0ef-23aa87402ce1</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__export</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">import</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Импортирует XML-выгрузку конфигурации в проект</Value>
+							<Value xsi:type="UUID">0f60c1e6-f279-4496-9d22-3979dc9bc0a1</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__import</Value>
+						</row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Экспорт и импорт проекта</Value>
+						<Value xsi:type="UUID">13ce104d-61fa-4752-8c3f-bc7cca99b4ad</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string">clean-up-source</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Оптимизирует формат хранения данных проекта. </Value>
+							<Value xsi:type="UUID">36cbe840-f838-47ea-be9e-87286c6821dd</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__clean-up-source</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">sort-project</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Сортирует объекты конфигурации в соответствии с настройками автоматической сортировки. Если автоматическая сортировка не была включена для проекта, будут установлены стандартные настройки автоматической сортировки, в соответствии с которыми объекты конфигурации будут отсортированы</Value>
+							<Value xsi:type="UUID">2728137f-18ed-48da-866c-86e291090d2b</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__sort-project</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">validate</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Проверяет проект и выводит результат в .tsv-файл</Value>
+							<Value xsi:type="UUID">435b75be-953d-4105-85e6-baa9fca64842</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__validate</Value>
+						</row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Обслуживание проекта</Value>
+						<Value xsi:type="UUID">7d7986e8-9331-4aad-83b9-d5db56be82e7</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string">platform-versions</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Сообщает список версий платформы «1С:Предприятие», которые поддерживаются данной средой разработки</Value>
+							<Value xsi:type="UUID">462993d3-2b37-44fa-9d29-53829f8ff181</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__platform-versions</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">install-platform-support</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">В текущую среду разработки добавляет поддержку платформы «1С:Предприятие» указанной версии</Value>
+							<Value xsi:type="UUID">461be532-faed-44f9-b5d6-bfaf18304057</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__install-platform-support</Value>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">uninstall-platform-support</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Из текущей среды разработки удаляет поддержку платформы «1С:Предприятие» указанной версии</Value>
+							<Value xsi:type="UUID">ef86cbba-643a-45db-b7ed-02f8d9fb3d0c</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__uninstall-platform-support</Value>
+						</row>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Работа с платформой «1С:Предприятия»</Value>
+						<Value xsi:type="UUID">59007300-382e-4b48-bdc2-0be4d3a243ce</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<Value xsi:type="xs:string">-command</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Команда, которую нужно выполнить, и ее аргументы</Value>
+					<Value xsi:type="UUID">15d0f872-c481-4962-bb0d-934cd6289108</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
+				</row>
+				<row>
+					<Value xsi:type="xs:string">-file</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Выполнение набора команд из файла</Value>
+					<Value xsi:type="UUID">5e4d6fc2-3b0b-4a2e-addd-96e2d75faa23</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__help</Value>
+				</row>
+				<row>
+					<Value xsi:type="xs:string">exit</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Завершает интерактивный режим работы</Value>
+					<Value xsi:type="UUID">e520b2fa-c77a-4d5c-b323-98906d970b62</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__exit</Value>
+				</row>
+				<Value xsi:type="xs:string">1cedtcli</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="UUID">1117ed90-4fbe-4bff-84d8-962f3f991be5</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc</Value>
+			</row>
+		</Value>
+	</Property>
+	<Property name="ТаблицаПараметров">
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name>КлючСвязи</Name>
+				<ValueType>
+					<Type>UUID</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Параметр</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>250</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Описание</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Использование</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ТипАргумента</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>25</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ИмяАргумента</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>25</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>СписокЗначенийАргумента</Name>
+				<ValueType>
+					<Type>ValueListType</Type>
+				</ValueType>
+			</column>
+			<row>
+				<Value xsi:type="UUID">520e3ac6-13fd-41d8-a0ef-23aa87402ce1</Value>
+				<Value xsi:type="xs:string">--project &lt;filepath&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу, в котором находятся файлы проекта. Если этот проект не импортирован в рабочую область, переданную в параметре -data, то перед экспортом проекта в XML-файлы конфигурации будет выполнен импорт этого проекта в рабочую область</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">filepath</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1117ed90-4fbe-4bff-84d8-962f3f991be5</Value>
+				<Value xsi:type="xs:string">-data &lt;catalog&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр. Расположение рабочей области 1C:EDT.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">catalog</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1117ed90-4fbe-4bff-84d8-962f3f991be5</Value>
+				<Value xsi:type="xs:string">-timeout&lt;timeout&gt;</Value>
+				<Value xsi:type="xs:string">Необязательный параметр. Максимальное время в секундах, отводимое на выполнение команды или скрипта. Если команда или скрипт не завершилась по истечении этого времени, они будут прерваны. Если таймаут не указан в явном виде, используется значение 60 секунд. </Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">timeout</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">5e4d6fc2-3b0b-4a2e-addd-96e2d75faa23</Value>
+				<Value xsi:type="xs:string">&lt;FilePath&gt;</Value>
+				<Value xsi:type="xs:string">Путь к файлу, содержащему команды, которые надо выполнить</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">FilePath</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">520e3ac6-13fd-41d8-a0ef-23aa87402ce1</Value>
+				<Value xsi:type="xs:string">--project-name &lt;name&gt;</Value>
+				<Value xsi:type="xs:string">Имя проекта, который нужно экспортировать</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">name</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">520e3ac6-13fd-41d8-a0ef-23aa87402ce1</Value>
+				<Value xsi:type="xs:string">--configuration-files &lt;catalog&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный аргумент. Каталог, в который следует поместить XML-файлы конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">catalog</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f60c1e6-f279-4496-9d22-3979dc9bc0a1</Value>
+				<Value xsi:type="xs:string">--version &lt;version&gt;</Value>
+				<Value xsi:type="xs:string">Номер версии платформы «1С:Предприятия», который будет назначен создаваемому проекту, например, 8.3.22. Если версия не задана, то она будет определена по предоставленной версии XML-файлов конфигурации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">version</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f60c1e6-f279-4496-9d22-3979dc9bc0a1</Value>
+				<Value xsi:type="xs:string">--base-project-name &lt;ProjectName&gt;</Value>
+				<Value xsi:type="xs:string">Имя базового проекта (только для проектов расширений и проектов внешних отчетов и обработок)</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">ProjectName</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f60c1e6-f279-4496-9d22-3979dc9bc0a1</Value>
+				<Value xsi:type="xs:string">--configuration-files &lt;catalog&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный аргумент. Путь к каталогу, содержащему XML-файлы конфигурации;</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">catalog</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f60c1e6-f279-4496-9d22-3979dc9bc0a1</Value>
+				<Value xsi:type="xs:string">--project &lt;catalog&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу проекта, в который следует импортировать XML-файлы конфигурации. Если каталог уже содержит какие-то файлы, то новые файлы будут добавлены к существующим. Если этот проект не импортирован в рабочую область, переданную в параметре -data, то перед импортом в него XML-файлов конфигурации будет выполнен импорт этого проекта в рабочую область</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">catalog</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0f60c1e6-f279-4496-9d22-3979dc9bc0a1</Value>
+				<Value xsi:type="xs:string">--project-name &lt;ProjectName&gt;</Value>
+				<Value xsi:type="xs:string">Имя проекта, в который следует импортировать XML-файлы конфигурации. Если такой проект уже существует в рабочей области, переданной в параметре -data, то будет выдана ошибка</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">ProjectName</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">36cbe840-f838-47ea-be9e-87286c6821dd</Value>
+				<Value xsi:type="xs:string">--project &lt;catalog&gt;</Value>
+				<Value xsi:type="xs:string">Путь к каталогу, в котором находятся файлы проекта. Если этот проект не импортирован в рабочую область, переданную в параметре -data, то перед оптимизацией формата хранения данных проекта будет выполнен импорт этого проекта в рабочую область</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">catalog</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">36cbe840-f838-47ea-be9e-87286c6821dd</Value>
+				<Value xsi:type="xs:string">--project-name &lt;ProjectName&gt;</Value>
+				<Value xsi:type="xs:string">Имя проекта, формат хранения данных которого нужно оптимизировать</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">ProjectName</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2728137f-18ed-48da-866c-86e291090d2b</Value>
+				<Value xsi:type="xs:string">--project-list &lt;project-list&gt;</Value>
+				<Value xsi:type="xs:string">Список путей к каталогам, в которых находятся файлы проектов, при этом обрабатываются все вложенные проекты. Если какой-то из проектов не импортирован в рабочую область, переданную в параметре -data, то перед сортировкой проекта будет выполнен импорт этого проекта в рабочую область</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">project-list</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">2728137f-18ed-48da-866c-86e291090d2b</Value>
+				<Value xsi:type="xs:string">--project-name-list &lt;NameList&gt;</Value>
+				<Value xsi:type="xs:string">Список имен проектов для сортировки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">NameList</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">435b75be-953d-4105-85e6-baa9fca64842</Value>
+				<Value xsi:type="xs:string">--file &lt;FilePath&gt;</Value>
+				<Value xsi:type="xs:string">Путь к .tsv-файлу, в который будут записаны результаты проверки. Если файл уже существует, то будет выдана ошибка</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">FilePath</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">435b75be-953d-4105-85e6-baa9fca64842</Value>
+				<Value xsi:type="xs:string">--project-list &lt;project-list&gt;</Value>
+				<Value xsi:type="xs:string">Список путей к каталогам, в которых находятся файлы проектов, при этом обрабатываются все вложенные проекты. Если какой-то из проектов не импортирован в рабочую область, переданную в параметре -data, то перед сортировкой проекта будет выполнен импорт этого проекта в рабочую область</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">project-list</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">435b75be-953d-4105-85e6-baa9fca64842</Value>
+				<Value xsi:type="xs:string">--project-name-list &lt;NameList&gt;</Value>
+				<Value xsi:type="xs:string">Список имен проектов для сортировки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">NameList</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">461be532-faed-44f9-b5d6-bfaf18304057</Value>
+				<Value xsi:type="xs:string">--version &lt;version&gt;</Value>
+				<Value xsi:type="xs:string">Версия платформы, поддержку которой нужно добавить.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">version</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ef86cbba-643a-45db-b7ed-02f8d9fb3d0c</Value>
+				<Value xsi:type="xs:string">--version &lt;version&gt;</Value>
+				<Value xsi:type="xs:string">Версия платформы, поддержку которой нужно удалить</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">version</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">e520b2fa-c77a-4d5c-b323-98906d970b62</Value>
+				<Value xsi:type="xs:string">--yes &lt;value&gt;</Value>
+				<Value xsi:type="xs:string">Если он имеет значение "true", то выход будет без подтверждения. Если он не указан или имеет значение "false" будет запрошено подтверждение выхода</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">value</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+		</Value>
+	</Property>
+</Structure>

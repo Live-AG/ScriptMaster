@@ -100,6 +100,15 @@
         <choiceList>
           <presentation>
             <key>ru</key>
+            <value>1cedtcli</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>1cedtcli</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
             <value>webinst</value>
           </presentation>
           <value xsi:type="core:StringValue">
@@ -1488,6 +1497,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>ChoiceProcessing</event>
+                <name>ТаблицаПараметровТипАргументаОбработкаВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -1506,6 +1519,15 @@
               <choiceList>
                 <presentation>
                   <key>ru</key>
+                  <value>Строка без ковычек</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Строка без ковычек</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
                   <value>Число</value>
                 </presentation>
                 <value xsi:type="core:StringValue">
@@ -1515,7 +1537,7 @@
               <choiceList>
                 <presentation>
                   <key>ru</key>
-                  <value>Булево</value>
+                  <value>Булево (true/false)</value>
                 </presentation>
                 <value xsi:type="core:StringValue">
                   <value>Булево</value>
@@ -1524,10 +1546,46 @@
               <choiceList>
                 <presentation>
                   <key>ru</key>
-                  <value>Дата</value>
+                  <value>Булево (yes/no)</value>
                 </presentation>
                 <value xsi:type="core:StringValue">
-                  <value>Дата</value>
+                  <value>Булево (yes/no)</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Булево (on/off)</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Булево (on/off)</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Булево (allow/deny)</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Булево (allow/deny)</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Дата (yyyy-MM-dd)</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Дата (yyyy-MM-dd)</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Дата (yyyyMMdd)</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Дата (yyyyMMdd)</value>
                 </value>
               </choiceList>
               <choiceList>
@@ -1613,6 +1671,10 @@
               <handlers>
                 <event>StartChoice</event>
                 <name>ТаблицаПараметровСписокЗначенийАргументаНачалоВыбора</name>
+              </handlers>
+              <handlers>
+                <event>ChoiceProcessing</event>
+                <name>ТаблицаПараметровСписокЗначенийАргументаОбработкаВыбора</name>
               </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
