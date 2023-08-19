@@ -369,7 +369,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">1117ed90-4fbe-4bff-84d8-962f3f991be5</Value>
-				<Value xsi:type="xs:string">-timeout&lt;timeout&gt;</Value>
+				<Value xsi:type="xs:string">-timeout &lt;timeout&gt;</Value>
 				<Value xsi:type="xs:string">Необязательный параметр. Максимальное время в секундах, отводимое на выполнение команды или скрипта. Если команда или скрипт не завершилась по истечении этого времени, они будут прерваны. Если таймаут не указан в явном виде, используется значение 60 секунд. </Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Число</Value>

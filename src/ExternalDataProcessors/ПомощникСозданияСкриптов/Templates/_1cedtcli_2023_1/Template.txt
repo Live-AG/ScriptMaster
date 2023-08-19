@@ -70,73 +70,73 @@
 					<row>
 						<Value xsi:type="xs:string">export</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде export</Value>
 						<Value xsi:type="UUID">b811d3b2-eed3-4370-a69f-f72163d4cc52</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">import</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде import</Value>
 						<Value xsi:type="UUID">7014d5a4-2810-4a39-91cc-c07f1062a5b0</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">clean-up-source</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде clean-up-source</Value>
 						<Value xsi:type="UUID">c0e7b254-86ca-4f2f-aa8e-1dfca23cec4e</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">sort-project</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде sort-project</Value>
 						<Value xsi:type="UUID">fa6a87ff-658c-4856-a441-2e0325f13396</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">validate</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде validate</Value>
 						<Value xsi:type="UUID">340752fa-6daa-4917-874e-715fabf510b2</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">platform-versions</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде platform-versions</Value>
 						<Value xsi:type="UUID">9f3f834a-85c7-4a71-bd63-1f58c1dccd75</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">install-platform-support</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде install-platform-support</Value>
 						<Value xsi:type="UUID">b67d3a29-b44a-4442-b1c1-ef83e7f75885</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:string">uninstall-platform-support</Value>
 						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:string">Справка по команде uninstall-platform-support</Value>
 						<Value xsi:type="UUID">dd3f8fd9-6643-480f-9347-e29f3c519cdd</Value>
 						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:string">help</Value>
@@ -145,7 +145,7 @@
 					<Value xsi:type="UUID">24b29de6-b48b-48bf-b3d7-fc34dab200a5</Value>
 					<Value xsi:type="xs:string"/>
 					<Value xsi:type="xs:boolean">true</Value>
-					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:string">https://its.1c.ru/db/edtdoc#content:10608:hdoc:t000608__help</Value>
 				</row>
 				<row>
 					<row>
@@ -369,7 +369,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">1117ed90-4fbe-4bff-84d8-962f3f991be5</Value>
-				<Value xsi:type="xs:string">-timeout&lt;timeout&gt;</Value>
+				<Value xsi:type="xs:string">-timeout &lt;timeout&gt;</Value>
 				<Value xsi:type="xs:string">Необязательный параметр. Максимальное время в секундах, отводимое на выполнение команды или скрипта. Если команда или скрипт не завершилась по истечении этого времени, они будут прерваны. Если таймаут не указан в явном виде, используется значение 60 секунд. </Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Число</Value>

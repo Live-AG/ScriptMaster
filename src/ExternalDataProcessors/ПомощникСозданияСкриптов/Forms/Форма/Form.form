@@ -1672,10 +1672,6 @@
                 <event>StartChoice</event>
                 <name>ТаблицаПараметровСписокЗначенийАргументаНачалоВыбора</name>
               </handlers>
-              <handlers>
-                <event>ChoiceProcessing</event>
-                <name>ТаблицаПараметровСписокЗначенийАргументаОбработкаВыбора</name>
-              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
