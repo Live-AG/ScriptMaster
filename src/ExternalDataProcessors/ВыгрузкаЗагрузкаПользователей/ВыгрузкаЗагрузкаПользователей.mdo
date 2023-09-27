@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="796a6d0d-48ef-4bb1-94b6-9c585fcf644d">
+  <producedTypes>
+    <objectType typeId="dd026cfb-3ff7-44b9-8b85-7969c7dba445" valueTypeId="4ecb099f-246b-4e84-bd06-d62b06421d4c"/>
+  </producedTypes>
+  <name>ВыгрузкаЗагрузкаПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка и загрузка пользователей</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="f368188e-3f2d-41c4-8a11-96e5e10d7ac7"/>
+  <defaultForm>ExternalDataProcessor.ВыгрузкаЗагрузкаПользователей.Form.Форма</defaultForm>
+  <forms uuid="d613e72e-4931-45c9-9003-b5d12fe06bb7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="66645011-9292-42b4-b270-4a5f0781cbce">
+    <name>XMLСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>XMLСхема</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>
