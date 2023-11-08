@@ -2338,6 +2338,10 @@
           <segments>ТекстСкриптаПредставление</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ТекстСкриптаПредставлениеПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>ТекстСкриптаПредставлениеРасширеннаяПодсказка</name>
           <id>175</id>
