@@ -6,7 +6,7 @@
 		<Value xsi:type="xs:string">8.3.21</Value>
 	</Property>
 	<Property name="UID_Модели">
-		<Value xsi:type="UUID">70264629-d0f0-4415-b8b9-959535bafe52</Value>
+		<Value xsi:type="UUID">5ba84aff-99c6-4e49-ac11-c33513d90ca0</Value>
 	</Property>
 	<Property name="ДеревоКоманд">
 		<Value xsi:type="ValueTree">
@@ -2142,7 +2142,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
-				<Value xsi:type="xs:string">/N&lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">/N &lt;имя&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя. Должно быть указано так же, как в списке пользователей, создаваемом в Конфигураторе.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Строка</Value>
@@ -2154,7 +2154,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">12894ec7-85eb-47d6-acbe-958f2887dc4f</Value>
-				<Value xsi:type="xs:string">/P&lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">/P &lt;пароль&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя, имя которого указано в команде /N. Если у пользователя нет пароля, этот параметр можно опустить.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Пароль</Value>
@@ -2598,7 +2598,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">7afefead-1033-4fb0-a23f-d24b93a06c9a</Value>
-				<Value xsi:type="xs:string">/N&lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">/N &lt;имя&gt;</Value>
 				<Value xsi:type="xs:string">Имя пользователя. Должно быть указано так же, как в списке пользователей, создаваемом в Конфигураторе.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Строка</Value>
@@ -2610,7 +2610,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">7afefead-1033-4fb0-a23f-d24b93a06c9a</Value>
-				<Value xsi:type="xs:string">/P&lt;пароль&gt;</Value>
+				<Value xsi:type="xs:string">/P &lt;пароль&gt;</Value>
 				<Value xsi:type="xs:string">Пароль пользователя, имя которого указано в команде /N. Если у пользователя нет пароля, этот параметр можно опустить.</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Пароль</Value>
@@ -7136,7 +7136,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">aeba804e-c4b8-42f3-b5b1-9e60342686f0</Value>
-				<Value xsi:type="xs:string">/L&lt;код языка&gt;</Value>
+				<Value xsi:type="xs:string">/L &lt;код языка&gt;</Value>
 				<Value xsi:type="xs:string">Азербайджанский - az
 Английский - en
 Армянский - hy
@@ -7279,7 +7279,7 @@
 			</row>
 			<row>
 				<Value xsi:type="UUID">aeba804e-c4b8-42f3-b5b1-9e60342686f0</Value>
-				<Value xsi:type="xs:string">/VL&lt;код локализации сеанса&gt;</Value>
+				<Value xsi:type="xs:string">/VL &lt;код локализации сеанса&gt;</Value>
 				<Value xsi:type="xs:string">Указывается код локализации сеанса, используемый при форматировании данных типа Число и Дата, а также в методах ЧислоПрописью() и ПредставлениеПериода()</Value>
 				<Value xsi:type="xs:boolean">false</Value>
 				<Value xsi:type="xs:string">Список</Value>
