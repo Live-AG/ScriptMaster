@@ -538,7 +538,7 @@
 				</ValueType>
 			</column>
 			<column>
-				<Name>ИмяАргумента</Name>
+				<Name>ПредставлениеПустогоЗначения</Name>
 				<ValueType>
 					<Type>xs:string</Type>
 					<StringQualifiers>
