@@ -15,7 +15,7 @@
 		<Value xsi:type="xs:string"> </Value>
 	</Property>
 	<Property name="UID_Модели">
-		<Value xsi:type="UUID">b61f44d9-c233-4a0a-ae71-800ea13e92c1</Value>
+		<Value xsi:type="UUID">868afb58-a41f-4b0e-9862-ac1af52cd347</Value>
 	</Property>
 	<Property name="ДеревоКоманд">
 		<Value xsi:type="ValueTree">
@@ -6962,19 +6962,6 @@
 					<lastId>-1</lastId>
 				</Value>
 				<Value xsi:type="xs:string">-Extension &lt;Имя расширения&gt;</Value>
-			</row>
-			<row>
-				<Value xsi:type="UUID">b54ff9a7-99c6-4b9d-a352-c17f3aa2d11b</Value>
-				<Value xsi:type="xs:string">/ConfigurationRepositoryBindCfg</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId>-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">/ConfigurationRepositoryBindCfg</Value>
 			</row>
 			<row>
 				<Value xsi:type="UUID">f94aabb7-050f-42b7-b2a0-c091c36e5ea0</Value>
