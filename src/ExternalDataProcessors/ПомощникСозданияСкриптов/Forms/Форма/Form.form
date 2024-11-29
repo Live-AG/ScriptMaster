@@ -4,7 +4,7 @@
     <name>ГруппаПрограммаВерсия</name>
     <id>98</id>
     <items xsi:type="form:FormField">
-      <name>Программа</name>
+      <name>Утилита</name>
       <id>95</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -12,16 +12,16 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Программа</segments>
+        <segments>ИмяУтилиты</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
       <shortcut>Ctrl+S</shortcut>
       <handlers>
         <event>OnChange</event>
-        <name>ПрограммаПриИзменении</name>
+        <name>УтилитаПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>ПрограммаРасширеннаяПодсказка</name>
+        <name>УтилитаРасширеннаяПодсказка</name>
         <id>97</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -36,7 +36,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ПрограммаКонтекстноеМеню</name>
+        <name>УтилитаКонтекстноеМеню</name>
         <id>96</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -118,7 +118,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВерсияПрограммы</name>
+      <name>ВерсияУтилиты</name>
       <id>100</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -126,14 +126,14 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>ВерсияПрограммы</segments>
+        <segments>ВерсияУтилиты</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
         <name>ВерсияПлатформыПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>ВерсияПрограммыРасширеннаяПодсказка</name>
+        <name>ВерсияУтилитыРасширеннаяПодсказка</name>
         <id>102</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -148,7 +148,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВерсияПрограммыКонтекстноеМеню</name>
+        <name>ВерсияУтилитыКонтекстноеМеню</name>
         <id>101</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -3263,10 +3263,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>Программа</name>
+    <name>ИмяУтилиты</name>
     <title>
       <key>ru</key>
-      <value>Программа</value>
+      <value>Имя утилиты</value>
     </title>
     <id>19</id>
     <valueType>
@@ -3283,7 +3283,7 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ВерсияПрограммы</name>
+    <name>ВерсияУтилиты</name>
     <title>
       <key>ru</key>
       <value>Версия</value>
