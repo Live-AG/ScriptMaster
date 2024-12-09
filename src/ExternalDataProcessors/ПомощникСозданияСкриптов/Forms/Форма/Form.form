@@ -1440,36 +1440,29 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
+          <type>RadioButtonField</type>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>15</width>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <dropListButton>true</dropListButton>
-            <listChoiceMode>true</listChoiceMode>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <radioButtonsType>Tumbler</radioButtonsType>
             <choiceList>
               <presentation>
                 <key>ru</key>
-                <value>&lt;пробел></value>
+                <value>Пробел</value>
               </presentation>
-              <value xsi:type="core:StringValue">
-                <value> </value>
+              <value xsi:type="core:NumberValue">
+                <value>0</value>
               </value>
             </choiceList>
             <choiceList>
               <presentation>
                 <key>ru</key>
-                <value>=</value>
+                <value>&quot;=&quot;</value>
               </presentation>
-              <value xsi:type="core:StringValue">
-                <value>=</value>
+              <value xsi:type="core:NumberValue">
+                <value>1</value>
               </value>
             </choiceList>
           </extInfo>
@@ -3465,10 +3458,10 @@
     </title>
     <id>32</id>
     <valueType>
-      <types>String</types>
-      <stringQualifiers>
-        <length>1</length>
-      </stringQualifiers>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
     </valueType>
     <view>
       <common>true</common>
