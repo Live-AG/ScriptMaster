@@ -12,7 +12,7 @@
 		<Value xsi:type="xs:string"/>
 	</Property>
 	<Property name="РазделительПараметраИАргумента">
-		<Value xsi:type="xs:string">=</Value>
+		<Value xsi:type="xs:integer">1</Value>
 	</Property>
 	<Property name="UID_Модели">
 		<Value xsi:type="UUID">e6729a9a-c63c-4058-950d-2636892207fb</Value>
