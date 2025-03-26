@@ -1315,9 +1315,6 @@
       <titleTextColor xsi:type="core:ColorRef">
         <color>Windows.ActiveTitleBar</color>
       </titleTextColor>
-      <titleFont xsi:type="core:FontDef">
-        <height>12.0</height>
-      </titleFont>
       <extendedTooltip>
         <name>ГруппаДеревоКомандВертикальнаяРасширеннаяПодсказка</name>
         <id>161</id>
@@ -2513,9 +2510,6 @@
       <titleTextColor xsi:type="core:ColorRef">
         <color>Windows.ActiveTitleBar</color>
       </titleTextColor>
-      <titleFont xsi:type="core:FontDef">
-        <height>12.0</height>
-      </titleFont>
       <extendedTooltip>
         <name>ГруппаТаблицаПараметровВертикальнаяРасширеннаяПодсказка</name>
         <id>182</id>
