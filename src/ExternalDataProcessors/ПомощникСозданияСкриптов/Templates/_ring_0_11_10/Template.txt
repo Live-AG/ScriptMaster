@@ -1,0 +1,1656 @@
+<Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Property name="Программа">
+		<Value xsi:type="xs:string">ring</Value>
+	</Property>
+	<Property name="ВерсияПрограммы">
+		<Value xsi:type="xs:string">0.11.10</Value>
+	</Property>
+	<Property name="UID_Модели">
+		<Value xsi:type="UUID">273f2bce-7f9a-446c-95a7-f4aeef18895f</Value>
+	</Property>
+	<Property name="ДеревоКоманд">
+		<Value xsi:type="ValueTree">
+			<column>
+				<Name>Команда</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>250</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Использование</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Описание</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>КлючСвязи</Name>
+				<ValueType>
+					<Type>UUID</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ИмяОбласти</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>50</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Исключительная</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>СсылкаНаИсточник</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<row>
+				<row>
+					<Value xsi:type="xs:string">help</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">отображения справки</Value>
+					<Value xsi:type="UUID">f07b9aff-916b-4e76-b92e-7a28776a05a6</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
+				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">platform-versions</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Получить поддерживаемые 1C:Enterprise Development Tools версии платформы 1С:Предприятия</Value>
+						<Value xsi:type="UUID">08d94be1-ab53-49ff-bf79-65a10b585e2e</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string">list</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Получить список зарегистрированных установок 1C:Enterprise Development Tools для данного модуля.</Value>
+							<Value xsi:type="UUID">044f0175-1e88-471d-a503-0b44b711e713</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">set-default</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Задать установку 1C:Enterprise Development Tools по умолчанию для данного модуля</Value>
+							<Value xsi:type="UUID">8182e6ac-23af-46e7-8bb2-233374846c6b</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string"/>
+						</row>
+						<Value xsi:type="xs:string">locations</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="UUID">f5b5fd91-97be-4524-b6ba-db3421f8440f</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<row>
+						<row>
+							<Value xsi:type="xs:string">clean-up-source</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Операция оптимизации формата хранения данных проекта 1C:Enterprise Development Tools</Value>
+							<Value xsi:type="UUID">8a5dcb60-6ee8-42bb-8446-be5ebd8f3a74</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">true</Value>
+							<Value xsi:type="xs:string"/>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">export</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Экспортировать проект 1C:Enterprise Development Tools в файлы конфигурации платформы 1С:Предприятия</Value>
+							<Value xsi:type="UUID">4843662d-2f72-486c-bdc2-6e8fd3e46d3c</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">true</Value>
+							<Value xsi:type="xs:string"/>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">import</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Импортировать проект 1C:Enterprise Development Tools из файлов конфигурации платформы 1С:Предприятия.</Value>
+							<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">true</Value>
+							<Value xsi:type="xs:string"/>
+						</row>
+						<row>
+							<Value xsi:type="xs:string">validate</Value>
+							<Value xsi:type="xs:boolean">false</Value>
+							<Value xsi:type="xs:string">Провалидировать проекты 1C:Enterprise Development Tools и вывести результат в файл в формате TSV</Value>
+							<Value xsi:type="UUID">57461942-b644-4e3d-953f-4ae256ea8b5d</Value>
+							<Value xsi:type="xs:string"/>
+							<Value xsi:type="xs:boolean">true</Value>
+							<Value xsi:type="xs:string"/>
+						</row>
+						<Value xsi:type="xs:string">workspace</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="UUID">01e39186-f5c0-4aac-94e1-317b9b769d73</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string"/>
+					</row>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Модуль EDT</Value>
+					<Value xsi:type="UUID">932281d0-0023-479e-9cbf-ed7c60593378</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
+				</row>
+				<row>
+					<row>
+						<Value xsi:type="xs:string">acquire</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Команда предназначена для формирования файла ответа по ранее сформированному файлу запроса, с использованием веб-сервиса центра лицензирования</Value>
+						<Value xsi:type="UUID">5839cb3d-f7a9-440f-98fe-7471dc0e86b6</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000685</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">activate</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Активация лицензии с использованием веб-сервиса центра лицензирования</Value>
+						<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000683</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">generate</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Команда предназначена для формирования файла лицензии по данным запроса к центру лицензирования и его (центра) ответа</Value>
+						<Value xsi:type="UUID">1a41e7af-dfda-4ba7-99a1-b487381a6b9e</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000686</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">get</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Получает файл с указанной активированной лицензией в указанном хранилище лицензий и записывает в файл</Value>
+						<Value xsi:type="UUID">f0849553-9fe4-4b4d-a53a-e694aceaa838</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000691</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">info</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Выводит информацию об указанной лицензии</Value>
+						<Value xsi:type="UUID">bffc55b4-825b-4f7e-9828-6a5ec8ad3f5c</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000688</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">list</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Команда предназначена для отображения списка лицензий в хранилище лицензий</Value>
+						<Value xsi:type="UUID">daba6e78-847c-477b-aa1d-8b128cf3072d</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000687</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">prepare-request</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Команда выполняет подготовку файла для передачи в центр лицензирования</Value>
+						<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000684</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">put</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Помещает выбранный файл с активированной лицензией в указанное хранилище лицензий</Value>
+						<Value xsi:type="UUID">dd2c88e6-fd3d-4cb5-bf3a-c6a985190d0d</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000690</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">remove</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Удаляет указанную лицензию из указанного хранилища лицензий</Value>
+						<Value xsi:type="UUID">b8368dcc-abc4-4fb2-8a40-cc8a5f6408ef</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000692</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">update</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Выполняет обновление (переполучение) всех лицензий из хранилища лицензий</Value>
+						<Value xsi:type="UUID">bddaf334-6c58-4d7f-bcba-efde081e0fec</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000969</Value>
+					</row>
+					<row>
+						<Value xsi:type="xs:string">validate</Value>
+						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:string">Проверяет соответствие оборудования на компьютере оборудованию, которое было зафиксировано в момент активации лицензии</Value>
+						<Value xsi:type="UUID">d17edfff-2968-4e24-a385-486b3c17b941</Value>
+						<Value xsi:type="xs:string"/>
+						<Value xsi:type="xs:boolean">true</Value>
+						<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000689</Value>
+					</row>
+					<Value xsi:type="xs:string">license</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Модуль лицензирования</Value>
+					<Value xsi:type="UUID">ca2dbdf8-1c13-4855-8b0e-503d71305c76</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000679</Value>
+				</row>
+				<Value xsi:type="xs:string">ring</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Утилита для управления локальной конфигурацией процессов системы «1С:Предприятия» и для выполнения различных операций, необходимых для поддержки работы системы</Value>
+				<Value xsi:type="UUID">71f02d52-0966-4008-bd2b-d4b68a67c60c</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000674</Value>
+			</row>
+		</Value>
+	</Property>
+	<Property name="ТаблицаПараметров">
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name>КлючСвязи</Name>
+				<ValueType>
+					<Type>UUID</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Параметр</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>250</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Описание</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Использование</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ТипАргумента</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>25</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ПредставлениеПустогоЗначения</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>25</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>СписокЗначенийАргумента</Name>
+				<ValueType>
+					<Type>ValueListType</Type>
+				</ValueType>
+			</column>
+			<row>
+				<Value xsi:type="UUID">71f02d52-0966-4008-bd2b-d4b68a67c60c</Value>
+				<Value xsi:type="xs:string">-l &lt;детализация сообщений&gt;</Value>
+				<Value xsi:type="xs:string">Уровень детализации сообщений. Определяет как много информации будет выводиться на экран в процессе выполнения команды. Допустимые значения: trace, debug, info, warn, error.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">детализация сообщений</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>4</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>trace</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>debug</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>info</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>warn</presentation>
+						<id>3</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>error</presentation>
+						<id>4</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">71f02d52-0966-4008-bd2b-d4b68a67c60c</Value>
+				<Value xsi:type="xs:string">-x</Value>
+				<Value xsi:type="xs:string">Если указан данный параметр то на экран будет выводиться дополнительная отладочная информация</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">71f02d52-0966-4008-bd2b-d4b68a67c60c</Value>
+				<Value xsi:type="xs:string">&lt;модуль&gt;</Value>
+				<Value xsi:type="xs:string">Параметр &lt;модуль&gt; должен содержать явное указание версии и/или архитектуры модуля, если в реестре команд существует несколько записей для одного имени модуля. Это может потребоваться если на сервере установлено несколько различных версий одного компонента. Если установлен только один модуль с указанным именем, то явное указание версии и архитектуры можно пропустить. Синтаксис параметра: &lt;имя модуля&gt;[@&lt;версия&gt;][:&lt;архитектура&gt;]. Примеры: worker@1.0.0:x86, manager@2.3.4, manager:x86_64, manager</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">модуль</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">71f02d52-0966-4008-bd2b-d4b68a67c60c</Value>
+				<Value xsi:type="xs:string">--instance &lt;имя экземпляра компонента&gt;</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя экземпляра компонента</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">71f02d52-0966-4008-bd2b-d4b68a67c60c</Value>
+				<Value xsi:type="xs:string">--version</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f07b9aff-916b-4e76-b92e-7a28776a05a6</Value>
+				<Value xsi:type="xs:string">modules</Value>
+				<Value xsi:type="xs:string">список установленных модулей</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--first-name &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">имя владельца лицензии. При указания параметра company, данный параметр является необязательным.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--middle-name &lt;отчество&gt;</Value>
+				<Value xsi:type="xs:string">имя владельца лицензии. При указания параметра company, данный параметр является необязательным.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">отчество</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--last-name &lt;фамилия&gt;</Value>
+				<Value xsi:type="xs:string">фамилия владельца лицензии. При указания параметра company, данный параметр является необязательным.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">фамилия</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--email &lt;email&gt;</Value>
+				<Value xsi:type="xs:string">электронная почта владельца лицензии.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">email</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--company &lt;компания&gt;</Value>
+				<Value xsi:type="xs:string">организация владельца лицензии. При указании параметров first-name, middle-name, last-name, данный параметр является необязательным. Требуется не менее 5 символов, при этом не должно быть более 3 одинаковых символов подряд.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">компания</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--country &lt;страна&gt;</Value>
+				<Value xsi:type="xs:string">страна регистрации. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">страна</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--zip-code &lt;индекс&gt;</Value>
+				<Value xsi:type="xs:string">индекс. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">индекс</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--region &lt;область&gt;</Value>
+				<Value xsi:type="xs:string">область/республика/край.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">область</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--district &lt;район&gt;</Value>
+				<Value xsi:type="xs:string">район.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">район</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--town &lt;город&gt;</Value>
+				<Value xsi:type="xs:string">город. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">город</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--street &lt;улица&gt;</Value>
+				<Value xsi:type="xs:string">улица. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">улица</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--house &lt;дом&gt;</Value>
+				<Value xsi:type="xs:string">номер дома. При указании параметров building или apartment, данный параметр является необязательным. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">дом</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--building &lt;строение&gt;</Value>
+				<Value xsi:type="xs:string">строение. При указании параметров house или apartment, данный параметр является необязательным. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">строение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--apartment &lt;квартира&gt;</Value>
+				<Value xsi:type="xs:string">квартира. При указании параметров house или building, данный параметр является необязательным. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">квартира</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--serial &lt;серийныйНомер&gt;</Value>
+				<Value xsi:type="xs:string">серийный номер программного продукта.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">серийныйНомер</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--pin &lt;пинкод&gt;</Value>
+				<Value xsi:type="xs:string">пинкод, используемый при активации лицензии.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">пинкод</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--previous-pin &lt;предыдущийПинкод&gt;</Value>
+				<Value xsi:type="xs:string">при повторной активации лицензии в данном параметре указывается пинкод, который использовался при первичной активации лицензии. Не должен совпадать со значением параметра pin.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">предыдущийПинкод</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--validate</Value>
+				<Value xsi:type="xs:string">если указан, то выполнение команды будет завершено с ошибкой, если при попытке получения какого-либо из ключевых параметров возникла ошибка времени исполнения. В случае если параметр не указан, возникновение ошибки при получении какого-либо ключевого параметра не будет препятствовать успешной активации лицензии. Однако, поля лицензии, соответствующие неполученным параметрам, будут заполнены пустыми значениями, что приведет к невозможности дальнейшего использования активированной лицензии.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--first-name &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">имя владельца лицензии. При указания параметра company, данный параметр является необязательным.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--middle-name &lt;отчество&gt;</Value>
+				<Value xsi:type="xs:string">имя владельца лицензии. При указания параметра company, данный параметр является необязательным.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">отчество</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--last-name &lt;фамилия&gt;</Value>
+				<Value xsi:type="xs:string">фамилия владельца лицензии. При указания параметра company, данный параметр является необязательным.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">фамилия</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--email &lt;email&gt;</Value>
+				<Value xsi:type="xs:string">электронная почта владельца лицензии.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">email</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--company &lt;компания&gt;</Value>
+				<Value xsi:type="xs:string">организация владельца лицензии. При указании параметров first-name, middle-name, last-name, данный параметр является необязательным. Требуется не менее 5 символов, при этом не должно быть более 3 одинаковых символов подряд.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">компания</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--country &lt;страна&gt;</Value>
+				<Value xsi:type="xs:string">страна регистрации. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">страна</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--zip-code &lt;индекс&gt;</Value>
+				<Value xsi:type="xs:string">индекс. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">индекс</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--region &lt;область&gt;</Value>
+				<Value xsi:type="xs:string">область/республика/край.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">область</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--district &lt;район&gt;</Value>
+				<Value xsi:type="xs:string">район.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">район</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--town &lt;город&gt;</Value>
+				<Value xsi:type="xs:string">город. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">город</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--street &lt;улица&gt;</Value>
+				<Value xsi:type="xs:string">улица. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">улица</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--house &lt;дом&gt;</Value>
+				<Value xsi:type="xs:string">номер дома. При указании параметров building или apartment, данный параметр является необязательным. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">дом</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--building &lt;строение&gt;</Value>
+				<Value xsi:type="xs:string">строение. При указании параметров house или apartment, данный параметр является необязательным. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">строение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--apartment &lt;квартира&gt;</Value>
+				<Value xsi:type="xs:string">квартира. При указании параметров house или building, данный параметр является необязательным. Не может быть пустым.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">квартира</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--serial &lt;серийныйНомер&gt;</Value>
+				<Value xsi:type="xs:string">серийный номер программного продукта.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Число</Value>
+				<Value xsi:type="xs:string">серийныйНомер</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--pin &lt;пинкод&gt;</Value>
+				<Value xsi:type="xs:string">пинкод, используемый при активации лицензии.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">пинкод</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--previous-pin &lt;предыдущийПинкод&gt;</Value>
+				<Value xsi:type="xs:string">при повторной активации лицензии в данном параметре указывается пинкод, который использовался при первичной активации лицензии. Не должен совпадать со значением параметра pin.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">предыдущийПинкод</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">request &lt;FilePath&gt;</Value>
+				<Value xsi:type="xs:string">указывает полный путь к файлу, в который будет помещена информация для передачи в центр лицензирования. Если не указан, то текст запроса в центр лицензирования будет выведен в стандартный поток вывода.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">FilePath</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--validate</Value>
+				<Value xsi:type="xs:string">если указан, то выполнение команды будет завершено с ошибкой, если при попытке получения какого-либо из ключевых параметров возникла ошибка времени исполнения. В случае если параметр не указан, возникновение ошибки при получении какого-либо ключевого параметра не будет препятствовать успешной активации лицензии. Однако, поля лицензии, соответствующие неполученным параметрам, будут заполнены пустыми значениями, что приведет к невозможности дальнейшего использования активированной лицензии.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1a41e7af-dfda-4ba7-99a1-b487381a6b9e</Value>
+				<Value xsi:type="xs:string">--license &lt;файлЛицензии&gt;</Value>
+				<Value xsi:type="xs:string">полное имя к файлу с получившейся лицензией. Если параметр не указан, то содержимое файла активированной лицензии выводится в стандартный поток вывода</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">файлЛицензии</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1a41e7af-dfda-4ba7-99a1-b487381a6b9e</Value>
+				<Value xsi:type="xs:string">--request &lt;ФайлЗапроса&gt;</Value>
+				<Value xsi:type="xs:string">полное имя к файлу с запросом к центру лицензирования. Если параметр не указан, то содержимое файла запроса ожидается со стандартного потока ввода</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">ФайлЗапроса</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1a41e7af-dfda-4ba7-99a1-b487381a6b9e</Value>
+				<Value xsi:type="xs:string">--response &lt;ФайлОтвета&gt;</Value>
+				<Value xsi:type="xs:string">полное имя файла, в которое будет помещен ответ центра лицензирования. Если параметр не указан, то содержимое файла ответа будет выведено в стандартный поток вывода</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">ФайлОтвета</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">daba6e78-847c-477b-aa1d-8b128cf3072d</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">5839cb3d-f7a9-440f-98fe-7471dc0e86b6</Value>
+				<Value xsi:type="xs:string">--request &lt;ФайлЗапроса&gt;</Value>
+				<Value xsi:type="xs:string">полное имя к файлу с запросом к центру лицензирования. Если параметр не указан, то содержимое файла запроса ожидается со стандартного потока ввода</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">ФайлЗапроса</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">5839cb3d-f7a9-440f-98fe-7471dc0e86b6</Value>
+				<Value xsi:type="xs:string">--response &lt;ФайлОтвета&gt;</Value>
+				<Value xsi:type="xs:string">полное имя файла, в которое будет помещен ответ центра лицензирования. Если параметр не указан, то содержимое файла ответа будет выведено в стандартный поток вывода</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">ФайлОтвета</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">5839cb3d-f7a9-440f-98fe-7471dc0e86b6</Value>
+				<Value xsi:type="xs:string">--conf-location &lt;путь&gt;</Value>
+				<Value xsi:type="xs:string">позволяет указать каталог, в котором расположен конфигурационный файл conf.cfg. В данном файле анализируется параметр ExternalResourcesMode, в соответствии с которым выбирается адрес используемого центра лицензирования.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">путь</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--conf-location &lt;путь&gt;</Value>
+				<Value xsi:type="xs:string">позволяет указать каталог, в котором расположен конфигурационный файл conf.cfg. В данном файле анализируется параметр ExternalResourcesMode, в соответствии с которым выбирается адрес используемого центра лицензирования.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">путь</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f0849553-9fe4-4b4d-a53a-e694aceaa838</Value>
+				<Value xsi:type="xs:string">-name &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">имя лицензии, для которой ожидается получение информации</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f0849553-9fe4-4b4d-a53a-e694aceaa838</Value>
+				<Value xsi:type="xs:string">--license &lt;полноеИмя&gt;</Value>
+				<Value xsi:type="xs:string">полный путь к файлу, в который будет записана получаемая лицензия. Если не указано ‑ содержимое файла с лицензией выводится в стандартный поток вывода</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">полноеИмя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f0849553-9fe4-4b4d-a53a-e694aceaa838</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bffc55b4-825b-4f7e-9828-6a5ec8ad3f5c</Value>
+				<Value xsi:type="xs:string">--name &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string"> имя лицензии, для которой ожидается получение информации. Если данный параметр отсутствует, то система ожидает со стандартного потока ввода содержимое (не имя!) файла с активированной лицензией</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bffc55b4-825b-4f7e-9828-6a5ec8ad3f5c</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">dd2c88e6-fd3d-4cb5-bf3a-c6a985190d0d</Value>
+				<Value xsi:type="xs:string">--license &lt;полноеИмя&gt;</Value>
+				<Value xsi:type="xs:string">полный путь к файлу активированной лицензии, который будет помещен в хранилище лицензий</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">полноеИмя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">dd2c88e6-fd3d-4cb5-bf3a-c6a985190d0d</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b8368dcc-abc4-4fb2-8a40-cc8a5f6408ef</Value>
+				<Value xsi:type="xs:string">-name &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">имя лицензии, которую требуется удалить из хранилища</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b8368dcc-abc4-4fb2-8a40-cc8a5f6408ef</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b8368dcc-abc4-4fb2-8a40-cc8a5f6408ef</Value>
+				<Value xsi:type="xs:string">--all</Value>
+				<Value xsi:type="xs:string">удалить все лицензии с заданным именем в хранилище</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bddaf334-6c58-4d7f-bcba-efde081e0fec</Value>
+				<Value xsi:type="xs:string">--conf-location &lt;КонфигурационныйФайл&gt;</Value>
+				<Value xsi:type="xs:string">каталог расположения конфигурационных файлов платформы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">КонфигурационныйФайл</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bddaf334-6c58-4d7f-bcba-efde081e0fec</Value>
+				<Value xsi:type="xs:string">--force &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">определяет поведение утилиты лицензирования, если при обновлении лицензии произошли ошибки</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bddaf334-6c58-4d7f-bcba-efde081e0fec</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bddaf334-6c58-4d7f-bcba-efde081e0fec</Value>
+				<Value xsi:type="xs:string">--validate</Value>
+				<Value xsi:type="xs:string">указывает, следует ли проверять аппаратные данные, полученные от системы</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d17edfff-2968-4e24-a385-486b3c17b941</Value>
+				<Value xsi:type="xs:string">--name &lt;имя&gt;</Value>
+				<Value xsi:type="xs:string">имя лицензии, для которой ожидается получение информации. Если данный параметр отсутствует, то система ожидает со стандартного потока ввода содержимое (не имя!) файла с активированной лицензией</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">имя</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d17edfff-2968-4e24-a385-486b3c17b941</Value>
+				<Value xsi:type="xs:string">--path &lt;хранилище&gt;</Value>
+				<Value xsi:type="xs:string">указывает путь к хранилищу лицензий, если оно отличается от пути по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">хранилище</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">d17edfff-2968-4e24-a385-486b3c17b941</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">5839cb3d-f7a9-440f-98fe-7471dc0e86b6</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">030aab7d-47bc-4622-96c1-3d1c27ba3b72</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">1a41e7af-dfda-4ba7-99a1-b487381a6b9e</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f0849553-9fe4-4b4d-a53a-e694aceaa838</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bffc55b4-825b-4f7e-9828-6a5ec8ad3f5c</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">daba6e78-847c-477b-aa1d-8b128cf3072d</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">65982f07-759d-4c59-8d77-d08df5e49ed9</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">dd2c88e6-fd3d-4cb5-bf3a-c6a985190d0d</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">bddaf334-6c58-4d7f-bcba-efde081e0fec</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">b8368dcc-abc4-4fb2-8a40-cc8a5f6408ef</Value>
+				<Value xsi:type="xs:string">--send-statistics &lt;режим&gt;</Value>
+				<Value xsi:type="xs:string">управляет отправкой статистической информацию в сервис 1С:Пульт (адрес pult.1c.com, порт 443). Параметр &lt;режим&gt; может принимать следующие значения:
+
+● true ‑ информация отправляется. Значение по умолчанию.
+
+● false ‑ информация не отправляется.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Булево</Value>
+				<Value xsi:type="xs:string">режим</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">08d94be1-ab53-49ff-bf79-65a10b585e2e</Value>
+				<Value xsi:type="xs:string">--edt-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая запускаемую установку 1C:Enterprise Development Tools. Если параметр не задан, то используется либо установка по умолчанию, либо самая ранняя установка, связанная с модулем.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">932281d0-0023-479e-9cbf-ed7c60593378</Value>
+				<Value xsi:type="xs:string">edt@&lt;ВерсияАрхитектура&gt;</Value>
+				<Value xsi:type="xs:string">[@&lt;версия&gt;][:&lt;архитектура&gt;] (пример: 2022.2.5:x86_64)</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка без ковычек</Value>
+				<Value xsi:type="xs:string">ВерсияАрхитектура</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8182e6ac-23af-46e7-8bb2-233374846c6b</Value>
+				<Value xsi:type="xs:string">&lt;edt-location&gt;</Value>
+				<Value xsi:type="xs:string">Путь к установке 1C:Enterprise Development Tools. Используйте значение @none чтобы сбросить установку по умолчанию</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">edt-location</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8a5dcb60-6ee8-42bb-8446-be5ebd8f3a74</Value>
+				<Value xsi:type="xs:string">--edt-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая запускаемую установку 1C:Enterprise Development Tools. Если параметр не задан, то используется либо установка по умолчанию, либо самая ранняя установка, связанная с модулем</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8a5dcb60-6ee8-42bb-8446-be5ebd8f3a74</Value>
+				<Value xsi:type="xs:string">--project &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая проект 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8a5dcb60-6ee8-42bb-8446-be5ebd8f3a74</Value>
+				<Value xsi:type="xs:string">--project-name &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Имя проекта 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">8a5dcb60-6ee8-42bb-8446-be5ebd8f3a74</Value>
+				<Value xsi:type="xs:string">--workspace-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр Директория рабочего простанства для запуска 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4843662d-2f72-486c-bdc2-6e8fd3e46d3c</Value>
+				<Value xsi:type="xs:string">--configuration-files &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр Директория, содержащая файлы конфигурации платформы 1С:Предприятия</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4843662d-2f72-486c-bdc2-6e8fd3e46d3c</Value>
+				<Value xsi:type="xs:string">--edt-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая запускаемую установку 1C:Enterprise Development Tools. Если параметр не задан, то используется либо установка по умолчанию, либо самая ранняя установка, связанная с модулем</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4843662d-2f72-486c-bdc2-6e8fd3e46d3c</Value>
+				<Value xsi:type="xs:string">--project &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая проект 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4843662d-2f72-486c-bdc2-6e8fd3e46d3c</Value>
+				<Value xsi:type="xs:string">--project-name &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Имя проекта 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">4843662d-2f72-486c-bdc2-6e8fd3e46d3c</Value>
+				<Value xsi:type="xs:string">--workspace-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр Директория рабочего простанства для запуска 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+				<Value xsi:type="xs:string">--base-project-name &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Имя базового проекта для создания проекта. Допустимо только для зависимых проектов.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+				<Value xsi:type="xs:string">--configuration-files &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр Директория, содержащая файлы конфигурации платформы 1С:Предприятия</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+				<Value xsi:type="xs:string">--edt-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая запускаемую установку 1C:Enterprise Development Tools. Если параметр не задан, то используется либо установка по умолчанию, либо самая ранняя установка, связанная с модулем</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+				<Value xsi:type="xs:string">--project &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая проект 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+				<Value xsi:type="xs:string">--project-name &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Имя проекта 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+				<Value xsi:type="xs:string">--version &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Версия платформы 1С:Предприятия</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">f2da4339-a25f-4e38-9e9d-ccf1234cbce4</Value>
+				<Value xsi:type="xs:string">--workspace-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр Директория рабочего простанства для запуска 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">57461942-b644-4e3d-953f-4ae256ea8b5d</Value>
+				<Value xsi:type="xs:string">--edt-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Директория, содержащая запускаемую установку 1C:Enterprise Development Tools. Если параметр не задан, то используется либо установка по умолчанию, либо самая ранняя установка, связанная с модулем</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">57461942-b644-4e3d-953f-4ae256ea8b5d</Value>
+				<Value xsi:type="xs:string">--file &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр Файл для записи результатов валидации в формате TSV. Если файл уже существует, то будет выдана ошибка.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">57461942-b644-4e3d-953f-4ae256ea8b5d</Value>
+				<Value xsi:type="xs:string">--project-list &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Список директорий с проектами 1C:Enterprise Development Tools. Например: c:\somewhere\project1 c:\somewhere\project2.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">57461942-b644-4e3d-953f-4ae256ea8b5d</Value>
+				<Value xsi:type="xs:string">--project-name-list &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Имя проекта 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">57461942-b644-4e3d-953f-4ae256ea8b5d</Value>
+				<Value xsi:type="xs:string">--workspace-location &lt;значение&gt;</Value>
+				<Value xsi:type="xs:string">Обязательный параметр Директория рабочего простанства для запуска 1C:Enterprise Development Tools</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">значение</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+		</Value>
+	</Property>
+</Structure>

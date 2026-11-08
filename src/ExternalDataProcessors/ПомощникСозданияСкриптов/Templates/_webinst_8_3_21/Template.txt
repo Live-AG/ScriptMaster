@@ -1,0 +1,310 @@
+<Structure xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Property name="Программа">
+		<Value xsi:type="xs:string">webinst</Value>
+	</Property>
+	<Property name="ВерсияПрограммы">
+		<Value xsi:type="xs:string">8.3.21</Value>
+	</Property>
+	<Property name="UID_Модели">
+		<Value xsi:type="UUID">a96c8821-c315-4791-9f26-6f2b0734bfc2</Value>
+	</Property>
+	<Property name="ДеревоКоманд">
+		<Value xsi:type="ValueTree">
+			<column>
+				<Name>Команда</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>250</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Использование</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Описание</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>КлючСвязи</Name>
+				<ValueType>
+					<Type>UUID</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ИмяОбласти</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>50</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Исключительная</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>СсылкаНаИсточник</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>512</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<row>
+				<row>
+					<Value xsi:type="xs:string">-publish</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Выполняется публикация веб-клиента на веб-сервер</Value>
+					<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
+				</row>
+				<row>
+					<Value xsi:type="xs:string">-delete</Value>
+					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:string">Выполняется удаление публикации из указанного каталога</Value>
+					<Value xsi:type="UUID">ea7175c1-adce-4b5e-a70a-b1acc543ff40</Value>
+					<Value xsi:type="xs:string"/>
+					<Value xsi:type="xs:boolean">true</Value>
+					<Value xsi:type="xs:string"/>
+				</row>
+				<Value xsi:type="xs:string">webinst</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Утилита предназначена для настройки веб-серверов с целью поддержки работы веб-клиента</Value>
+				<Value xsi:type="UUID">adf957bc-5c65-4ea3-8af1-7d98fe988460</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">https://its.1c.ru/db/v8321doc#bookmark:adm:TI000000201</Value>
+			</row>
+		</Value>
+	</Property>
+	<Property name="ТаблицаПараметров">
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name>КлючСвязи</Name>
+				<ValueType>
+					<Type>UUID</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Параметр</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>250</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Описание</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>Использование</Name>
+				<ValueType>
+					<Type>xs:boolean</Type>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ТипАргумента</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>25</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>ПредставлениеПустогоЗначения</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>25</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+			<column>
+				<Name>СписокЗначенийАргумента</Name>
+				<ValueType>
+					<Type>ValueListType</Type>
+				</ValueType>
+			</column>
+			<row>
+				<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+				<Value xsi:type="xs:string">&lt;веб-сервер&gt;</Value>
+				<Value xsi:type="xs:string">Указывает, для какого веб-сервера будет выполняться действие</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">веб-сервер</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-iis</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-apache2</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-apache22</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-apache24</presentation>
+						<id>3</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+				<Value xsi:type="xs:string">-wsdir &lt;виртуальный каталог&gt;</Value>
+				<Value xsi:type="xs:string">Имя виртуального каталога</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">виртуальный каталог</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+				<Value xsi:type="xs:string">-dir &lt;физический каталог&gt;</Value>
+				<Value xsi:type="xs:string">Имя физического каталога, куда будет отображен виртуальный каталог веб-сервера. Каталог должен существовать.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Каталог</Value>
+				<Value xsi:type="xs:string">физический каталог</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+				<Value xsi:type="xs:string">-connstr &lt;строка соединения&gt;</Value>
+				<Value xsi:type="xs:string">Строка соединения с информационной базой</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">строка соединения</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+				<Value xsi:type="xs:string">-confpath &lt;Путь к файлу&gt;</Value>
+				<Value xsi:type="xs:string">Полный путь к конфигурационному файлу (httpd.conf) веб-сервера Apache</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">Путь к файлу</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+				<Value xsi:type="xs:string">-descriptor &lt;Путь к файлу&gt;</Value>
+				<Value xsi:type="xs:string">Позволяет выполнить публикацию по шаблону, заданному существующим файлом.</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Файл</Value>
+				<Value xsi:type="xs:string">Путь к файлу</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">0b6055c5-5361-4303-86ab-a883db3586a9</Value>
+				<Value xsi:type="xs:string">-osauth</Value>
+				<Value xsi:type="xs:string">При публикации настраивает использование аутентификации ОС на веб-сервере. Данный параметр применяется только при использовании веб-серверов IIS</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="xs:string"/>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ea7175c1-adce-4b5e-a70a-b1acc543ff40</Value>
+				<Value xsi:type="xs:string">&lt;веб-сервер&gt;</Value>
+				<Value xsi:type="xs:string">Указывает, для какого веб-сервера будет выполняться действие</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Список</Value>
+				<Value xsi:type="xs:string">веб-сервер</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>3</lastId>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-iis</presentation>
+						<id>0</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-apache2</presentation>
+						<id>1</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-apache22</presentation>
+						<id>2</id>
+					</item>
+					<item>
+						<value xsi:nil="true"/>
+						<presentation>-apache24</presentation>
+						<id>3</id>
+					</item>
+				</Value>
+			</row>
+			<row>
+				<Value xsi:type="UUID">ea7175c1-adce-4b5e-a70a-b1acc543ff40</Value>
+				<Value xsi:type="xs:string">-wsdir &lt;виртуальный каталог&gt;</Value>
+				<Value xsi:type="xs:string">Имя виртуального каталога</Value>
+				<Value xsi:type="xs:boolean">false</Value>
+				<Value xsi:type="xs:string">Строка</Value>
+				<Value xsi:type="xs:string">виртуальный каталог</Value>
+				<Value xsi:type="ValueListType">
+					<valueType/>
+					<lastId>-1</lastId>
+				</Value>
+			</row>
+		</Value>
+	</Property>
+</Structure>
